@@ -206,6 +206,29 @@
             color: #777;
             font-size: 12px;
         }
+
+        .carousel-inner {
+            cursor: grab;
+            overflow: hidden;
+        }
+
+        .carousel-inner.grabbing {
+            cursor: grabbing;
+        }
+
+        .carousel-control-next {
+            background-color: #808080;
+            width: 2rem;
+            height: 2rem;
+            opacity: 0.1;
+        }
+
+        .carousel-control-prev {
+            width: 2rem;
+            height: 2rem;
+            background-color: #808080;
+            opacity: 0.1;
+        }
     </style>
 </head>
 
@@ -365,7 +388,6 @@
 
 
 
-
     <!-- Chooseus Section Begin -->
     <section class="testimonials spad mt-8">
         <div class="container">
@@ -374,109 +396,127 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <h2 class="mb-2">Os nossos serviços</h2>
-                        <span>N’A Clínica, damos consultas em várias áreas de especialidade</span>
+                        <span>N’A <i>Clínica</i>, damos consultas em várias áreas de especialidade</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Cards de Áreas de Intervenção -->
-            <div class="row">
-                <!-- Pediatria -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-4.png" alt="Pediatria">
-                        <h5>Pediatria</h5>
-                        <p>Cuidado especializado para crianças em todas as fases de crescimento.</p>
+            <!-- Carrossel -->
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div> -->
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Pediatria -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-4.png" alt="Pediatria">
+                                    <h5>Pediatria</h5>
+                                    <p>Cuidado especializado para crianças em todas as fases de crescimento.</p>
+                                </div>
+                            </div>
+                            <!-- Nutrição -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-2.png" alt="Nutrição">
+                                    <h5>Nutrição</h5>
+                                    <p>Planos alimentares personalizados para promover saúde e bem-estar.</p>
+                                </div>
+                            </div>
+                            <!-- Terapia Ocupacional -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-3.png" alt="Terapia Ocupacional">
+                                    <h5>Terapia Ocupacional</h5>
+                                    <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p>
+                                </div>
+                            </div>
+                            <!-- Vacinação -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-1.png" alt="Vacinação">
+                                    <h5>Vacinação</h5>
+                                    <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Terapia Ocupacional -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-3.png" alt="Terapia Ocupacional">
+                                    <h5>Terapia Ocupacional</h5>
+                                    <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p>
+                                </div>
+                            </div>
+                            <!-- Vacinação -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-1.png" alt="Vacinação">
+                                    <h5>Vacinação</h5>
+                                    <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p>
+                                </div>
+                            </div>
+                            <!-- Nutrição -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-2.png" alt="Nutrição">
+                                    <h5>Nutrição</h5>
+                                    <p>Planos alimentares personalizados para promover saúde e bem-estar.</p>
+                                </div>
+                            </div>
+                            <!-- Pediatria -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="chooseus__item">
+                                    <img src="img/icons/ci-4.png" alt="Pediatria">
+                                    <h5>Pediatria</h5>
+                                    <p>Cuidado especializado para crianças em todas as fases de crescimento.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Nutrição -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-2.png" alt="Nutrição">
-                        <h5>Nutrição</h5>
-                        <p>Planos alimentares personalizados para promover saúde e bem-estar.</p>
-                    </div>
-                </div>
+                <!-- Controles -->
+                <div class="">
+                    <button class="carousel-control-prev rounded-circle" type="button"
+                        data-bs-target="#servicesCarousel" data-bs-slide="prev">
 
-                <!-- Terapia Ocupacional -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-3.png" alt="Terapia Ocupacional">
-                        <h5>Terapia Ocupacional</h5>
-                        <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p>
-                    </div>
-                </div>
-
-                <!-- Vacinação -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-1.png" alt="Vacinação">
-                        <h5>Vacinação</h5>
-                        <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p>
-                    </div>
+                        <span class="" aria-hidden="true"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                    </button>
+                    <button class="carousel-control-next rounded-circle" type="button"
+                        data-bs-target="#servicesCarousel" data-bs-slide="next">
+                        <span class="" aria-hidden="true"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Chooseus Section End -->
+
+
 
     <!-- Chooseus Section End -->
 
 
-    <!-- Início da Secção de Serviços -->
-    <section class="chooseus spad">
-        <div class="container">
-            <!-- Título da Seção -->
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2 class="mb-2">A Jornada da Maternidade Começa Aqui</h2>
-                        <span>Da preparação para o parto ao suporte pós-parto.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="consultation__text p-0">
-                        <div class="row">
-                            <!-- Banner 1 -->
-                            <div class="col banner-1" style="background-image: url('img/treinamento.jpg');">
-                                <div class="banner-text">
-                                    Curso de Preparação para o Parto e Parentalidade
-                                </div>
-                                <button class="banner-btn">Saiba mais</button>
-                            </div>
-                            <div class="col">
-                                <!-- Banner 2 -->
-                                <div class="row banner-2"
-                                    style="background-image: url('https://img.freepik.com/free-photo/closeup-pediatrician-preparing-vaccine-child_637285-10527.jpg?t=st=1733482817~exp=1733486417~hmac=341135d4c3fe6fcb68149cb1a199b408293e3061960053bffbda6e5d9b424e08&w=826');">
-                                    <div class="banner-text">
-                                        Planos de Vacinação adaptados ao seu país de origem
-                                    </div>
-                                    <button class="banner-btn">Saiba mais</button>
-                                </div>
-
-                                <!-- Banner 3 -->
-                                <div class="row banner-2"
-                                    style="background-image: url('https://www.ninhosdobrasil.com.br/sites/default/files/styles/standard/public/2023-08/Sala%20Multissensorial_0.jpg?itok=C9Snpyaz');">
-                                    <div class="banner-text">
-                                        Dispomos da única sala multissensorial em Moçambique!
-                                    </div>
-                                    <button class="banner-btn">Saiba mais</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Fim da Secção de Serviços -->
 
 
 
     <!-- Início da Secção de Serviços -->
-    <section class="chooseus spad">
+    <!-- <section class="chooseus spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -484,42 +524,45 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <div class="consultation__video set-bg" data-setbg="img/gallery/gallery-4.jpg"
-                                    style="background-image: url(&quot;img/clinica.jpg&quot;); height: 27rem;">
+                                    style="background-image: url(&quot;img/clinica.jpg&quot;); height: 33rem;">
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-8 d-flex">
                                 <div class="consultation__text__item align-content-center">
                                     <div class="section-title mb-2">
-                                        <h2>Conheça também a nossa clínica</h2>
-                                        <span>Bem-vindo à sua Jornada</span>
-                                    </div>
-                                    <p>A clínica conta com uma clínica especializada, equipada com uma
-                                        equipa multidisciplinar.</p>
-                                    <div class="section-title mb-0 mt-4">
-                                        <span>Nossos Serviços</span>
+                                        <h2>Conheça <i> A Clínica</i></h2>
+                                        <span>A Clínica conta com uma clínica especializada, equipada com uma
+                                            equipa multidisciplinar.</span>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <ul class="services__details__feature">
-                                                <li><i class="fa fa-check-circle"></i> Aulas de preparação para o parto
-                                                </li>
-                                                <li><i class="fa fa-check-circle"></i> Consultas com especialistas em
-                                                    pré-natal</li>
-                                                <li><i class="fa fa-check-circle"></i> Acompanhamento pós-parto
-                                                    personalizado</li>
-                                                <li><i class="fa fa-check-circle"></i> Orientação em amamentação</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <ul class="services__details__feature">
-                                                <li><i class="fa fa-check-circle"></i> Suporte emocional para mães</li>
-                                                <li><i class="fa fa-check-circle"></i> Grupos de apoio para pais e
-                                                    cuidadores</li>
-                                                <li><i class="fa fa-check-circle"></i> Workshops sobre cuidados com o
-                                                    bebê</li>
-                                                <li><i class="fa fa-check-circle"></i> Exercícios físicos para gestantes
-                                                </li>
-                                            </ul>
+                                        <div class="paragrafo m-4">
+                                            <div class="col-lg-10 col-md-10 col-sm-10">
+                                                <ul class="services__details__feature">
+                                                    <li><i class="fa fa-check-circle"></i> A Clínica é uma instituição
+                                                        de saúde com o foco na família.
+                                                        Desejamos
+                                                        apoiar
+                                                        as famílias na jornada da maternidade e
+                                                        paternidade, cuidando de todos os elementos que as constituem
+                                                        física,
+                                                        psicológica e emocionalmente.</li>
+                                                    <li><i class="fa fa-check-circle"></i> N’A Clínica</i> vai
+                                                        encontrar, entre outras, as especialidades de
+                                                        Pediatria,
+                                                        Nutrição, Vacinação e Terapia Ocupacional.</li>
+                                                    <li><i class="fa fa-check-circle"></i>Orgulhamo-nos de ser a única
+                                                        instituição de saúde em Moçambique com uma
+                                                        sala
+                                                        multissensorial Snoezelen.</li>
+                                                    <li><i class="fa fa-check-circle"></i> A nossa equipa
+                                                        multidisciplinar de excelência está ao seu dispor para
+                                                        tornar
+                                                        a sua experiência de maternidade e
+                                                        paternidade o mais agradável possível.
+                                                        Pais informados, são pais mais seguros e confiantes!
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="load__more">
@@ -533,7 +576,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Fim da Secção de Serviços -->
 
 
@@ -544,7 +587,7 @@
                 <div class="col-lg-6 mt-4">
                     <div class="hero__text">
                         <!-- <span>Bem-vindo à A Clínica</span> -->
-                        <h2>Somos a sua aldeia na jornada de saúde e bem-estar familiar.</h2>
+                        <h2>Somos a aldeia <br>da SUA família</h2>
                         <a href="#" class="primary-btn normal-btn">Saiba Mais</a>
                     </div>
                 </div>
@@ -559,40 +602,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="consultation__form">
-                        <div class="section-title">
-                            <span>Agende a sua</span>
-                            <h2>Consulta</h2>
+                    <div class="consultation__form p-0">
+                        <div class="consultation__video set-bg" data-setbg="img/gallery/gallery-4.jpg"
+                            style="background-image: url(&quot;img/gallery/gallery-4.jpg&quot;); height: 33rem;">
                         </div>
-                        <form action="agendar-consulta.php" method="POST">
-                            <!-- Nome -->
-                            <input type="text" name="nome" placeholder="Nome Completo" required>
-
-                            <!-- Email -->
-                            <input type="email" name="email" placeholder="Email" required>
-
-                            <!-- Telefone -->
-                            <input type="tel" name="telefone" placeholder="Telefone (Ex.: +258 XXXXXXXX)" required>
-
-                            <!-- Data Preferida -->
-                            <div class="datepicker__item">
-                                <input type="text" name="data" placeholder="Data Preferida" class="datepicker" required>
-                                <i class="fa fa-calendar"></i>
-                            </div>
-
-                            <!-- Tipo de Consulta -->
-                            <select name="consulta" required>
-                                <option value="">Selecione o Tipo de Consulta</option>
-                                <option value="amamentacao">Consulta de Amamentação</option>
-                                <option value="pediatria">Consulta de Pediatria</option>
-                                <option value="nutricao">Consulta de Nutrição</option>
-                                <option value="terapia-ocupacional">Terapia Ocupacional</option>
-                                <option value="medicina-viajante">Consulta de Medicina do Viajante</option>
-                            </select>
-
-                            <!-- Botão de Enviar -->
-                            <button type="submit" class="site-btn">Agendar Consulta</button>
-                        </form>
                     </div>
                 </div>
 
@@ -603,14 +616,38 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="consultation__text__item">
                                     <div class="section-title">
-                                        <span>Bem-vindo à A Clínica</span>
-                                        <h2>Cuide da sua <b>Saúde Familiar</b></h2>
+                                        <h2>Conheça a <i>Clínica</i></h2>
+                                        <span>A Clínica conta com uma clínica especializada, equipada com uma equipa
+                                            multidisciplinar.</span>
                                     </div>
-                                    <p>N’A Clínica, apoiamos você e sua família em todas as fases da vida, desde a
-                                        gravidez até os
-                                        cuidados com o bem-estar físico e emocional. Nossa equipa está pronta para
-                                        oferecer um
-                                        atendimento especializado e personalizado.</p>
+                                    <p>
+                                        A Clínica é uma instituição
+                                        de saúde com o foco na família.
+                                        Desejamos
+                                        apoiar
+                                        as famílias na jornada da maternidade e
+                                        paternidade, cuidando de todos os elementos que as constituem
+                                        física,
+                                        psicológica e emocionalmente.</br>
+                                        <!-- N’A Clínica</i> vai
+                                        encontrar, entre outras, as especialidades de
+                                        Pediatria,
+                                        Nutrição, Vacinação e Terapia Ocupacional.</br>
+                                       Orgulhamo-nos de ser a única
+                                        instituição de saúde em Moçambique com uma
+                                        sala
+                                        multissensorial Snoezelen.</br>
+                                        <i class="fa fa-check-circle"></i> A nossa equipa
+                                        multidisciplinar de excelência está ao seu dispor para
+                                        tornar
+                                        a sua experiência de maternidade e
+                                        paternidade o mais agradável possível.
+                                        Pais informados, são pais mais seguros e confiantes!
+                                        </br> -->
+                                    </p>
+                                </div>
+                                <div class="load__more">
+                                    <a href="#" class="primary-btn">Mais Informações</a>
                                 </div>
                             </div>
 
@@ -632,47 +669,64 @@
     <!-- Consultation Section End -->
 
 
+    <!-- Início da Secção de Serviços -->
+    <section class="chooseus spad">
+        <div class="container">
+            <!-- Título da Seção -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2 class="mb-2">A sua Jornada de Maternidade Começa Aqui</h2>
+                        <span>Da gravidez, ao apoio no pós-parto e ao crescimento do seu filhote!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="consultation__text p-0">
+                        <div class="row">
+                            <!-- Banner 1 -->
+                            <div class="col banner-1" style="background-image: url('img/treinamento.jpg');">
+                                <div class="banner-text">
+                                    Curso de Preparação para o Parto e Parentalidade: pensado para si!
+                                </div>
+                                <button class="banner-btn">Saiba mais</button>
+                            </div>
+                            <div class="col">
+                                <!-- Banner 2 -->
+                                <div class="row banner-2"
+                                    style="background-image: url('https://img.freepik.com/free-photo/closeup-pediatrician-preparing-vaccine-child_637285-10527.jpg?t=st=1733482817~exp=1733486417~hmac=341135d4c3fe6fcb68149cb1a199b408293e3061960053bffbda6e5d9b424e08&w=826');">
+                                    <div class="banner-text">
+                                        Planos de Vacinação adaptados ao seu país de origem.
+                                    </div>
+                                    <button class="banner-btn">Saiba mais</button>
+                                </div>
 
+                                <!-- Banner 3 -->
+                                <div class="row banner-2"
+                                    style="background-image: url('https://www.ninhosdobrasil.com.br/sites/default/files/styles/standard/public/2023-08/Sala%20Multissensorial_0.jpg?itok=C9Snpyaz');">
+                                    <div class="banner-text">
+                                        Sala Snoezelen: a única sala multissensorial em Moçambique!
+                                    </div>
+                                    <button class="banner-btn">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Fim da Secção de Serviços -->
 
-
-    <!-- Gallery Begin -->
-    <!-- <div class="gallery">
-        <div class="gallery__container">
-            <div class="grid-sizer"></div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-1.jpg">
-                <a href="img/gallery/gallery-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-2.jpg">
-                <a href="img/gallery/gallery-2.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-3.jpg">
-                <a href="img/gallery/gallery-3.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item gc__item__large set-bg" data-setbg="img/gallery/gallery-4.jpg">
-                <a href="img/gallery/gallery-4.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-5.jpg">
-                <a href="img/gallery/gallery-5.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-6.jpg">
-                <a href="img/gallery/gallery-6.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="gc__item set-bg" data-setbg="img/gallery/gallery-7.jpg">
-                <a href="img/gallery/gallery-7.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
-            </div>
-        </div>
-    </div> -->
-    <!-- Gallery End -->
-    <!-- Seção de Testemunhos Início -->
     <!-- Testimonials Section Begin -->
     <section class="testimonials spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>O que dizem sobre nós</h2>
-                        <span>Opiniões que nos inspiram!</span>
+                        <h2>Testemunhos</h2>
+                        <span>A sua opinião é valiosa para nós!</span>
                     </div>
                 </div>
             </div>
@@ -1199,8 +1253,8 @@
         </div>
     </footer>
     <!-- Seção de Rodapé Fim -->
-
     <script>
+
         function likeButton() {
             let heart = document.querySelector('.heart');
             let likes = document.querySelector('.likes');
@@ -1214,6 +1268,8 @@
         }
     </script>
     <!-- Js Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

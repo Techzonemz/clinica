@@ -1,10 +1,20 @@
 /*  CSS principal
 /*----------------------------------------*/
+@font-face {
+    font-family: 'LucyRounded';
+    src: url('../fonts/Lucy_Rounded.woff2') format('woff2'),
+        url('../fonts/Lucy_Rounded.woff') format('woff'),
+        url('../fonts/Lucy_Rounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 html,
 body {
     height: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'LucyRounded', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -17,7 +27,7 @@ s h6 {
     margin: 0;
     color: #777777;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: 'LucyRounded', Arial, sans-serif;
 }
 
 h1 {
@@ -87,7 +97,7 @@ ol {
     height: 40px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
+    background-color: #cfdbab;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
