@@ -7,8 +7,8 @@
     <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>a clinica</title>
-
+    <title>A clinica</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -25,44 +25,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <style>
-        .dropdown.menu {
-            display: flex;
-            background-color: white !important;
-            width: auto !important;
-            padding: 2rem !important;
-            border: 1px solid #b5ccc2;
-            left: -500px !important;
-        }
-
-        .menu li {
-            padding: 4px 10px 4px 10px;
-            margin-right: 45px !important;
-            width: 300px;
-        }
-
-        .menu li span {
-            color: #777777;
-            font-weight: 600;
-        }
-
-        .dropdown-sec li a {
-            color: #777777 !important;
-            padding: 0px !important;
-        }
-
-        .dropdown-sec li a:hover {
-            background: #b5ccc2;
-            color: white !important;
-            padding: 5px !important;
-        }
-
-        .header__menu ul li .dropdown li a:hover {
-            background: #b5ccc2;
-            color: white !important;
-            padding: 5px !important;
-        }
-
-
         .card {
             position: relative;
             width: 360px;
@@ -221,6 +183,7 @@
             width: 2rem;
             height: 2rem;
             opacity: 0.1;
+            border: none;
         }
 
         .carousel-control-prev {
@@ -228,6 +191,7 @@
             height: 2rem;
             background-color: #808080;
             opacity: 0.1;
+            border: none;
         }
     </style>
 </head>
@@ -251,8 +215,8 @@
             <a href="#" class="primary-btn">Agendar</a>
         </div>
         <ul class="offcanvas__widget">
-            <li><i class="fa fa-phone"></i> +258 84 123 4567</li>
-            <li><i class="fa fa-map-marker"></i> Cidade de Maputo, Av. Julius Nyerere, Nº 123</li>
+            <li><a href="#"><i class="fa fa-phone"></i> +258 84 123 4567</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
             <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
         </ul>
         <div class="offcanvas__social">
@@ -301,8 +265,7 @@
                         <nav class="header__menu">
                             <ul>
                                 <!-- Início -->
-                                <li class="active"><a class="arrow" href="./index.html">Início <span
-                                            class="dropdown-arrow"></span></a></li>
+                                <li class="active"><a class="arrow" href="./index.html">Início </a></li>
 
                                 <!-- A Clínica -->
                                 <li><a class="arrow" href="./about.html">A Clínica <span
@@ -372,9 +335,6 @@
                             </ul>
 
                         </nav>
-                        <!-- <div class="header__btn">
-                            <a href="#" class="primary-btn"> <i class="fa fa-lock"></i> Área reservada</a>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -389,7 +349,7 @@
 
 
     <!-- Chooseus Section Begin -->
-    <section class="testimonials spad mt-8">
+    <section class="testimonials spad mt-8 pb-4">
         <div class="container">
             <!-- Título da Seção -->
             <div class="row">
@@ -420,32 +380,32 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-4.png" alt="Pediatria">
-                                    <h5>Pediatria</h5>
-                                    <p>Cuidado especializado para crianças em todas as fases de crescimento.</p>
+                                    <h5 class="subtitle">Pediatria</h5>
+                                    <!-- <p>Cuidado especializado para crianças em todas as fases de crescimento.</p> -->
                                 </div>
                             </div>
                             <!-- Nutrição -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-2.png" alt="Nutrição">
-                                    <h5>Nutrição</h5>
-                                    <p>Planos alimentares personalizados para promover saúde e bem-estar.</p>
+                                    <h5 class="subtitle">Nutrição</h5>
+                                    <!-- <p>Planos alimentares personalizados para promover saúde e bem-estar.</p> -->
                                 </div>
                             </div>
                             <!-- Terapia Ocupacional -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-3.png" alt="Terapia Ocupacional">
-                                    <h5>Terapia Ocupacional</h5>
-                                    <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p>
+                                    <h5 class="subtitle">Terapia Ocupacional</h5>
+                                    <!-- <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p> -->
                                 </div>
                             </div>
                             <!-- Vacinação -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-1.png" alt="Vacinação">
-                                    <h5>Vacinação</h5>
-                                    <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p>
+                                    <h5 class="subtitle">Vacinação</h5>
+                                    <!-- <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -458,32 +418,32 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-3.png" alt="Terapia Ocupacional">
-                                    <h5>Terapia Ocupacional</h5>
-                                    <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p>
+                                    <h5 class="subtitle">Terapia Ocupacional</h5>
+                                    <!-- <p>Apoio no desenvolvimento e bem-estar físico, psicológico e emocional.</p> -->
                                 </div>
                             </div>
                             <!-- Vacinação -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-1.png" alt="Vacinação">
-                                    <h5>Vacinação</h5>
-                                    <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p>
+                                    <h5 class="subtitle">Vacinação</h5>
+                                    <!-- <p>Imunização segura para todas as idades, adaptada às suas necessidades.</p> -->
                                 </div>
                             </div>
                             <!-- Nutrição -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-2.png" alt="Nutrição">
-                                    <h5>Nutrição</h5>
-                                    <p>Planos alimentares personalizados para promover saúde e bem-estar.</p>
+                                    <h5 class="subtitle">Nutrição</h5>
+                                    <!-- <p>Planos alimentares personalizados para promover saúde e bem-estar.</p> -->
                                 </div>
                             </div>
                             <!-- Pediatria -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="chooseus__item">
                                     <img src="img/icons/ci-4.png" alt="Pediatria">
-                                    <h5>Pediatria</h5>
-                                    <p>Cuidado especializado para crianças em todas as fases de crescimento.</p>
+                                    <h5 class="subtitle">Pediatria</h5>
+                                    <!-- <p>Cuidado especializado para crianças em todas as fases de crescimento.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -584,7 +544,7 @@
     <section class="hero spad set-bg" data-setbg="img/hero-bg.jpg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mt-4">
+                <div class="col-lg-6 mt-5">
                     <div class="hero__text">
                         <!-- <span>Bem-vindo à A Clínica</span> -->
                         <h2>Somos a aldeia <br>da SUA família</h2>
@@ -602,7 +562,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="consultation__form p-0">
+                    <div class=" p-0">
                         <div class="consultation__video set-bg" data-setbg="img/gallery/gallery-4.jpg"
                             style="background-image: url(&quot;img/gallery/gallery-4.jpg&quot;); height: 33rem;">
                         </div>
@@ -676,8 +636,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2 class="mb-2">A sua Jornada de Maternidade Começa Aqui</h2>
-                        <span>Da gravidez, ao apoio no pós-parto e ao crescimento do seu filhote!</span>
+                        <h2 class="mb-2">A SUA Jornada de Maternidade Começa Aqui</h2>
+                        <span>Da gravidéz, ao apoio no pós-parto e ao crescimento do seu filhote!</span>
                     </div>
                 </div>
             </div>
@@ -687,7 +647,7 @@
                         <div class="row">
                             <!-- Banner 1 -->
                             <div class="col banner-1" style="background-image: url('img/treinamento.jpg');">
-                                <div class="banner-text">
+                                <div class="banner-text subtitle">
                                     Curso de Preparação para o Parto e Parentalidade: pensado para si!
                                 </div>
                                 <button class="banner-btn">Saiba mais</button>
@@ -696,7 +656,7 @@
                                 <!-- Banner 2 -->
                                 <div class="row banner-2"
                                     style="background-image: url('https://img.freepik.com/free-photo/closeup-pediatrician-preparing-vaccine-child_637285-10527.jpg?t=st=1733482817~exp=1733486417~hmac=341135d4c3fe6fcb68149cb1a199b408293e3061960053bffbda6e5d9b424e08&w=826');">
-                                    <div class="banner-text">
+                                    <div class="banner-text subtitle">
                                         Planos de Vacinação adaptados ao seu país de origem.
                                     </div>
                                     <button class="banner-btn">Saiba mais</button>
@@ -705,7 +665,7 @@
                                 <!-- Banner 3 -->
                                 <div class="row banner-2"
                                     style="background-image: url('https://www.ninhosdobrasil.com.br/sites/default/files/styles/standard/public/2023-08/Sala%20Multissensorial_0.jpg?itok=C9Snpyaz');">
-                                    <div class="banner-text">
+                                    <div class="banner-text subtitle">
                                         Sala Snoezelen: a única sala multissensorial em Moçambique!
                                     </div>
                                     <button class="banner-btn">Saiba mais</button>
@@ -726,7 +686,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <h2>Testemunhos</h2>
-                        <span>A sua opinião é valiosa para nós!</span>
+                        <span class="subtitle">A sua opinião é valiosa para nós!</span>
                     </div>
                 </div>
             </div>
@@ -914,7 +874,9 @@
                                 <b>Workshop:</b> Cuidados com a Pele Oleosa
                             </a>
                         </li>
-                        <li><span class="date">5</span></li>
+                        <li><span class="date">5</span><a href="#" class="meeting-2">
+                                <b>Promoção:</b> Limpeza de Pele 15% OFF
+                            </a></li>
                         <li><span class="date">6</span></li>
 
                         <!-- Semana 2 -->
@@ -933,7 +895,9 @@
                             </a>
                         </li>
                         <li><span class="date">11</span></li>
-                        <li><span class="date">12</span></li>
+                        <li><span class="date">12</span><a href="#" class="meeting-2">
+                                <b>Promoção:</b> Limpeza de Pele 15% OFF
+                            </a></li>
                         <li><span class="date">13</span></li>
 
                         <!-- Semana 3 -->
@@ -952,7 +916,9 @@
                         </li>
                         <li><span class="date">17</span></li>
                         <li><span class="date">18</span></li>
-                        <li><span class="date">19</span></li>
+                        <li><span class="date">19</span><a href="#" class="meeting-2">
+                                <b>Promoção:</b> Limpeza de Pele 15% OFF
+                            </a></li>
                         <li><span class="date">20</span>
                             <a href="#" class="meeting">
                                 <b>Workshop:</b> Técnicas de Relaxamento Facial
@@ -971,7 +937,9 @@
                             </a>
                         </li>
                         <li><span class="date">25</span></li>
-                        <li><span class="date">26</span></li>
+                        <li><span class="date">26</span><a href="#" class="meeting-2">
+                                <b>Promoção:</b> Limpeza de Pele 15% OFF
+                            </a></li>
                         <li><span class="date">27</span></li>
 
                         <!-- Semana 5 -->
@@ -990,7 +958,9 @@
                         </li>
                         <li><span class="date">31</span></li>
                         <li><span class="date">1</span></li>
-                        <li><span class="date">2</span></li>
+                        <li><span class="date">2</span><a href="#" class="meeting">
+                                <b>Promoção:</b> Limpeza de Pele 15% OFF
+                            </a></li>
                         <li><span class="date">3</span></li>
                     </ul>
 
@@ -1008,21 +978,21 @@
                 <!-- Ponto vermelho (Cursos/Aulas) -->
                 <div class="d-flex align-items-center me-4 mr-4">
                     <span class=""
-                        style="background-color: #dc3545; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"></span>
+                        style="background-color: #d6a294; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"></span>
                     <span class="ms-2">Cursos/Aulas</span>
                 </div>
 
                 <!-- Ponto verde (Workshops) -->
                 <div class="d-flex align-items-center me-4  mr-4">
                     <span class=""
-                        style="background-color: #28a745; width: 20px; height: 20px; border-radius: 50%;  margin-right: 10px;"></span>
+                        style="background-color: #cfdbab; width: 20px; height: 20px; border-radius: 50%;  margin-right: 10px;"></span>
                     <span class="ms-2">Workshops</span>
                 </div>
 
                 <!-- Ponto azul (Atividades pós parto) -->
                 <div class="d-flex align-items-center  mr-4">
                     <span class=""
-                        style="background-color: #007bff; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"></span>
+                        style="background-color: #808080; width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;"></span>
                     <span class="ms-2">Atividades pós parto</span>
                 </div>
             </div>

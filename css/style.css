@@ -30,6 +30,36 @@ s h6 {
     font-family: 'LucyRounded', Arial, sans-serif;
 }
 
+.subtitle {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.h1 {
+    font-size: 70px;
+}
+
+.h2 {
+    font-size: 36px;
+}
+
+.h3 {
+    font-size: 30px;
+}
+
+.h4 {
+    font-size: 24px;
+}
+
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 16px;
+}
+
+
 h1 {
     font-size: 70px;
 }
@@ -87,14 +117,18 @@ ol {
     margin: 0;
 }
 
+.mt-5 {
+    margin-top: 4rem !important;
+}
+
 .mt-8 {
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 
 .float-whatsap {
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     bottom: 40px;
     right: 40px;
     background-color: #cfdbab;
@@ -106,6 +140,11 @@ ol {
     z-index: 100;
 }
 
+.float-whatsap:hover {
+    background-color: #ffffff;
+    color: #cfdbab;
+}
+
 
 
 /*---------------------
@@ -113,7 +152,7 @@ ol {
 -----------------------*/
 
 .section-title {
-    margin-bottom: 45px;
+    margin-bottom: 1rem;
 }
 
 .section-title span {
@@ -489,6 +528,46 @@ ol {
 
 .canvas__open {
     display: none;
+}
+
+.dropdown.menu {
+    display: flex;
+    background-color: white !important;
+    width: auto !important;
+    padding: 2rem !important;
+    border: 1px solid #808080;
+    left: -500px !important;
+}
+
+.menu li {
+    padding: 4px 10px 4px 10px;
+    margin-right: 45px !important;
+    width: 300px;
+}
+
+.menu li span {
+    color: #777777;
+    font-weight: 600;
+}
+
+.dropdown-sec li a {
+    color: #777777 !important;
+    padding: 0px !important;
+}
+
+.dropdown-sec li a:hover {
+    background: #808080;
+    color: white !important;
+}
+
+li .dropdown .active a {
+    background: #808080;
+    color: white !important;
+}
+
+.header__menu ul li .dropdown li a:hover {
+    background: #808080;
+    color: white !important;
 }
 
 /*---------------------
@@ -3155,11 +3234,11 @@ ol {
 /* CALENDARIO */
 .meeting {
     height: 100%;
-    background-color: #60c5ba !important;
+    background-color: #d6a294 !important;
 }
 
 .meeting-2 {
-    background-color: #6d819c;
+    background-color: #cfdbab;
     height: 100%;
 }
 
@@ -3185,7 +3264,7 @@ ol {
 }
 
 ul.days {
-    background-color: #83a79e;
+    background-color: #808080;
 }
 
 .days li {
