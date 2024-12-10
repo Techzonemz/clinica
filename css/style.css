@@ -1190,6 +1190,10 @@ li .dropdown .active a {
     margin-bottom: 65px;
 }
 
+.footer .container {
+    max-width: 95% !important;
+}
+
 .footer__logo {
     line-height: 50px;
 }

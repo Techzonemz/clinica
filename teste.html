@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Clinica de Pre-pos">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a clinica</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        .card {
+            position: relative;
+            width: 360px;
+            min-height: 400px;
+            background: #fff;
+            box-shadow: 15px 15px 60px rgba(0, 0, 0, .15);
+            padding: 20px;
+        }
+
+        .card .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card .top .userDeatils {
+            display: flex;
+            align-items: center;
+        }
+
+        .card .top .userDeatils .profileImg {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 8px;
+            overflow: hidden;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            cursor: pointer;
+        }
+
+        .card .top .userDeatils h3 {
+            font-size: 18px;
+            color: #4d4d4f;
+            font-weight: 700;
+            line-height: 1rem;
+            cursor: pointer;
+        }
+
+        .card .top .userDeatils span {
+            font-size: 0.75em;
+        }
+
+        .card .top .dot {
+            transform: scale(0.6);
+            cursor: pointer;
+        }
+
+        .imgBg {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            margin: 10px 0 15px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btns img {
+            max-width: 24px;
+            cursor: pointer;
+        }
+
+        .btns .left img {
+            margin-right: 8px;
+        }
+
+        .likes {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #4d4d4f;
+        }
+
+        .message {
+            font-weight: 400;
+            margin-top: 5px;
+            color: #777;
+            line-height: 1.5em;
+            font-size: 12px;
+        }
+
+        .message b {
+            color: #262626;
+        }
+
+        .message span {
+            color: #1d92ff;
+            cursor: pointer;
+        }
+
+        .comments {
+            margin-top: 10px;
+            align-items: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .addComments {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .addComments .userImg {
+            position: relative;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 8px;
+        }
+
+        .addComments .text {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-weight: 400;
+            font-size: 18px;
+            color: #262626;
+        }
+
+        .addComments .text::placeholder {
+            color: #777;
+        }
+
+        .postTime {
+            margin-top: 10px;
+            font-weight: 500;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .carousel-inner {
+            cursor: grab;
+            overflow: hidden;
+        }
+
+        .carousel-inner.grabbing {
+            cursor: grabbing;
+        }
+
+        .carousel-control-next {
+            background-color: #808080;
+            width: 2rem;
+            height: 2rem;
+            opacity: 0.1;
+            border: none;
+        }
+
+        .carousel-control-prev {
+            width: 2rem;
+            height: 2rem;
+            background-color: #808080;
+            opacity: 0.1;
+            border: none;
+        }
+
+        .servicos {
+            background: none !important;
+            box-shadow: none;
+        }
+
+        .services__icon {
+            display: grid;
+            justify-content: center;
+            border: none !important;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .services__icon .testimonial__author__icon {
+            background: none !important;
+            height: 64px;
+            width: 64px;
+        }
+
+        .servicos .subtitle {
+            font-size: 20px;
+            color: #777777;
+            font-weight: 600;
+            margin-top: 26px;
+            margin-bottom: 16px;
+        }
+
+        .servicos p {
+            font-size: 15px;
+        }
+
+        #ourclients {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background: #f9f9f9;
+            padding-bottom: 30px;
+            height: 150px;
+        }
+
+        #ourclients .clients-wrap {
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #ourclients .clients-wrap ul {
+            display: block;
+            list-style: none;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #ourclients .clients-wrap ul li {
+            display: block;
+            float: left;
+            position: relative;
+            width: 220px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        #ourclients .clients-wrap ul li img {
+            vertical-align: middle;
+            max-width: 100%;
+            width: 150px;
+            max-height: 100%;
+            -webkit-transition: 0 linear left;
+            -moz-transition: 0 linear left;
+            transition: 0 linear left;
+        }
+
+        #ourclients h3 {
+            border-bottom: 2px solid #3399ff;
+            width: 150px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Testimonials Section Begin -->
+    <section class="testimonials spad">
+        <div class="container">
+            <div class="row">
+                <div id="ourclients">
+                    <center>
+                        <h3>Our Partners</h3>
+                    </center>
+                    <div class="clients-wrap">
+                        <ul id="clientlogo" class="clearfix">
+                            <li>
+                                <img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png"
+                                    alt="Logo">
+                            </li>
+                            <li>
+                                <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                                    alt="Logo">
+                            </li>
+                            <li>
+                                <img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png"
+                                    alt="Logo">
+                            </li>
+                            <li>
+                                <img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png"
+                                    alt="Logo">
+                            </li>
+                            <li>
+                                <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                                    alt="Logo" hspace='100'>
+                            </li>
+                            <li>
+                                <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                                    alt="Logo" hspace='100'>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+
+    <script>
+        $(function () {
+            var $clientslider = $('#clientlogo');
+            var clients = $clientslider.children().length;
+            var clientwidth = (clients * 220);
+            $clientslider.css('width', clientwidth);
+            var rotating = true;
+            var clientspeed = 1800;
+            var seeclients = setInterval(rotateClients, clientspeed);
+            $(document).on({
+                mouseenter: function () {
+                    rotating = false;
+                },
+                mouseleave: function () {
+                    rotating = true;
+                }
+            }, '#ourclients');
+            function rotateClients() {
+                if (rotating != false) {
+                    var $first = $('#clientlogo li:first');
+                    $first.animate({
+                        'margin-left': '-220px'
+                    }, 2000, function () {
+                        $first.remove().css({
+                            'margin-left': '0px'
+                        });
+                        $('#clientlogo li:last').after($first);
+                    });
+                }
+            }
+        });
+        function likeButton() {
+            let heart = document.querySelector('.heart');
+            let likes = document.querySelector('.likes');
+            if (heart.src.match("img/icons/heart.png")) {
+                heart.src = "img/icons/heart_red.png";
+                likes.innerHTML = "5,490 likes";
+            } else {
+                heart.src = "img/icons/heart.png";
+                likes.innerHTML = "5,489 likes"
+            }
+        }
+    </script>
+    <!-- Js Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
