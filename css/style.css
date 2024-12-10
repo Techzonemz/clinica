@@ -127,7 +127,7 @@ ol {
 }
 
 .mt-5 {
-    margin-top: 4rem !important;
+    margin-top: 5rem !important;
 }
 
 .mt-8 {
@@ -214,7 +214,8 @@ ol {
 
 .primary-btn {
     display: inline-block;
-    font-size: 10px;
+    font-family: 'LucyRounded', Arial, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     padding: 12px 10px 10px;
     color: #fff;
@@ -405,7 +406,7 @@ ol {
 .header__menu ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 24px;
+    margin-right: 30px;
     position: relative;
 }
 
@@ -605,7 +606,7 @@ li .dropdown .active a {
 .hero {
     /* padding-top: 200px;
     padding-bottom: 215px; */
-    height: 22rem;
+    height: 30rem;
 }
 
 .hero__text span {
