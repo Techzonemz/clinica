@@ -106,6 +106,10 @@ img {
     max-width: 100%;
 }
 
+.d-grid {
+    display: grid !important;
+}
+
 input:focus,
 select:focus,
 button:focus,
