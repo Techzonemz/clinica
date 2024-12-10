@@ -122,7 +122,15 @@ ol {
 }
 
 .mt-8 {
+    margin-top: 8rem;
+}
+
+.mt-7 {
     margin-top: 7rem;
+}
+
+.mt-9 {
+    margin-top: 9rem;
 }
 
 .float-whatsap {
