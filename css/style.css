@@ -9,12 +9,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/CenturyGothic.woff2') format('woff2'),
+        url('../fonts/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 html,
 body {
     height: 100%;
-    font-family: 'LucyRounded', Arial, sans-serif;
+    font-family: 'CenturyGothic', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -31,7 +40,7 @@ s h6 {
 }
 
 .subtitle {
-    font-family: 'Poppins', Arial, sans-serif !important;
+    font-family: 'CenturyGothic', Arial, sans-serif !important;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -205,9 +214,9 @@ ol {
 
 .primary-btn {
     display: inline-block;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
-    padding: 12px 30px 10px;
+    padding: 12px 10px 10px;
     color: #fff;
     text-transform: none;
     letter-spacing: 2px;
@@ -373,7 +382,7 @@ ol {
 }
 
 .header__logo {
-    padding: 14px 30px 20px 30px !important;
+    padding: 2px 30px 20px 30px !important;
 }
 
 .header__logo a {
@@ -390,13 +399,13 @@ ol {
 
 .header__menu {
     display: inline-block;
-    margin-right: 45px;
+    margin-right: 0;
 }
 
 .header__menu ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 24px;
     position: relative;
 }
 
@@ -544,13 +553,23 @@ ol {
     width: auto !important;
     padding: 2rem !important;
     border: 1px solid #808080;
-    left: -500px !important;
+    left: -330px !important;
 }
 
 .menu li {
-    padding: 4px 10px 4px 10px;
-    margin-right: 45px !important;
-    width: 300px;
+    padding: 4px 0px 4px 0px;
+    /* margin-right: 45px !important; */
+    width: 196px;
+}
+
+.grav li {
+    padding: 4px 0px 4px 0px;
+    /* margin-right: 45px !important; */
+    width: 370px;
+}
+
+.grav.menu {
+    left: -550px !important
 }
 
 .menu li span {
@@ -576,6 +595,7 @@ li .dropdown .active a {
 .header__menu ul li .dropdown li a:hover {
     background: #808080;
     color: white !important;
+
 }
 
 /*---------------------
@@ -973,6 +993,12 @@ li .dropdown .active a {
 /*---------------------
   Team
 -----------------------*/
+.team-img img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: -webkit-transform 4s ease-out;
+    transition: transform 4s ease-out;
+}
 
 .team {
     padding-bottom: 70px;
