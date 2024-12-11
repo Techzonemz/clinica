@@ -416,6 +416,7 @@ ol {
     display: inline-block;
     margin-right: 30px;
     position: relative;
+    margin-top: 12px;
 }
 
 .header__menu ul li.active a:after {
@@ -544,6 +545,18 @@ ol {
     /* Seta aponta para cima */
 }
 
+.dropdown-sec .primary-btn {
+    margin: 1rem 5rem !important;
+    padding: 1rem !important;
+    /* right: 0; */
+    color: white !important;
+}
+
+
+.dropdown-sec .primary-btn:hover {
+    color: #d6a294 !important;
+}
+
 .header__btn {
     display: inline-block;
 }
@@ -603,7 +616,7 @@ li .dropdown .active a {
 
 .header__menu ul li .dropdown li a:hover {
     background: #808080;
-    color: white !important;
+    color: white;
 
 }
 
@@ -688,10 +701,10 @@ li .dropdown .active a {
     bottom: 20px;
     left: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     z-index: 2;
-    width: 72%;
+    width: 66%;
 }
 
 .banner-btn {
