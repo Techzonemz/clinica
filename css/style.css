@@ -614,6 +614,11 @@ li .dropdown .active a {
     color: white !important;
 }
 
+.dropdown li a.active {
+    background: #808080;
+    color: white;
+}
+
 .header__menu ul li .dropdown li a:hover {
     background: #808080;
     color: white;
@@ -1020,6 +1025,19 @@ li .dropdown .active a {
     transform: scale(1.2);
     -webkit-transition: -webkit-transform 4s ease-out;
     transition: transform 4s ease-out;
+}
+
+.team-img {
+    width: 295px;
+    height: 295px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.team-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .team {
