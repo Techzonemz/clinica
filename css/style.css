@@ -938,8 +938,48 @@ li .dropdown .active a {
     color: #777777;
 }
 
-.services .section-title h2 {
-    color: #ffffff;
+.list li {
+    color: #686868;
+    padding: 2px 18px;
+    /* font-size: 14px; */
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d6a294;
+    border-radius: .25rem;
+}
+
+.card-more {
+    padding: 2.5rem;
+}
+
+.card-more .card-icon {
+    text-align: center;
+    display: grid;
+}
+
+.card-more p {
+    padding-bottom: 10px;
+}
+
+.card-text button {
+    background: transparent;
+    border: none;
+    color: gray;
+    text-decoration: underline;
+}
+
+.card-text a:hover {
+    color: black;
 }
 
 .services__btn {
@@ -955,22 +995,35 @@ li .dropdown .active a {
     padding: 45px 30px 45px 50px;
     margin-bottom: 30px;
     border-radius: 5px;
+    height: 14rem;
 }
 
 .services__item:hover {
     background: #777777;
 }
 
-.services__item:hover .services__item__icon span {
+.services__item:hover .services__item__icon img {
     color: #ffffff;
+    filter: invert(1) brightness(2);
 }
 
 .services__item:hover .services__item__text h5 {
     color: #ffffff;
 }
 
-.services__item:hover .services__item__text p {
+.services__item:hover .services__item__text ul li a {
     color: #ffffff;
+}
+
+.services__item .services__item__text ul li a {
+    color: #777777;
+    text-decoration: underline;
+}
+
+.services__item .services__item__text ul li {
+    color: #777777;
+    text-decoration: underline;
+    padding: 2px;
 }
 
 .services__item__icon {
@@ -982,7 +1035,7 @@ li .dropdown .active a {
     filter: invert(1) sepia(1) saturate(1000%) hue-rotate(180deg);
 } */
 
-.services__item__icon span {
+.services__item__icon img {
     color: #777777;
     font-size: 40px;
     display: inline-block;
@@ -992,8 +1045,12 @@ li .dropdown .active a {
     transition: all, 0.3s;
 }
 
-.services__item__icon span:before {
-    font-size: 70px;
+.services__item__icon img:before {
+    font-size: 90px;
+}
+
+.services__item img:hover {
+    filter: invert(1) brightness(2);
 }
 
 .services__item__text {
@@ -1010,7 +1067,7 @@ li .dropdown .active a {
     transition: all, 0.3s;
 }
 
-.services__item__text p {
+.services__item__text ul li a {
     margin-bottom: 0;
     -webkit-transition: all, 0.3s;
     -o-transition: all, 0.3s;
