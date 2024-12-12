@@ -93,6 +93,37 @@ h6 {
     font-size: 16px;
 }
 
+/* Font Weights */
+.fw-light {
+    font-weight: 300;
+    /* Leve */
+}
+
+.fw-normal {
+    font-weight: 400;
+    /* Normal */
+}
+
+.fw-semibold {
+    font-weight: 600;
+    /* Semi-negrito */
+}
+
+.fw-bold {
+    font-weight: 700;
+    /* Negrito */
+}
+
+.fw-bolder {
+    font-weight: bolder;
+    /* Maior que o peso padrão do elemento pai */
+}
+
+.fw-lighter {
+    font-weight: lighter;
+    /* Menor que o peso padrão do elemento pai */
+}
+
 p {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
@@ -633,6 +664,7 @@ li .dropdown .active a {
     /* padding-top: 200px;
     padding-bottom: 215px; */
     height: 30rem;
+    border-radius: 10px;
 }
 
 .hero__text span {
@@ -941,7 +973,7 @@ li .dropdown .active a {
 .list li {
     color: #686868;
     padding: 2px 18px;
-    /* font-size: 14px; */
+    font-size: 14px;
 }
 
 .card {
@@ -976,6 +1008,7 @@ li .dropdown .active a {
     border: none;
     color: gray;
     text-decoration: underline;
+    font-size: 17px;
 }
 
 .card-text a:hover {
@@ -2307,6 +2340,7 @@ li .dropdown .active a {
 .blog__details__hero {
     padding: 200px 0;
     margin-bottom: 60px;
+    border-radius: 10px;
 }
 
 .blog__hero__text h2 {
