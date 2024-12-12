@@ -632,24 +632,45 @@
         const conPosBtn = document.getElementById('con-pos');
         const prePartoDiv = document.getElementById('pré-parto');
         const posPartoDiv = document.getElementById('pos-parto');
-        const parto = document.getElementById('parto');
+        const partoText = document.getElementById('parto');
 
-        // Função para exibir a consulta pré-parto e esconder a pós-parto
-        conPreBtn.addEventListener('click', function () {
+        // Função para exibir a consulta pré-parto, esconder a pós-parto e atualizar o texto
+        function showPreParto() {
             prePartoDiv.style.display = 'block'; // Exibe a div pré-parto
             posPartoDiv.style.display = 'none';  // Esconde a div pós-parto
-            parto.textContent = "Consulta de Amamentação Pré-parto"; // Atualiza o texto para "Pré-parto"
-        });
+            partoText.textContent = "Consulta de Amamentação Pré-parto"; // Atualiza o texto para "Pré-parto"
+        }
 
-        // Função para exibir a consulta pós-parto e esconder a pré-parto
-        conPosBtn.addEventListener('click', function () {
+        // Função para exibir a consulta pós-parto, esconder a pré-parto e atualizar o texto
+        function showPosParto() {
             posPartoDiv.style.display = 'block'; // Exibe a div pós-parto
             prePartoDiv.style.display = 'none';  // Esconde a div pré-parto
-            parto.textContent = "Consulta de Amamentação Pós-parto"; // Atualiza o texto para "Pós-parto"
+            partoText.textContent = "Consulta de Amamentação Pós-parto"; // Atualiza o texto para "Pós-parto"
+        }
+
+        // Verificar o fragmento da URL e inicializar a página de acordo
+        window.addEventListener('load', function () {
+            const hash = window.location.hash; // Pega a parte após o "#"
+
+            if (hash === "#pre") {
+                showPreParto(); // Se o hash for "#pre", exibe pré-parto
+            } else if (hash === "#pos") {
+                showPosParto(); // Se o hash for "#pos", exibe pós-parto
+            } else {
+                showPreParto(); // Se não houver hash ou hash desconhecido, exibe pré-parto por padrão
+            }
         });
 
-        // Inicializa com "Pré-parto" ao carregar a página
-        parto.textContent = "Consulta de Amamentação Pré-parto";
+        // Adicionar funcionalidade dos botões
+        conPreBtn.addEventListener('click', function () {
+            window.location.hash = "#pre"; // Atualiza o URL para "#pre" ao clicar no botão pré-parto
+            showPreParto(); // Exibe a consulta pré-parto
+        });
+
+        conPosBtn.addEventListener('click', function () {
+            window.location.hash = "#pos"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
+            showPosParto(); // Exibe a consulta pós-parto
+        });
     </script>
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
