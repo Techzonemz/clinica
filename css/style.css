@@ -1004,7 +1004,7 @@ li .dropdown .active a {
 
 .services__item:hover .services__item__icon img {
     color: #ffffff;
-    filter: invert(1) brightness(2);
+    filter: invert(1) brightness(5);
 }
 
 .services__item:hover .services__item__text h5 {
