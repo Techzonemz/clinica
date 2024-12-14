@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Clinica de Pre-pos">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A clinica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .right_conatct_social_icon {
+            background: #808080;
+        }
+
+        .contact_us {
+            padding: 120px 0px;
+        }
+
+        .contact_inner {
+            background-color: #fff;
+            position: relative;
+            box-shadow: 20px 22px 44px #cccc;
+            border-radius: 25px;
+        }
+
+        .contact_field {
+            padding: 60px 0 90px 100px;
+            text-align: center;
+        }
+
+        .form-control::placeholder {
+            font-size: 15px !important;
+            padding-left: 2rem;
+        }
+
+        .right_conatct_social_icon {
+            height: 100%;
+        }
+
+        .contact_field h3 {
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 10px
+        }
+
+        .contact_field p {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+        }
+
+        .contact_field .form-control {
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 34px 1rem;
+            font-size: 18px;
+            background-color: #f9f9f9;
+        }
+
+        .contact_field .form-control:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom: 2px solid #d6a294;
+        }
+
+        .contact_field .form-control::placeholder {
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .contact_info_sec {
+            position: absolute;
+            background-color: #d6a294;
+            right: 1px;
+            top: 18%;
+            height: 340px;
+            width: 340px;
+            padding: 40px;
+            border-radius: 25px 0 0 25px;
+        }
+
+        .contact_info_sec h4 {
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+            color: white;
+        }
+
+        .info_single {
+            margin: 30px 0px;
+            color: white;
+        }
+
+        .info_single i {
+            margin-right: 15px;
+        }
+
+        .info_single span {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        button.contact_form_submit {
+            background: #d6a294;
+            border: 2px solid #d6a294;
+            color: #fff;
+            padding: 10px 15px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .contact_form_submit:hover {
+            color: #d6a294 !important;
+            background-color: transparent !important;
+            border: 2px solid #d6a294;
+        }
+
+        .socil_item_inner li {
+            list-style: none;
+        }
+
+        .socil_item_inner li a {
+            color: #fff;
+            margin: 0px 15px;
+            font-size: 14px;
+        }
+
+        .socil_item_inner {
+            padding-bottom: 10px;
+        }
+
+        .map_sec {
+            padding: 50px 0px;
+        }
+
+        .map_inner h4,
+        .map_inner p {
+            text-align: center
+        }
+
+        .map_inner p {
+            font-size: 13px;
+        }
+
+        .map_bind {
+            margin-top: 50px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a href="https://wa.me/+258123" class="float-whatsap" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="header__top__left">
+                            <li><a href="#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+                            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20
+                            </li>
+                            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="header__top__right">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" style="width: 80%;" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__menu__option">
+                        <nav class="header__menu">
+                            <ul>
+                                <!-- Início -->
+                                <!-- <li class="active"><a class="arrow" href="./index.html">INÍCIO</a></li> -->
+
+                                <!-- A Clínica -->
+                                <li><a class="arrow" href="./about.html">A Clínica <span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">Sobre Nós</a></li>
+                                        <li><a href="./team.html">Equipa</a></li>
+                                        <li><a href="./humanitario.html">O nosso trabalho humanitário</a></li>
+                                        <li><a href="./partners.html">Pedido de informação/ Agendamento</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Consultas -->
+                                <li><a class="arrow" href="consultas.html">Consultas <span
+                                            class="dropdown-arrow"></span></a>
+                                    <div class="dt-mega-menu-wrap justify-content-center d-flex">
+                                        <ul class="dropdown menu">
+                                            <li>
+                                                <span>Amamentação</span>
+                                                <ul class="dropdown-sec">
+
+                                                    <li><a href="pages/amament-pre-parto.html#pre">Consulta
+                                                            Pré-parto</a></li>
+                                                    <li><a href="pages/amament-pre-parto.html#pos">Consulta
+                                                            Pós-parto</a></li>
+
+                                                </ul>
+                                                <br>
+                                                <span class="pt-4">Medicina do Viajante</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Consulta</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Cirurgia</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="pages/cirurgia.html#Cirurgia">Consulta de Cirurgia</a>
+                                                    </li>
+                                                    <li><a href="pages/cirurgia.html#anel">Circuncisão com anel</a></li>
+                                                    <li><a href="pages/cirurgia.html#sutura">Sutura de feridas
+                                                            superficiais</a></li>
+                                                </ul>
+                                                <br>
+                                                <span>Enfermagem
+                                                </span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="pages/enfermagem.html#domicilio">Apoio domiciliário no
+                                                            pós-parto</a></li>
+                                                    <li><a href="pages/enfermagem.html#conseferm">Consulta de
+                                                            enfermagem</a></li>
+                                                    <li><a href="pages/enfermagem.html#pensos">Pensos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Nutrição</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Nutrição Geral</a></li>
+                                                    <li><a href="#">Nutrição Infantil</a></li>
+                                                    <li><a href="#">Diabetes Gestacional</a></li>
+                                                    <li><a href="#">Pré-conceção</a></li>
+                                                    <li><a href="#">Pré-natal</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Pediatria</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Pré-natal</a></li>
+                                                    <li><a href="#">Rotina</a></li>
+                                                    <li><a href="#">Criança doente</a></li>
+                                                    <li><a href="#">Consulta de sono infantil</a></li>
+                                                    <li><a href="#">Introdução alimentar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Terapia ocupacional</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Infantil</a></li>
+                                                    <li><a href="#">Neurológica</a></li>
+                                                    <li><a href="#">Saúde Mental</a></li>
+                                                    <li><a href="#">Snoezelen</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Testes diagnósticos</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Teste do pezinho</a></li>
+                                                    <li><a href="#">Teste rápido de amigdalite bacteriana</a></li>
+                                                    <li><a href="#">Teste rápido de malária</a></li>
+                                                    <li><a href="#">Teste rápido de urina</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <!-- Serviços Adicionais -->
+                                <li><a class="arrow" href="./additional-services.html">Vacinação<span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Adulto</a></li>
+                                        <li><a href="#">Gravidez</a></li>
+                                        <li><a href="#">Infantil</a></li>
+                                        <li><a href="#">Viajante</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Consultas -->
+                                <li>
+                                    <a class="arrow">Gravidez <span class="dropdown-arrow"></span></a>
+                                    <div class="dt-mega-menu-wrap justify-content-center d-flex">
+                                        <ul class="dropdown menu grav">
+                                            <li>
+                                                <span>A Clínica durante a gravidez</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Amamentação</a></li>
+                                                    <li><a href="#">Pediatria pré-natal</a></li>
+                                                    <li><a href="#">Nutrição: pré-conceção, pré-natal, Diabetes
+                                                            Gestacional</a></li>
+                                                    <li><a href="#">Snoezelen na gravidez</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <span>Preparação para a Amamentação</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Curso Normal em grupo</a></li>
+                                                    <li><a href="#">Curso Individual</a></li>
+                                                    <li><a href="#">Preparation for Breastfeeding in English</a></li>
+                                                </ul>
+                                                <br>
+
+                                                <ul class="dropdown-sec">
+                                                    <span>
+                                                        <li><a href="#" class="primary-btn">
+                                                                Galeria de fotos</a></li>
+                                                    </span>
+                                                </ul>
+
+                                            </li>
+                                            <li>
+                                                <span>Preparação para o parto</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Curso Normal em grupo</a></li>
+                                                    <li><a href="#">Curso Individual</a></li>
+                                                    <li><a href="#">Pre-natal course in English</a></li>
+                                                </ul>
+                                                <br>
+                                                <span>Exercício Físico</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Plano de treino para a gravidez</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <!-- Serviços Adicionais -->
+                                <li><a class="arrow" href="./additional-services.html">Apoio ao domicílio <span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Amamentação</a></li>
+                                        <li><a href="#">Enfermagem</a></li>
+                                        <li><a href="#">Teste do pezinho</a></li>
+                                        <li><a href="#">Pacotes</a></li>
+                                    </ul>
+                                </li><!-- Serviços Adicionais -->
+                                <li><a class="arrow" href="./additional-services.html">Workshops<span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Amamentação</a></li>
+                                        <li><a href="#">Bebé</a></li>
+                                        <li><a href="#">Gravidez</a></li>
+                                        <li><a href="#">Introdução alimentar</a></li>
+                                        <li><a href="#">Parentalidade</a></li>
+                                        <li><a href="#">Pediatria</a></li>
+                                        <li><a href="#">Primeiros Socorros Pediátricos</a></li>
+                                        <li><a href="#">Galeria de fotos</a></li>
+                                    </ul>
+                                </li>
+                                <a href="#" class="primary-btn" style="
+                                    right: 0;
+                                    position: absolute;
+                                "> <i class="fa fa-lock"></i> Área Reservada</a>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header Section End -->
+
+
+
+
+
+    <section class="contact_us mt-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="contact_inner">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="contact_form_inner">
+                                    <div class="contact_field">
+                                        <h3 class="subtitle">Pedido de Informação</h3>
+                                        <p>Fique à vontade para nos contactar a qualquer momento. Responderemos assim
+                                            que possível!
+                                        </p>
+                                        <input type="text" class="form-control form-group" placeholder="Nome" />
+                                        <input type="contact" class="form-control form-group"
+                                            placeholder="Contacto telefónico" />
+                                        <input type="email" class="form-control form-group" placeholder="Email" />
+                                        <input type="text" class="form-control form-group"
+                                            placeholder="Semanas de Gestação ou Idade do Bebé" />
+                                        <input type="text" class="form-control form-group" placeholder="Assunto" />
+                                        <textarea class="form-control form-group" placeholder="Messagem"
+                                            style="height: 16rem;"></textarea>
+                                        <p style="text-align: initial;font-size: 11px;">Os dados recolhidos, serão
+                                            utilizados exclusivamente para prestar as
+                                            informações comerciais dos serviços solicitados. Os
+                                            dados recolhidos serão arquivados por um prazo de 3 meses, sendo
+                                            posteriormente apagados dos servidores do Centro Pré e
+                                            Pós Parto. Para mais informações leia a política de privacidade do Centro
+                                            Pré e Pós Parto
+
+                                            Poderá solicitar qualquer esclarecimento por e-mail para
+                                            dpo@preeposparto.com ou via postal para Rua José da Costa
+                                            Pedreira Nº12, 1750-130 Lisboa</p>
+                                        <button type="submit" class="contact_form_submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-2">
+                                <div class="right_conatct_social_icon d-flex align-items-end">
+                                    <div class="socil_item_inner d-flex">
+                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- <div class="contact_info_sec">
+                            <h4>Informação de contacto</h4>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fa fa-phone"></i>
+                                <span>+258 84 1869 7194</span>
+                            </div>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fa fa-envelope"></i>
+                                <span>geral@aclinica-mz.com</span>
+                            </div>
+                            <div class="d-flex info_single align-items-center">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20 ( R/C, corredor central ao
+                                    lado do cabeleireiro)</span>
+                            </div>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="map_inner">
+                        <h4>Venha conhecer o nosso espaço</h4>
+                        <p>Estamos no edifício ou Shopping 24, Avenida 24 de Julho, Loja 20 ( R/C, corredor central ao
+                            lado do cabeleireiro) <br></p>
+                        <p> Temos parque de estacionamento com segurança 24h para pacientes. Cruzamento da
+                            Avenida Salvador Allende com a
+                            Avenida 24 de Julho <br> primeira entrada à direita. Informar os seguranças que tem consulta
+                            <i>n’ A Clínica</i>.
+                        </p>
+                        <div class="map_bind">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2930.988071317479!2d32.584243372678415!3d-25.97228228222015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1ee69b02e6567d9b%3A0x29e99533fa6f0204!2sEdificio%20Shopping%2024%202HHM%2B784%20Av.%2024%20de%20Julho%20Maputo%201000!3m2!1d-25.9717654!2d32.5833794!5e0!3m2!1spt-PT!2smz!4v1734174084644!5m2!1spt-PT!2smz"
+                                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="footer__newslatter">
+                            <form action="#">
+                                <!-- <input type="text" placeholder="Email">
+                                <button type="submit" class="site-btn">Subscrever</button> -->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>A Clinica</h5>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Equipa</a></li>
+                            <li><a href="#">O Nosso Trabalho Humanitário</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="#">Cursos</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Links Rápidos</h5>
+                        <ul>
+                            <li><a href="#">Área Reservada</a></li>
+                            <li><a href="#">Consultas</a></li>
+                            <li><a href="#">Vacinaçao</a></li>
+                            <li><a href="#">Gravidez</a></li>
+                            <li><a href="#">Apoio ao domicílio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__address">
+                        <h5>Entre em Contato</h5>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i>Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20
+                            </li>
+                            <li><i class="fa fa-phone"></i> +258 84 1869 7194</li>
+                            <li><i class="fa fa-envelope"></i> geral@aaclinica-mz.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-6">
+                    <div class="footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2284001393815!2d32.5737!3d-25.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee81c160c60b5c5%3A0xab3b2266c8984b5f!2sMaputo%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-BR!2s!4v1692288246392!5m2!1spt-BR!2s"
+                            width="100%" height="190" style="border:0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>Todos os Direitos Reservados</li>
+                            <li>Termos & Uso</li>
+                            <li>Política de Privacidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+
+
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

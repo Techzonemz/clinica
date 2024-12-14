@@ -26,181 +26,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
-        .card {
-            position: relative;
-            width: 360px;
-            min-height: 400px;
-            background: #fff;
-            box-shadow: 15px 15px 60px rgba(0, 0, 0, .15);
-            padding: 20px;
-        }
 
-        .card .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .card .top .userDeatils {
-            display: flex;
-            align-items: center;
-        }
-
-        .card .top .userDeatils .profileImg {
-            position: relative;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 8px;
-            overflow: hidden;
-        }
-
-        .cover {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            cursor: pointer;
-        }
-
-        .card .top .userDeatils h3 {
-            font-size: 18px;
-            color: #4d4d4f;
-            font-weight: 700;
-            line-height: 1rem;
-            cursor: pointer;
-        }
-
-        .card .top .userDeatils span {
-            font-size: 0.75em;
-        }
-
-        .card .top .dot {
-            transform: scale(0.6);
-            cursor: pointer;
-        }
-
-        .imgBg {
-            position: relative;
-            width: 100%;
-            height: 320px;
-            margin: 10px 0 15px;
-        }
-
-        .btns {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .btns img {
-            max-width: 24px;
-            cursor: pointer;
-        }
-
-        .btns .left img {
-            margin-right: 8px;
-        }
-
-        .likes {
-            margin-top: 5px;
-            font-size: 1em;
-            color: #4d4d4f;
-        }
-
-        .message {
-            font-weight: 400;
-            margin-top: 5px;
-            color: #777;
-            line-height: 1.5em;
-            font-size: 12px;
-        }
-
-        .message b {
-            color: #262626;
-        }
-
-        .message span {
-            color: #1d92ff;
-            cursor: pointer;
-        }
-
-        .comments {
-            margin-top: 10px;
-            align-items: center;
-            color: #999;
-            font-size: 12px;
-        }
-
-        .addComments {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .addComments .userImg {
-            position: relative;
-            min-width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 8px;
-        }
-
-        .addComments .text {
-            width: 100%;
-            border: none;
-            outline: none;
-            font-weight: 400;
-            font-size: 18px;
-            color: #262626;
-        }
-
-        .addComments .text::placeholder {
-            color: #777;
-        }
-
-        .postTime {
-            margin-top: 10px;
-            font-weight: 500;
-            color: #777;
-            font-size: 12px;
-        }
-
-        .body {
-            background: transparent;
-            height: 200px;
-        }
-
-        .body>.body-ul {
-            position: absolute;
-            width: 80% !important;
-        }
-
-        ul.body-ul>li {
-            /* width: 25%; */
-            list-style-type: none;
-            position: absolute;
-            top: 0;
-            padding: 20px;
-            height: 200px;
-            opacity: 0;
-            padding-top: 40px;
-            text-align: center;
-            transition: 1s opacity;
-        }
-
-        li h5 strong img {
-            font-weight: 600;
-        }
-
-        .active {
-            opacity: 1 !important;
-            z-index: 100;
-        }
     </style>
 </head>
 
@@ -282,13 +108,14 @@
                                     <ul class="dropdown">
                                         <li><a href="./about.html">Sobre Nós</a></li>
                                         <li><a href="./team.html">Equipa</a></li>
-                                        <li><a href="./partners.html">O nosso trabalho humanitário</a></li>
+                                        <li><a href="./humanitario.html">O nosso trabalho humanitário</a></li>
                                         <li><a href="./partners.html">Pedido de informação/ Agendamento</a></li>
                                     </ul>
                                 </li>
 
                                 <!-- Consultas -->
-                                <li><a class="arrow">Consultas <span class="dropdown-arrow"></span></a>
+                                <li><a class="arrow" href="consultas.html">Consultas <span
+                                            class="dropdown-arrow"></span></a>
                                     <div class="dt-mega-menu-wrap justify-content-center d-flex">
                                         <ul class="dropdown menu">
                                             <li>
@@ -1013,26 +840,27 @@
                 </div>
             </div>
             <div class="row justify-content-between">
-
                 <div class="card">
                     <div class="top">
                         <div class="userDeatils">
                             <div class="profileImg">
-                                <img src="img/profile.png" alt="user" class="cover">
+                                <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
+                                <img src="img/profile.png" alt="A Clínica" class="cover">
                             </div>
-                            <h3>A Clínica<br><span>a_clinica</span></h3>
+                            <h3>A Clínica<br><span>@a_clinica</span></h3>
                         </div>
                         <div class="dot">
                             <img src="img/icons/dot.png" alt="dot">
                         </div>
                     </div>
                     <div class="imgBg">
+                        <!-- Alterar a imagem para algo relacionado à clínica -->
                         <img src="img/blog/blog-5.jpg" alt="bg" class="cover">
                     </div>
                     <div class="btns">
                         <div class="left">
                             <img src="img/icons/heart.png" alt="heart" class="heart" onclick="likeButton()">
-                            <img src=img/icons/comment.png alt="comment">
+                            <img src="img/icons/comment.png" alt="comment">
                             <img src="img/icons/share.png" alt="share">
                         </div>
                         <div class="right">
@@ -1041,107 +869,89 @@
                     </div>
                     <h4 class="likes">5,489 likes</h4>
                     <h4 class="message">
-                        <b>Nikhil Kumar</b>
-                        Captain America: Civil War
-                        <span>#ironman</span>
-                        <span>#captainamerica</span>
+                        <b>A Clínica</b>
+                        A importância da atividade física durante a gravidez.
+                        <span>#gravidez</span>
+                        <span>#exercício</span>
+                        <span>#bemestar</span>
                     </h4>
-                    <h4 class="comments">View all 546 comments</h4>
-                    <!-- <div class="addComments">
-                        <div class="userImg">
-                            <img src="img/blog/blog-5.jpg" alt="user" class="cover">
-                        </div>
-                        <input type="text" class="text" placeholder="Add a comment...">
-                    </div>
-                    <h5 class="postTime">5 hours ago</h5> -->
+                    <h4 class="comments">Ver todos os 546 comentários</h4>
                 </div>
-
 
                 <div class="card">
                     <div class="top">
                         <div class="userDeatils">
                             <div class="profileImg">
-                                <img src="img/blog/blog-5.jpg" alt="user" class="cover">
+                                <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
+                                <img src="img/profile.png" alt="A Clínica" class="cover">
                             </div>
-                            <h3>Nikhil Kumar<br><span>Web Designer</span></h3>
+                            <h3>A Clínica<br><span>@a_clinica</span></h3>
                         </div>
                         <div class="dot">
                             <img src="img/icons/dot.png" alt="dot">
                         </div>
                     </div>
                     <div class="imgBg">
+                        <!-- Alterar a imagem para algo relacionado ao serviço de psicologia -->
                         <img src="img/gallery/gallery-3.jpg" alt="bg" class="cover">
                     </div>
                     <div class="btns">
                         <div class="left">
                             <img src="img/icons/heart.png" alt="heart" class="heart" onclick="likeButton()">
-                            <img src=img/icons/comment.png alt="comment">
+                            <img src="img/icons/comment.png" alt="comment">
                             <img src="img/icons/share.png" alt="share">
                         </div>
                         <div class="right">
                             <img src="img/icons/bookmark.png" alt="bookmark">
                         </div>
                     </div>
-                    <h4 class="likes">5,489 likes</h4>
+                    <h4 class="likes">3,800 likes</h4>
                     <h4 class="message">
-                        <b>Nikhil Kumar</b>
-                        Captain America: Civil War
-                        <span>#ironman</span>
-                        <span>#captainamerica</span>
+                        <b>a clinica</b>
+                        A importância do vínculo mãe-filho nos primeiros anos.
+                        <span>#pediatria</span>
+                        <span>#saúdeinfantil</span>
                     </h4>
-                    <h4 class="comments">View all 546 comments</h4>
-                    <!-- <div class="addComments">
-                                        <div class="userImg">
-                                            <img src="img/blog/blog-5.jpg" alt="user" class="cover">
-                                        </div>
-                                        <input type="text" class="text" placeholder="Add a comment...">
-                                    </div>
-                                    <h5 class="postTime">5 hours ago</h5> -->
+                    <h4 class="comments">Ver todos os 210 comentários</h4>
                 </div>
-
-
 
                 <div class="card">
                     <div class="top">
                         <div class="userDeatils">
                             <div class="profileImg">
-                                <img src="img/blog/blog-5.jpg" alt="user" class="cover">
+                                <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
+                                <img src="img/profile.png" alt="A Clínica" class="cover">
                             </div>
-                            <h3>Nikhil Kumar<br><span>Web Designer</span></h3>
+                            <h3>A Clínica<br><span>@a_clinica</span></h3>
                         </div>
                         <div class="dot">
                             <img src="img/icons/dot.png" alt="dot">
                         </div>
                     </div>
                     <div class="imgBg">
+                        <!-- Alterar a imagem para algo relacionado ao serviço de nutrição -->
                         <img src="img/gallery/gallery-6.jpg" alt="bg" class="cover">
                     </div>
                     <div class="btns">
                         <div class="left">
                             <img src="img/icons/heart.png" alt="heart" class="heart" onclick="likeButton()">
-                            <img src=img/icons/comment.png alt="comment">
+                            <img src="img/icons/comment.png" alt="comment">
                             <img src="img/icons/share.png" alt="share">
                         </div>
                         <div class="right">
                             <img src="img/icons/bookmark.png" alt="bookmark">
                         </div>
                     </div>
-                    <h4 class="likes">5,489 likes</h4>
+                    <h4 class="likes">4,256 likes</h4>
                     <h4 class="message">
-                        <b>Nikhil Kumar</b>
-                        Captain America: Civil War
-                        <span>#ironman</span>
-                        <span>#captainamerica</span>
+                        <b>a clinica</b>
+                        Exercícios seguros para gestantes.
+                        <span>#exercícios</span>
+                        <span>#gravidez</span>
                     </h4>
-                    <h4 class="comments">View all 546 comments</h4>
-                    <!-- <div class="addComments">
-                                        <div class="userImg">
-                                            <img src="img/blog/blog-5.jpg" alt="user" class="cover">
-                                        </div>
-                                        <input type="text" class="text" placeholder="Add a comment...">
-                                    </div>
-                                    <h5 class="postTime">5 hours ago</h5> -->
+                    <h4 class="comments">Ver todos os 412 comentários</h4>
                 </div>
+
                 <div class="col-lg-12 text-center mt-4">
                     <div class="load__more">
                         <a href="#" class="primary-btn"><i class="fa fa-instagram p-2"></i> Não perca as novidades:

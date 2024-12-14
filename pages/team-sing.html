@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A clinica</title>
     <!-- Favicon no formato .png -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -29,6 +29,43 @@
         b {
             color: #d6a294;
             font-weight: 400;
+        }
+
+        .card-container {
+            background-color: #d6a294;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section img {
+            height: 400px !important;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+        }
+
+        .text-container {
+            margin: 0 0 0 6rem;
+        }
+
+        .text-container h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            padding-bottom: 6px;
+            color: white;
+        }
+
+        .text-container h3 img {
+            max-width: 6rem;
+            padding: 1rem;
+            filter: invert(1) brightness(5);
+        }
+
+        .text-container h3 {
+            color: white;
+            margin-bottom: -25px;
         }
     </style>
 </head>
@@ -295,18 +332,19 @@
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad mt-6">
         <div class="container mt-9">
-            <div class="blog__details__hero set-bg mb-0" data-setbg="../img/blog/details/blog-hero6.jpg">
-                <!-- <div class="row d-flex justify-content-center">
-                    <div class="col-lg-7 text-center">
-                        <div class="blog__hero__text">
-                            <h2>Here’s how you can get a natural glow this party season</h2>
-                            <ul>
-                                <li><img src="../img/blog/blog-author.jpg" alt=""> John Doe</li>
-                                <li>Dec 06, 2019</li>
-                            </ul>
-                        </div>
+            <div class="row card-container">
+                <!-- Seção de Texto -->
+                <div class="col-lg-6 col-md-6 col-12 text-section d-flex flex-column justify-content-center">
+                    <div class="text-container">
+                        <h3><img src="../img/icons/nutritional-plan.png" alt="">Atendimento ao Paciente</h3>
+                        <h1 class="name">Calisto Chemane</h1>
+                        <p class="description">Connosco a ajudar famílias desde 2016.</p>
                     </div>
-                </div> -->
+                </div>
+                <!-- Seção de Imagem -->
+                <div class="col-lg-6 col-md-6 col-12 image-section p-0">
+                    <img src="../img/team/team 4.jpg" alt="Ana Castro Santos" alt="Ana Castro Santos">
+                </div>
             </div>
             <div class="row d-flex justify-content-center mt-4">
                 <div class="col-lg-12">
@@ -316,16 +354,23 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="section-title">
-                                        <h2 class="mb-4 subtitle fw-bolder">Enfermagem
+                                        <h2 class="mb-2 subtitle fw-bolder">Apresentação
                                         </h2>
-                                        <span class="mb-4 mt-4"><b>Cuidar dos pacientes com amor é o que distingue os
-                                                Enfermeiros!</b></span>
                                         <br>
-                                        <p class="mb-4">Enfermagem é uma profissão chave nos cuidados de saúde,
-                                            especialmente na área materno-infantil. <i>N’A Clínica</i>
-                                            proporcionamos cuidados de Enfermagem de excelência aos nossos pacientes e
-                                            às suas famílias. </p>
-
+                                        <p class="mb-4">Estudante universitário no curso de Ciências de Informação
+                                            Geográfica na Universidade Eduardo Mondlane em Maputo,
+                                            Moçambique e formado em Atendimento ao Cliente pela Academia Negócios de
+                                            Saúde, Portugal. <br><br>
+                                            Com mais de 2 anos de experiência de atendimento ao paciente, orgulho-me de
+                                            ter desenvolvido uma abordagem marcada pela
+                                            simpatia, empatia, paciência e compreensão. Descobri uma verdadeira paixão
+                                            por esta área de trabalho, transformando cada
+                                            interação numa oportunidade de oferecer o meu melhor e criar conexões leais
+                                            e genuínas, colocando sempre as necessidades
+                                            dos pacientes em primeiro lugar.
+                                        </p>
+                                        <span class="mb-4 mt-4"><b>«N’A Clínica quero que te sintas em sempre casa,
+                                                acolhido e cuidado como parte da nossa família!»</b></span>
                                     </div>
                                 </div>
                             </div>
