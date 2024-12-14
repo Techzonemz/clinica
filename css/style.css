@@ -18,6 +18,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'sinka';
+    src: url('../fonts/SourGummy-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 html,
@@ -32,11 +39,11 @@ h2,
 h3,
 h4,
 h5,
-s h6 {
+h6 {
     margin: 0;
     color: #777777;
     font-weight: 400;
-    font-family: 'LucyRounded', Arial, sans-serif;
+    font-family: 'sinka', Arial, sans-serif;
 }
 
 .subtitle {
@@ -665,6 +672,7 @@ li .dropdown .active a {
     padding-bottom: 215px; */
     height: 30rem;
     border-radius: 10px;
+    align-content: center;
 }
 
 .hero__text span {
