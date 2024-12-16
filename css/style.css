@@ -271,10 +271,10 @@ ol {
 
 .primary-btn {
     display: inline-block;
-    font-family: 'LucyRounded', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 10px 10px;
+    font-family: 'sinka', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
     color: #fff;
     text-transform: none;
     letter-spacing: 2px;
@@ -575,12 +575,13 @@ ol {
 .dropdown-arrow {
     display: inline-block;
     margin-left: 5px;
-    border: solid #333;
+    border: solid #808080;
     border-width: 0 2px 2px 0;
-    padding: 3px;
+    padding: 2px;
     transform: rotate(45deg);
     /* Gera seta padrão */
     transition: transform 0.3s ease;
+    opacity: 0.3;
 }
 
 /* Mostrar dropdown ao interagir */
