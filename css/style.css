@@ -25,6 +25,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 html,
@@ -47,7 +54,7 @@ h6 {
 }
 
 .subtitle {
-    font-family: 'CenturyGothic', Arial, sans-serif !important;
+    font-family: 'sinka', Arial, sans-serif !important;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -131,8 +138,12 @@ h6 {
     /* Menor que o peso padrão do elemento pai */
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 p {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
     color: #666666;
     font-weight: 400;
@@ -215,7 +226,7 @@ ol {
 -----------------------*/
 
 .section-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .section-title span {
@@ -981,7 +992,7 @@ li .dropdown .active a {
 .list li {
     color: #686868;
     padding: 2px 18px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .card {
@@ -1155,6 +1166,10 @@ li h5 strong img {
     font-weight: 600;
 }
 
+.card-text button.active {
+    color: #d6a294;
+}
+
 .active {
     opacity: 1 !important;
     z-index: 100;
@@ -1175,7 +1190,7 @@ li h5 strong img {
 }
 
 .card-more {
-    padding: 2.5rem;
+    padding: 0;
 }
 
 .card-more .card-icon {
@@ -1187,12 +1202,18 @@ li h5 strong img {
     padding-bottom: 10px;
 }
 
+.card-text button:hover {
+    color: #d6a294;
+}
+
 .card-text button {
     background: transparent;
     border: none;
     color: gray;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 16px;
+    text-align: initial !important;
+    padding: 0.4rem 0 0.4rem 0;
 }
 
 .card-text a:hover {
