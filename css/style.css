@@ -1164,35 +1164,38 @@ li .dropdown .active a {
     font-size: 12px;
 }
 
-.body {
-    background: transparent;
+.servocos {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     height: 200px;
+    display: flex;
+    /* Configuração flex container */
+    justify-content: space-between;
+    /* Aplica espaço entre os itens */
+    flex-wrap: wrap;
 }
 
-.body>.body-ul {
-    position: absolute;
-    width: 80% !important;
-}
-
-ul.body-ul>li {
-    /* width: 25%; */
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    padding: 20px;
-    height: 200px;
-    opacity: 0;
-    padding-top: 40px;
+.servocos>li {
+    display: none;
+    /* Oculta por padrão */
+    flex: 1;
+    /* Itens flexíveis ocupam o espaço igualmente */
     text-align: center;
-    transition: 1s opacity;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    /* Suavidade */
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
 
-li h5 strong img {
-    font-weight: 600;
-}
-
-li h5 strong img:hover {
-    transform: scale(1.2);
+.servocos>li.active {
+    display: block;
+    /* Exibe os itens ativos */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
 
 .card-text button.active {
