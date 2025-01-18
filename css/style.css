@@ -1591,6 +1591,10 @@ li .dropdown .active a {
     line-height: 50px;
 }
 
+.footer-logo img {
+    width: 11rem;
+}
+
 .footer__logo a {
     display: inline-block;
 }
