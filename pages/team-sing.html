@@ -30,6 +30,14 @@
             color: #d6a294;
             font-weight: 400;
         }
+
+        #icone {
+            width: 70px;
+            height: 70px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
     </style>
     <script>
         fetch('header.html')
@@ -52,8 +60,10 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    <a href="https://wa.me/+258123" class="float-whatsap" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale Conosco!<span>
     </a>
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
@@ -92,13 +102,17 @@
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad mt-6">
         <div class="container mt-9">
-            <div class="row card-container">
+            <div class="row card-container"
+                style="background-image: url('../img/bg3.png'); background-repeat: no-repeat;background-size: cover;background-position: top center;">
                 <!-- Seção de Texto -->
                 <div class="col-lg-6 col-md-6 col-12 text-section d-flex flex-column justify-content-center">
-                    <div class="text-container">
-                        <h3><img src="../img/icons/nutritional-plan.png" alt="">Atendimento ao Paciente</h3>
-                        <h1 class="name">Calisto Chemane</h1>
-                        <p class="description">Connosco a ajudar famílias desde 2016.</p>
+                    <div class="text-container m-2">
+                        <div class="d-flex align-items-end">
+                            <div id="icone"></div>
+                            <h3 class="text-white" id="funcao"><img alt="icon"></h3>
+                        </div>
+                        <h1 class="name" id="nome"></h1>
+                        <p class="description text-white" id="tempo"></p>
                     </div>
                 </div>
                 <!-- Seção de Imagem -->
@@ -117,28 +131,87 @@
                                         <h2 class="mb-2 subtitle fw-bolder">Apresentação
                                         </h2>
                                         <br>
-                                        <p class="mb-4">Estudante universitário no curso de Ciências de Informação
-                                            Geográfica na Universidade Eduardo Mondlane em Maputo,
-                                            Moçambique e formado em Atendimento ao Cliente pela Academia Negócios de
-                                            Saúde, Portugal. <br><br>
-                                            Com mais de 2 anos de experiência de atendimento ao paciente, orgulho-me de
-                                            ter desenvolvido uma abordagem marcada pela
-                                            simpatia, empatia, paciência e compreensão. Descobri uma verdadeira paixão
-                                            por esta área de trabalho, transformando cada
-                                            interação numa oportunidade de oferecer o meu melhor e criar conexões leais
-                                            e genuínas, colocando sempre as necessidades
-                                            dos pacientes em primeiro lugar.
+                                        <p class="mb-4" id="paragrafo">
                                         </p>
-                                        <span class="mb-4 mt-4"><b>«N’A Clínica quero que te sintas em sempre casa,
-                                                acolhido e cuidado como parte da nossa família!»</b></span>
+                                        <h5 class="mb-4 mt-4 h4 text-center"><b><i>N’A Clínica</i> quero que te sintas
+                                                em sempre casa,
+                                                acolhido e cuidado como parte da nossa família!</b></h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div class="row d-flex justify-content-center mt-8">
+                <div class="team-area sp">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-lg-12">
+                                <div class="section-title d-flex justify-content-between">
+                                    <h4 class="">Conheça outros especialistas da nossa equipa </h4>
+                                    <a href="#" class="primary-btn-hover normal-btn">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-lg-3 single-team">
+                                <div class="inner">
+                                    <a href="../pages/team-sing.html">
+                                        <div class="team-img">
+                                            <img src="../img/team/team 4.jpg" alt="Member Photo">
+                                        </div>
+                                        <div class="team-content">
+                                            <h4 class="mb-2">Calisto Chemane</h4>
+                                            <p>Atendimento ao Paciente</p>
+                                            <div class="team-social mt-3">
+                                                <a href="#" class="fa fa-envelope"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-4 col-lg-3 single-team">
+                                <div class="inner">
+                                    <div class="team-img">
+                                        <img src="../img/team/team-6.jpg" alt="Member Photo">
+                                    </div>
+                                    <div class="team-content">
+                                        <h4 class="mb-2">Marcos Aurelio</h4>
+                                        <p>Personal Trainer certificado, desporto e fitness</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-4 col-lg-3 single-team">
+                                <div class="inner">
+                                    <div class="team-img">
+                                        <img src="../img/team/team-5.jpg">
+                                    </div>
+                                    <div class="team-content">
+                                        <h4 class="mb-2">Joana Maria</h4>
+                                        <p>Personal Trainer certificado, desporto e fitness</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mb-4 col-lg-3 single-team">
+                                <div class="inner">
+                                    <div class="team-img">
+                                        <img src="../img/team/team-7.jpg">
+                                    </div>
+                                    <div class="team-content">
+                                        <h4 class="mb-2">Maria Joana</h4>
+                                        <p>Personal Trainer certificado, desporto e fitness</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
     <!-- Blog Details Section End -->
 
@@ -146,106 +219,50 @@
 
 
     <!-- Seção de Rodapé Início -->
-    <footer class="footer  mt-8">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
-                            <a href="../#"><img src="../img/footer-logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
-                            <form action="#">
-                                <!-- <input type="text" placeholder="Email">
-                                <button type="submit" class="site-btn">Subscrever</button> -->
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
-                            <a href="../#"><i class="fa fa-facebook"></i></a>
-                            <a href="../#"><i class="fa fa-twitter"></i></a>
-                            <a href="../#"><i class="fa fa-instagram"></i></a>
-                            <a href="../#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>A Clinica</h5>
-                        <ul>
-                            <li><a href="../#">Sobre Nós</a></li>
-                            <li><a href="../#">Equipa</a></li>
-                            <li><a href="../#">O Nosso Trabalho Humanitário</a></li>
-                            <li><a href="../#">Agenda</a></li>
-                            <li><a href="../#">Cursos</a></li>
+    <footer class="footer" style='background-image: url("../img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>Links Rápidos</h5>
-                        <ul>
-                            <li><a href="../#">Área Reservada</a></li>
-                            <li><a href="../#">Consultas</a></li>
-                            <li><a href="../#">Vacinaçao</a></li>
-                            <li><a href="../#">Gravidez</a></li>
-                            <li><a href="../#">Apoio ao domicílio</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
-                        <h5>Entre em Contato</h5>
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i>Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20
-                            </li>
-                            <li><i class="fa fa-phone"></i> +258 84 1869 7194</li>
-                            <li><i class="fa fa-envelope"></i> geral@aaclinica-mz.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2284001393815!2d32.5737!3d-25.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee81c160c60b5c5%3A0xab3b2266c8984b5f!2sMaputo%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-BR!2s!4v1692288246392!5m2!1spt-BR!2s"
-                            width="100%" height="190" style="border:0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="footer__copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="footer__copyright__text">
-                            <p>Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul>
-                            <li>Todos os Direitos Reservados</li>
-                            <li>Termos & Uso</li>
-                            <li>Política de Privacidade</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </footer>
+    <!-- Seção de Rodapé Fim -->
+
+    <script>
+        const nome = document.getElementById('nome');
+        const icone = document.getElementById('icone');
+        const tempo = document.getElementById('tempo');
+        const funcao = document.getElementById('funcao');
+        const paragrafo = document.getElementById('paragrafo');
+
+
+        // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
+        function showA() {
+            nome.textContent = "Calisto Chemane"; // Atualiza o texto para "Calisto Chemane"
+            icone.style.backgroundImage = "url('../img/icons/atendimento.png')";
+            tempo.textContent = "Connosco a ajudar famílias desde 2016."; // Atualiza o texto
+            funcao.textContent = "Atendimento ao Paciente."; // Atualiza o texto
+            paragrafo.innerHTML = "Estudante universitário no curso de Ciências de Informação Geográfica na Universidade Eduardo Mondlane em Maputo, Moçambique e formado em Atendimento ao Cliente pela Academia Negócios de Saúde, Portugal. <br><br> Com mais de 2 anos de experiência de atendimento ao paciente, orgulho-me de ter desenvolvido uma abordagem marcada pela simpatia, empatia, paciência e compreensão. Descobri uma verdadeira paixão por esta área de trabalho, transformando cada interação numa oportunidade de oferecer o meu melhor e criar conexões leais e genuínas, colocando sempre as necessidades dos pacientes em primeiro lugar.";
+        }
+
+        // Verificar o fragmento da URL e inicializar a página de acordo
+        window.addEventListener('load', function () {
+            const hash = window.location.hash; // Pega a parte após o "#"
+
+            if (hash === "#A") {
+                showA(); // Se o hash for "#A", exibe Cirurgia
+            } else if (hash === "#B") {
+                showB(); // Se o hash for "#pos", exibe pós-parto
+            } else if (hash === "#C") {
+                showC(); // Se o hash for "#pos", exibe pós-parto
+            } else if (hash === "#D") {
+                showD(); // Se o hash for "#pos", exibe pós-parto
+            } else if (hash === "#E") {
+                showE(); // Se o hash for "#pos", exibe pós-parto
+            }
+            else {
+                showA(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
+            }
+        });
+    </script>
     <!-- Seção de Rodapé Fim -->
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
