@@ -143,12 +143,13 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Poppins", sans-serif;
     color: #666666;
     font-weight: 400;
     line-height: 25px;
     margin: 0 0 15px 0;
+    text-align: justify;
 }
 
 img {
@@ -178,7 +179,12 @@ ol {
     padding: 0;
     margin: 0;
 }
-
+.mb-0{
+    margin-bottom: 0 !important;
+}
+.mt-0{
+    margin-top: 0 !important;
+}
 .mt-5 {
     margin-top: 5rem !important;
 }
@@ -220,6 +226,63 @@ ol {
 }
 
 
+   
+.float-button {
+    text-decoration: none;
+    position: fixed;
+    padding: 10px;
+    padding-right: 15px;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    background-color:#25D366;
+    border-radius: 25px 30px 5px 25px;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 17px;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+    transition:all 0.3s ease-out;
+}
+
+.float-button:hover {
+     background-color: #128C7E;
+      color: #fff;
+}
+
+.fa-whatsapp {
+    font-size: 20px !important;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@keyframes whatsapp-animation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+}
+
+@media screen and (max-width: 545px) {
+    span {
+        display: none;
+    }
+
+    .float-button {
+        bottom: 15px;
+        right: 15px;
+        width: 20px;
+        border-radius: 20px 20px 5px 20px;
+    }
+
+    .fa-whatsapp {
+        font-size: 22px !important;
+        padding: 4px;
+    }
+}
 
 /*---------------------
   Helper CSS
@@ -238,7 +301,7 @@ ol {
 }
 
 .section-title h2 {
-    color: #777777;
+    color: #4b4b4b;
     font-weight: 700;
     margin-top: 8px;
 }
@@ -252,6 +315,10 @@ ol {
 .spad {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+a.text-white:hover {
+    text-decoration: underline;
+    color: #d6a294 !important;
 }
 
 .text-white h1,
@@ -294,6 +361,49 @@ ol {
     transform: translateY(-5px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
+
+.primary-btn-hover{
+    display: inline-block;
+    font-family: 'sinka', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    text-transform: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: #d6a294 !important;
+    background-color: transparent !important;
+    border: 2px solid #d6a294;
+}
+.primary-btn-hover:hover{
+    color: #ffffff !important;
+    background-color: #d6a294 !important;
+    border: 2px solid #d6a294;
+    transform: translateY(-5px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+.white-btn {
+    display: inline-block;
+    font-family: 'sinka', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    color: #d6a294;
+    text-transform: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: #ffff;
+    border: 2px solid #d6a294;
+}
+
+.white-btn:hover {
+    color: #fff !important;
+    background-color: transparent !important;
+    border: 2px solid #ffff;
+    transform: translateY(-5px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
 
 .site-btn:hover {
     color: #d6a294 !important;
