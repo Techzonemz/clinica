@@ -1494,6 +1494,7 @@ li .dropdown .active a {
     height: 295px;
     max-width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .team-img img {
@@ -1501,7 +1502,15 @@ li .dropdown .active a {
     width: 100%;
     height: 100%;
 }
-
+.teambtn{
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+.image-section#profile {
+    height: 20rem;
+    overflow: hidden;
+}
 .team {
     padding-bottom: 70px;
 }
