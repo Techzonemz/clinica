@@ -1334,7 +1334,7 @@ li .dropdown .active a {
 }
 
 .card-text button.active {
-    color: #d6a294;
+    color: gray;
 }
 
 .active {
@@ -1370,13 +1370,13 @@ li .dropdown .active a {
 }
 
 .card-text button:hover {
-    color: #d6a294;
+    color: gray;
 }
 
 .card-text button {
     background: transparent;
     border: none;
-    color: gray;
+    color: #ffff;
     text-decoration: underline;
     font-size: 16px;
     text-align: initial !important;
