@@ -342,6 +342,8 @@
             prePartoDiv.style.display = 'block'; // Exibe a div pré-parto
             posPartoDiv.style.display = 'none';  // Esconde a div pós-parto
             partoText.textContent = "Consulta de Amamentação Pré-parto"; // Atualiza o texto para "Pré-parto"
+           // Rolar para o topo suavemente
+    window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Função para exibir a consulta pós-parto, esconder a pré-parto e atualizar o texto
@@ -349,6 +351,8 @@
             posPartoDiv.style.display = 'block'; // Exibe a div pós-parto
             prePartoDiv.style.display = 'none';  // Esconde a div pré-parto
             partoText.textContent = "Consulta de Amamentação Pós-parto"; // Atualiza o texto para "Pós-parto"
+            // Rolar para o topo suavemente
+    window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Verificar o fragmento da URL e inicializar a página de acordo
