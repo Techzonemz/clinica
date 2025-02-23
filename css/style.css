@@ -320,7 +320,9 @@ a.text-white:hover {
     text-decoration: underline;
     color: #d6a294 !important;
 }
-
+li a i {
+    margin-right: 7px;
+}
 .text-white h1,
 .text-white h2,
 .text-white h3,
@@ -1341,7 +1343,9 @@ li .dropdown .active a {
     opacity: 1 !important;
     z-index: 100;
 }
-
+button.text-dark.active {
+    color: white !important;
+}
 .card {
     position: relative;
     display: -ms-flexbox;
