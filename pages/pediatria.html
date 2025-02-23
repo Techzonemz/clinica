@@ -94,7 +94,7 @@
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad mt-6">
         <div class="container mt-9">
-            <div class="blog__details__hero set-bg mb-0" data-setbg="../img/blog/details/blog-hero10.jpg">
+            <div id="img" class="blog__details__hero set-bg mb-0" data-setbg="../img/blog/details/blog-hero10.jpg">
                 <!-- <div class="row d-flex justify-content-center">
                     <div class="col-lg-7 text-center">
                         <div class="blog__hero__text">
@@ -106,32 +106,6 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-            <div class="row d-flex justify-content-center mt-4">
-                <div class="col-lg-12">
-                    <div class="blog__details__text ml-4 mr-4">
-                        <div class="blog__details__text__item">
-                            <!-- Título da Seção -->
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="section-title">
-                                        <h2 class="mb-4 subtitle fw-bolder">Pediatria
-                                        </h2>
-                                        <span class="mb-4 mt-4"><b>Uma Pediatra não é uma médica como as outras, é
-                                                alguém que acompanha toda a família!</b></span>
-                                        <br>
-                                        <p class="mb-4">O acompanhamento da saúde desde o nascimento até à idade adulta
-                                            de pessoas é um privilégio reservado aos Pediatras. As
-                                            consultas de Pediatria permitem avaliar desenvolvimento físico, social e
-                                            emocional do seu filhote. </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
     </section>
     <!-- Blog Details Section End -->
@@ -148,8 +122,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="section-title">
-                                        <h3 id="title" class="subtitle fw-bold">
-                                        </h3>
+                                        <h2 id="title" class="subtitle fw-bold">
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
@@ -159,6 +133,25 @@
                 </div>
             </div>
             <div class="d-flex">
+                
+                <div  id="header" class="col-lg-8 col-md-8">
+                        <div class="row">
+                        <div class="blog__details__text ml-4 mr-4">
+                            <div class="blog__details__text__item">
+                                <div class="section-title">
+                                    <h5 class="mb-0 mt-4 h4"><b>Uma Pediatra não é uma médica como as outras, é
+                                            alguém que acompanha toda a família!</b></h5>
+                                    <br>
+                                    <p class="mb-4">O acompanhamento da saúde desde o nascimento até à idade adulta
+                                        de pessoas é um privilégio reservado aos Pediatras. As
+                                        consultas de Pediatria permitem avaliar desenvolvimento físico, social e
+                                        emocional do seu filhote. </p>
+
+                                </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
                 <div id="A" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -280,7 +273,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="C" class="col-lg-8 col-md-8" style="display: none;">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -309,16 +301,13 @@
                                 </p>
                                 <p>
                                     <br><br>
-                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica da
-                                    gravidez atual e prévias (se procede). As grávidas/casais deverão
-                                    trazer consigo o boletim de gravidez.
+                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica do paciente e exame físico do mesmo, sempre com a presença e autorização dos pais. Os pais devem trazer o boletim de saúde do seu filho, bem como o seu plano de vacinação.
                                 </p>
                             </div>
                             <a href="#" class="primary-btn">Marcar Consulta </a>
                         </div>
                     </div>
                 </div>
-
                 <div id="D" class="col-lg-8 col-md-8" style="display: none;">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -378,7 +367,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="E" class="col-lg-8 col-md-8" style="display: none;">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -429,24 +417,21 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="row">
-                        <div class="card w-100 shadow">
+                        <div class="card shadow" style="background-image: url('../img/blog/details/blog-hero11.jpg');">
                             <div class="card-more">
-                                <p class="border-bottom">Neste espaço existem consultas em várias áreas,
-                                    tanto
-                                    para as pessoas que estão na “preparação para o parto”
-                                    como na “recuperação pós parto”. Clique em cada um dos ícones seguintes para saber
+                                <div class="icon text-center p-2">
+                                    <img src="../img/icons/pediatria-alt.png" width="100">
+                                </div>
+                                <p class="border-bottom text-white">Neste espaço existem consultas em várias áreas, clique em cada uma das seguintes consultas para saber
                                     que consultas tem disponíveis.</p>
                                 <div class="d-flex">
                                     <div class="col-lg-12 col-md-12 ">
-                                        <div class="card-icon justify-content-center">
-                                            <img src="../img/icons/pediatry.png" style="width: 150px;">
-                                        </div>
-                                        <div class="card-text">
-                                            <button id="ABtn">a) Consulta de Pediatria Pré-Natal</button>
-                                            <button id="BBtn">b) Consulta de Pediatria de Rotina</button>
-                                            <button id="CBtn">c) Consulta de Pediatria de Criança Doente</button>
-                                            <button id="DBtn">d) Consulta de Sono Infantil</button>
-                                            <button id="EBtn">e) Consulta de Pediatria de Introdução Alimentar</button>
+                                        <div class="card-text d-grid">
+                                            <button id="ABtn">a) Pediatria Pré-Natal</button>
+                                            <button id="BBtn">b) Pediatria de Rotina</button>
+                                            <button id="CBtn">c) Pediatria de Criança Doente</button>
+                                            <button id="DBtn">d) Sono Infantil</button>
+                                            <button id="EBtn">e) Pediatria de Introdução Alimentar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -462,104 +447,9 @@
 
 
     <!-- Seção de Rodapé Início -->
-    <footer class="footer  mt-8">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
-                            <a href="../index.html"><img src="../img/footer-logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
-                            <form action="#">
-                                <!-- <input type="text" placeholder="Email">
-                                <button type="submit" class="site-btn">Subscrever</button> -->
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
-                            <a href="../#"><i class="fa fa-facebook"></i></a>
-                            <a href="../#"><i class="fa fa-twitter"></i></a>
-                            <a href="../#"><i class="fa fa-instagram"></i></a>
-                            <a href="../#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>A Clinica</h5>
-                        <ul>
-                            <li><a href="../#">Sobre Nós</a></li>
-                            <li><a href="../#">Equipa</a></li>
-                            <li><a href="../#">O Nosso Trabalho Humanitário</a></li>
-                            <li><a href="../#">Agenda</a></li>
-                            <li><a href="../#">Cursos</a></li>
+    <footer class="footer" style='background-image: url("../img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>Links Rápidos</h5>
-                        <ul>
-                            <li><a href="../#">Área Reservada</a></li>
-                            <li><a href="../#">Consultas</a></li>
-                            <li><a href="../#">Vacinaçao</a></li>
-                            <li><a href="../#">Gravidez</a></li>
-                            <li><a href="../#">Apoio ao domicílio</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
-                        <h5>Entre em Contato</h5>
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i>Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20
-                            </li>
-                            <li><i class="fa fa-phone"></i> +258 84 1869 7194</li>
-                            <li><i class="fa fa-envelope"></i> geral@aaclinica-mz.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2284001393815!2d32.5737!3d-25.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee81c160c60b5c5%3A0xab3b2266c8984b5f!2sMaputo%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-BR!2s!4v1692288246392!5m2!1spt-BR!2s"
-                            width="100%" height="190" style="border:0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="footer__copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="footer__copyright__text">
-                            <p>Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul>
-                            <li>Todos os Direitos Reservados</li>
-                            <li>Termos & Uso</li>
-                            <li>Política de Privacidade</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </footer>
     <!-- Seção de Rodapé Fim -->
@@ -577,76 +467,110 @@
         const EBtn = document.getElementById('EBtn');
         const EDiv = document.getElementById('E');
         const title = document.getElementById('title');
+        const img = document.getElementById('img');
+        const header = document.getElementById('header');
 
         // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
         function showA() {
+             header.classList.add("d-none");
             ADiv.style.display = 'block'; // Exibe a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div pós-parto
             CDiv.style.display = 'none';  // Esconde a div pós-parto
             DDiv.style.display = 'none';  // Esconde a div pós-parto
             EDiv.style.display = 'none';  // Esconde a div pós-parto
             title.textContent = "a) Consulta de Pediatria Pré-Natal"; // Atualiza o texto para "Cirurgia"
+             img.style.backgroundImage = "url('../img/blog/details/nutri-geral.jpg')"; // Atualiza o texto para "Cirurgia"
             ABtn.classList.add("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
 
         // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showB() {
+             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'block'; // Exibe a div pós-parto
             CDiv.style.display = 'none'; // Exibe a div pós-parto
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
             title.textContent = "b) Consulta de Pediatria de Rotina"; // Atualiza o texto para "Pós-parto"
+             img.style.backgroundImage = "url('../img/blog/details/nutri-geral.jpg')"; // Atualiza o texto para "Cirurgia"
             ABtn.classList.remove("active");
             BBtn.classList.add("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
 
         // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showC() {
+             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             CDiv.style.display = 'block'; // Exibe a div pós-parto
             DDiv.style.display = 'none';  // Esconde a div Cirurgia
             EDiv.style.display = 'none';  // Esconde a div Cirurgia
             title.textContent = "c) Consulta de Pediatria de Criança Doente"; // Atualiza o texto para "Pós-parto"
+             img.style.backgroundImage = "url('../img/blog/details/nutri-geral.jpg')"; // Atualiza o texto para "Cirurgia"
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.add("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
-        }      // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+        }    
+          // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showD() {
+             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             CDiv.style.display = 'none';  // Esconde a div Cirurgia
             DDiv.style.display = 'block'; // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
             title.textContent = "d) Consulta de Sono Infantil"; // Atualiza o texto para "Pós-parto"
+             img.style.backgroundImage = "url('../img/blog/details/nutri-geral.jpg')"; // Atualiza o texto para "Cirurgia"
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.add("active");
             EBtn.classList.remove("active");
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }      // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showE() {
+             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             CDiv.style.display = 'none';  // Esconde a div Cirurgia
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.style.display = 'block'; // Exibe a div pós-parto
             title.textContent = "e) Consulta de Pediatria de Introdução Alimentar"; // Atualiza o texto para "Pós-parto"
+             img.style.backgroundImage = "url('../img/blog/details/nutrio-infant.jpg')"; // Atualiza o texto para "Cirurgia"
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.add("active");
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+        }
+        function show() {
+             header.classList.remove("d-none");
+            ADiv.style.display = 'none';  // Esconde a div Cirurgia
+            BDiv.style.display = 'none';  // Esconde a div Cirurgia
+            CDiv.style.display = 'none';  // Esconde a div Cirurgia
+            DDiv.style.display = 'none'; // Exibe a div pós-parto
+            EDiv.style.display = 'none'; // Exibe a div pós-parto
+            title.textContent = "Pediatria"; // Atualiza o texto para "Pós-parto"
+             img.style.backgroundImage = "url('../img/blog/details/blog-hero10.jpg')"; // Atualiza o texto para "Cirurgia"
+            ABtn.classList.remove("active");
+            BBtn.classList.remove("active");
+            CBtn.classList.remove("active");
+            DBtn.classList.remove("active");
+            EBtn.classList.remove("active");
+             window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
         // Verificar o fragmento da URL e inicializar a página de acordo
         window.addEventListener('load', function () {
@@ -664,7 +588,7 @@
                 showE(); // Se o hash for "#pos", exibe pós-parto
             }
             else {
-                showA(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
+                show(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
             }
         });
 

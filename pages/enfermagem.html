@@ -117,9 +117,7 @@
                                     <div class="section-title">
                                         <h2 class="mb-4 subtitle fw-bolder">Enfermagem
                                         </h2>
-                                        <span class="mb-4 mt-4"><b>Cuidar dos pacientes com amor é o que distingue os
-                                                Enfermeiros!</b></span>
-                                        <br>
+                                        <h5 class="h4"><b>O cuidado do seu recém-nascido na comodidade da sua casa!</b></h5>
                                         <p class="mb-4">Enfermagem é uma profissão chave nos cuidados de saúde,
                                             especialmente na área materno-infantil. <i>N’A Clínica</i>
                                             proporcionamos cuidados de Enfermagem de excelência aos nossos pacientes e
@@ -293,22 +291,19 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="row">
-                        <div class="card w-100 shadow">
+                        <div class="card shadow" style="background-image: url('../img/bg3.png');">
                             <div class="card-more">
-                                <p class="border-bottom">Neste espaço existem consultas em várias áreas,
-                                    tanto
-                                    para as pessoas que estão na “preparação para o parto”
-                                    como na “recuperação pós parto”. Clique em cada um dos ícones seguintes para saber
+                                <div class="icon text-center p-2">
+                                    <img src="../img/icons/Enfermagem.png" width="100">
+                                </div>
+                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas, clique em cada uma das seguintes consultas para saber
                                     que consultas tem disponíveis.</p>
                                 <div class="d-flex">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="card-icon justify-content-center">
-                                            <img src="../img/icons/nurse.png" style="width: 150px;">
-                                        </div>
-                                        <div class="card-text">
-                                            <button id="con-ciru">1. Apoio domiciliário no pós-parto</button> <br>
-                                            <button id="circ-anel">2. Consulta de Enfermagem</button> <br>
-                                            <button id="Sutura">3. Pensos</button>
+                                    <div class="col-lg-12 col-md-12 ">
+                                        <div class="card-text d-grid">
+                                            <button class="text-dark" id="con-ciru">a) Apoio domiciliário no pós-parto</button> <br>
+                                            <button class="text-dark" id="circ-anel">b) Consulta de Enfermagem</button> <br>
+                                            <button class="text-dark" id="Sutura">c) Pensos</button>
                                         </div>
                                     </div>
                                 </div>
@@ -346,10 +341,11 @@
             CirurgiaDiv.style.display = 'block'; // Exibe a div Cirurgia
             anelDiv.style.display = 'none';  // Esconde a div pós-parto
             suturaDiv.style.display = 'none';  // Esconde a div pós-parto
-            consultaText.textContent = "1. Apoio domiciliário no pós-parto"; // Atualiza o texto para "Cirurgia"
+            consultaText.textContent = "a) Apoio domiciliário no pós-parto"; // Atualiza o texto para "Cirurgia"
             CirurgiaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
+              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
 
         // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
@@ -357,10 +353,11 @@
             anelDiv.style.display = 'block'; // Exibe a div pós-parto
             suturaDiv.style.display = 'none'; // Exibe a div pós-parto
             CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "2. Consulta de Enfermagem"; // Atualiza o texto para "Pós-parto"
+            consultaText.textContent = "b) Consulta de Enfermagem"; // Atualiza o texto para "Pós-parto"
             anelBtn.classList.add("active");
             CirurgiaBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
+              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
 
         // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
@@ -368,10 +365,11 @@
             suturaDiv.style.display = 'block'; // Exibe a div pós-parto
             anelDiv.style.display = 'none';  // Esconde a div Cirurgia
             CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "3. Pensos"; // Atualiza o texto para "Pós-parto"
+            consultaText.textContent = "c) Pensos"; // Atualiza o texto para "Pós-parto"
             suturaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             CirurgiaBtn.classList.remove("active");
+              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
         }
         // Verificar o fragmento da URL e inicializar a página de acordo
         window.addEventListener('load', function () {
