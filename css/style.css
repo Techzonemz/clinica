@@ -235,7 +235,7 @@ ol {
     bottom: 30px;
     right: 30px;
     color: #fff;
-    background-color:#25D366;
+    background-color:#cfdbab;
     border-radius: 25px 30px 5px 25px;
     z-index: 100;
     font-family: Arial;
@@ -246,7 +246,7 @@ ol {
 }
 
 .float-button:hover {
-     background-color: #128C7E;
+     background-color: #25D366;
       color: #fff;
 }
 
@@ -1300,7 +1300,9 @@ li .dropdown .active a {
     color: #777;
     font-size: 12px;
 }
-
+h4.subtitle.mt-4.fw-semibold{
+    color: white;
+}
 .servocos {
     position: relative;
     list-style: none;
@@ -1308,9 +1310,8 @@ li .dropdown .active a {
     margin: 0;
     height: 200px;
     display: flex;
-    /* Configuração flex container */
+    align-items: center;
     justify-content: space-between;
-    /* Aplica espaço entre os itens */
     flex-wrap: wrap;
 }
 
