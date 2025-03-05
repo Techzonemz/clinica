@@ -1,0 +1,544 @@
+<meta name="description"
+    content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Clínica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .services__item {
+            background: #d6a294;
+            padding: 45px 30px 45px 50px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            line-height: 2.1;
+            color: white !important;
+            height: 19rem;
+        }
+
+        .services__item .services__item__text ul li a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        b {
+            color: #d6a294;
+            font-weight: 400;
+        }
+
+        .services__details__pic {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+        }
+
+        .services__details__title h3 {
+            width: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .services__details__pic img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .services__details__content {
+            position: absolute;
+            bottom: 3rem;
+            left: 10px;
+            width: 26rem;
+            max-width: 60%;
+            background-image: url('../img/bg0.png');
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .services__details__title span {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .services__details__title h3,
+        .services__details__widget h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .services__details__widget .rating i {
+            color: #f8d210;
+        }
+
+        .clicavel {
+            background: transparent;
+            border: none;
+        }
+    </style>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data; // O conteúdo é carregado como está
+            });
+
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data; // O conteúdo é carregado como está
+            });
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale connosco!<span>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="../#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="../#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="../#"><i class="fa fa-facebook"></i></a>
+            <a href="../#"><i class="fa fa-twitter"></i></a>
+            <a href="../#"><i class="fa fa-instagram"></i></a>
+            <a href="../#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div id="header-container">
+
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="testimonials spad mt-7 mb-4 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 order-lg-2">
+                    <div class="services__details">
+                        <div class="services__details__pic">
+                            <div class="services__details__pic">
+                                <img src="../img/blog/details/amame.jpg" alt="">
+                                <div class="services__details__content">
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="services__details__title">
+                                                <span>Dra. Patrícia Pérez Ronquillo</span>
+                                                <h3><img src="../img/icons/amamentação-white.png" class="fa mr-3"
+                                                        alt="">Marcação</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 text-end">
+                                            <div class="services__details__widget">
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <h4>1h30min</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__text">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="mr-4">
+                                        <div class="blog__details__text__item">
+                                            <!-- Título da Seção -->
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="section-title">
+                                                        <h2 id="title" class="subtitle fw-bold h3">Curso de Preparação
+                                                            para
+                                                            a Amamentação em grupo
+                                                        </h2>
+                                                        <h5 class="mb-0 mt-4 h4"><b>A amamentação tem tanto de instinto
+                                                                como de aprendizagem!</b></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <p class="mt-4">
+                                <b class="underline">Este curso destina-se a:</b> grávidas ou casais após as 20 semanas
+                                de gestação e realização da ecografia morfológica.
+                                <br>
+                                <br>
+                                É um curso em grupo cuidadosamente elaborado para que tenha acesso a informações
+                                rigorosamente científicas sobre a
+                                amamentação e temas associados.
+                                <i>N’A Clínica</i> entendemos que a amamentação é um foco importante de preocupações e
+                                dúvidas
+                                durante a gravidez. Queremos
+                                estar presentes e ser um apoio para a sua família.
+                                <br>
+                                <br>
+                                <b>O Curso em Grupo de Preparação para a Amamentação:</b> Consiste em 5 sessões de
+                                aprendizagem
+                                teórica e prática sobre
+                                diversas questões relacionadas com a amamentação, com a duração de 1h30min cada. Cada
+                                aula é dada com periodicidade
+                                semanal e com inscrições limitadas a 4 casais por turma.
+                                <br>
+                                <br>
+                                O Curso de Preparação para a Amamentação em Grupo é elaborado pela Dra Inês Claudino,
+                                Pediatra Especialista
+                                Universitária em Amamentação e pela Dra Patrícia Pérez Ronquillo, Médica Geral
+                                especializada em Pediatria e graduanda em
+                                Neonatologia. Lecionado pela Dra Patrícia Pérez Ronquillo. Pode haver apoio de
+                                Enfermeira Materno-Infantil e Doula.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="consultation__video set-bg" data-setbg="../img/bg0.png"
+                                    style="background-image: url('../img/bg0.png'); height: 25rem; border-radius: 10px;">
+
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <!-- Texto Principal -->
+                                            <div class="col-lg-12 col-md-12 text-center">
+                                                <div class="section-title text-white text-center">
+                                                    <h3 class="underline mb-4">Este curso inclui</h3>
+                                                    <!-- <span>A Clínica conta com uma clínica especializada, equipada com uma equipa
+                                                                        multidisciplinar.</span> -->
+                                                </div>
+                                                <div class="col-lg-12 d-inline-block">
+                                                    <div class="d-flex align-items-center mb-4">
+                                                        <img src="../img/icons/horario.png" class="fas mr-3 " alt=""
+                                                            style="width: 4rem;">
+                                                        <p class="text-justify text-white h5">
+                                                            Acesso a materiais exclusivos sobre
+                                                            amamentação durante 6 meses na área reservada.
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-4">
+                                                        <img src="../img/icons/Workshops.png" class="fas mr-3 " alt=""
+                                                            style="width: 4rem;">
+                                                        <p class="text-justify text-white h5">
+                                                            Um Workshop sobre Terapia Snoezelen durante a gravidez e
+                                                            visita à nossa sala Snoezelen, única em Moçambique ou um
+                                                            Worshop sobre Amamentação durante o sono do bebé.
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-4">
+                                                        <img src="../img/icons/amamentação-white.png" class="fas mr-3 "
+                                                            alt="" style="width: 4rem;">
+                                                        <p class="text-justify text-white h5">
+                                                            Um acompanhamento sobre a amamentação da grávida ou casal
+                                                            durante a sua gravidez e no pós-parto através de grupo de
+                                                            Whatsapp.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="services__details__desc">
+                            <div class="section-title  text-center mb-4">
+                                <h4 class=" mb-2 mt-6">Temário Curso de Preparação para a Amamentação</h3>
+                                    <span>clique em cada um das seguintes módulos para saber mais</span>
+                            </div>
+                            <div class="row d-flex align-items-center ">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="services__item d-flex align-items-center border shadow-sm">
+                                        <div class="services__item__text">
+                                            <h5>Amamentação</h5>
+                                            <ul>
+                                                <li>
+                                                    <button class="clicavel" id="M1">
+                                                        <a href="pages/amament-pre-parto.html#pre">
+                                                            <i class="fa fa-check-circle"></i>
+                                                            Módulo 1: Bem-vinda ao mundo da amamentação:
+                                                        </a>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="clicavel" id="M2">
+                                                        <a href="pages/amament-pre-parto.html#pre">
+                                                            <i class="fa fa-check-circle"></i>
+                                                            Módulo 2: Anatomia e fisiologia da amamentação:
+                                                        </a>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="clicavel" id="M3">
+                                                        <a href="pages/amament-pre-parto.html#pre">
+                                                            <i class="fa fa-check-circle"></i>
+                                                            Módulo 3: Técnicas de aleitamento:
+                                                        </a>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="clicavel" id="M4">
+                                                        <a href="pages/amament-pre-parto.html#pre">
+                                                            <i class="fa fa-check-circle"></i>
+                                                            Módulo 4: Dificuldades na amamentação:
+                                                        </a>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="clicavel" id="M5">
+                                                        <a href="pages/amament-pre-parto.html#pre">
+                                                            <i class="fa fa-check-circle"></i>
+                                                            Módulo 5: Produtos úteis na Amamentação. Amamentação e
+                                                            regresso
+                                                            ao trabalho.
+                                                        </a>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div id="view">
+                                        <h5>Módulo 1: Bem-vinda ao mundo da amamentação:</h5>
+                                        <ul class="services__details__feature">
+                                            <li><i class="fa fa-check-circle"></i> Apresentação.</li>
+                                            <li><i class="fa fa-check-circle"></i> Que esperar da amamentação.</li>
+                                            <li><i class="fa fa-check-circle"></i> Hora de ouro na amamentação e pele
+                                                com pele.</li>
+                                            <li><i class="fa fa-check-circle"></i> Mitos sobre a amamentação.</li>
+                                            <li><i class="fa fa-check-circle"></i> Medos e preocupações em torno da
+                                                amamentação.</li>
+                                            <li><i class="fa fa-check-circle"></i> Rede de apoio.</li>
+                                            <li><i class="fa fa-check-circle"></i> Prática: Falar sobre redes de apoio,
+                                                os meus medos em relação à amamentação.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__details__desc">
+                                <div class="section-title  text-center mb-4">
+                                    <a href="#" class="primary-btn mt-4">Inscrever-me </a>
+                                </div>
+                            </div>
+                            <div class="section-title  text-center mb-4">
+                                <h4 class=" mb-2 mt-6"><b>! Informação importante</b></h3>
+                            </div>
+                            <p>
+                                O Curso de Preparação para a Amamentação em Grupo encontra-se estruturado numa sequência
+                                lógica e pensada para otimizar
+                                a sua aprendizagem. Este curso requer uma inscrição prévia e a inclusão num grupo antes
+                                do início das sessões, o que
+                                constitui uma vantagem no desenvolvimento dos vários temas. Desta forma, não é possível
+                                entrar em grupos após o início
+                                do Curso de Preparação para a Amamentação em Grupo.
+                                <br><br>
+                                O Curso de Preparação para a Amamentação em Grupo poderá apenas ser frequentado pela
+                                família inscrita. Na ausência de um
+                                dos elementos da família, a grávida poderá vir acompanhada exclusivamente por um dos
+                                avós ou tios do bebé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/amame-grupo.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Curso de Preparação para a Amamentação em grupo</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team 4.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/details/amame.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Curso de Preparação para a Amamentação Individual</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team-7.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/blog-4.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Here’s how you can get a natural glow this party season</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team-5.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="load__more">
+                        <a href="#" class="primary-btn">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer" style='background-image: url("../img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modules = {
+                M1: `Módulo 1: Bem-vinda ao mundo da amamentação:
+        <ul class="services__details__feature">
+            <li><i class="fa fa-check-circle"></i> Apresentação.</li>
+            <li><i class="fa fa-check-circle"></i> Que esperar da amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Hora de ouro na amamentação e pele com pele.</li>
+            <li><i class="fa fa-check-circle"></i> Mitos sobre a amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Medos e preocupações em torno da amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Rede de apoio.</li>
+            <li><i class="fa fa-check-circle"></i> Prática: Falar sobre redes de apoio, os meus medos em relação à amamentação.</li>
+        </ul>`,
+                M2: `Módulo 2: Anatomia e fisiologia da amamentação:
+        <ul class="services__details__feature">
+            <li><i class="fa fa-check-circle"></i> Anatomia da mama.</li>
+            <li><i class="fa fa-check-circle"></i> Mudanças da mama durante a gravidez.</li>
+            <li><i class="fa fa-check-circle"></i> Mudanças no puerpério: descida/subida do leite.</li>
+            <li><i class="fa fa-check-circle"></i> Diferentes fases do leite materno.</li>
+            <li><i class="fa fa-check-circle"></i> Diferentes tipos de mamilos não interferem com a amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Prática: extração do colostro na gravidez, extração manual de leite materno.</li>
+        </ul>`,
+                M3: `Módulo 3: Técnicas de aleitamento:
+        <ul class="services__details__feature">
+            <li><i class="fa fa-check-circle"></i> Posições de amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Pega correta: Amamentação sem dor.</li>
+            <li><i class="fa fa-check-circle"></i> Sinais de fome no bebé.</li>
+            <li><i class="fa fa-check-circle"></i> Prática: Identificação de uma pega correta e posições.</li>
+        </ul>`,
+                M4: `Módulo 4: Dificuldades na amamentação:
+        <ul class="services__details__feature">
+            <li><i class="fa fa-check-circle"></i> Sensibilidade mamária.</li>
+            <li><i class="fa fa-check-circle"></i> Gretas e feridas nos mamilos.</li>
+            <li><i class="fa fa-check-circle"></i> Ingurgitamento mamário e entupimento dos ductos mamários.</li>
+            <li><i class="fa fa-check-circle"></i> Mastite e abscessos mamários.</li>
+            <li><i class="fa fa-check-circle"></i> Contraindicações da amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Confusão de bicos.</li>
+            <li><i class="fa fa-check-circle"></i> Prática: Pega correta, alívio do ingurgitamento mamário.</li>
+        </ul>`,
+                M5: `Módulo 5: Produtos úteis na Amamentação. Amamentação e regresso ao trabalho:
+        <ul class="services__details__feature">
+            <li><i class="fa fa-check-circle"></i> Almofadas de amamentação.</li>
+            <li><i class="fa fa-check-circle"></i> Amamentar com colher doseador, seringa e copo.</li>
+            <li><i class="fa fa-check-circle"></i> Bombas de aleitamento.</li>
+            <li><i class="fa fa-check-circle"></i> Coletor de leite materno.</li>
+            <li><i class="fa fa-check-circle"></i> Protetores de mamilo e conchas de prata.</li>
+            <li><i class="fa fa-check-circle"></i> Bolsas de calor e frio e Parches de hidrogel.</li>
+            <li><i class="fa fa-check-circle"></i> Armazenamento de leite materno.</li>
+            <li><i class="fa fa-check-circle"></i> Preparar o regresso ao trabalho.</li>
+            <li><i class="fa fa-check-circle"></i> Prática: como extrair o leite materno com bomba.</li>
+        </ul>`
+            };
+
+            document.querySelectorAll(".clicavel").forEach(button => {
+                button.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    document.getElementById("view").innerHTML = modules[this.id] || "";
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
