@@ -179,12 +179,15 @@ ol {
     padding: 0;
     margin: 0;
 }
-.mb-0{
+
+.mb-0 {
     margin-bottom: 0 !important;
 }
-.mt-0{
+
+.mt-0 {
     margin-top: 0 !important;
 }
+
 .mt-5 {
     margin-top: 5rem !important;
 }
@@ -226,7 +229,7 @@ ol {
 }
 
 
-   
+
 .float-button {
     text-decoration: none;
     position: fixed;
@@ -235,19 +238,19 @@ ol {
     bottom: 30px;
     right: 30px;
     color: #fff;
-    background-color:#cfdbab;
+    background-color: #cfdbab;
     border-radius: 25px 30px 5px 25px;
     z-index: 100;
     font-family: Arial;
     font-size: 17px;
     animation: whatsapp-animation 0.5s ease-in-out;
-    box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
-    transition:all 0.3s ease-out;
+    box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+    transition: all 0.3s ease-out;
 }
 
 .float-button:hover {
-     background-color: #25D366;
-      color: #fff;
+    background-color: #25D366;
+    color: #fff;
 }
 
 .fa-whatsapp {
@@ -316,13 +319,16 @@ ol {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 a.text-white:hover {
     text-decoration: underline;
     color: #d6a294 !important;
 }
+
 li a i {
     margin-right: 7px;
 }
+
 .text-white h1,
 .text-white h2,
 .text-white h3,
@@ -364,7 +370,7 @@ li a i {
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
-.primary-btn-hover{
+.primary-btn-hover {
     display: inline-block;
     font-family: 'sinka', Arial, sans-serif;
     font-size: 14px;
@@ -377,13 +383,15 @@ li a i {
     background-color: transparent !important;
     border: 2px solid #d6a294;
 }
-.primary-btn-hover:hover{
+
+.primary-btn-hover:hover {
     color: #ffffff !important;
     background-color: #d6a294 !important;
     border: 2px solid #d6a294;
     transform: translateY(-5px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
+
 .white-btn {
     display: inline-block;
     font-family: 'sinka', Arial, sans-serif;
@@ -1300,9 +1308,11 @@ li .dropdown .active a {
     color: #777;
     font-size: 12px;
 }
-h4.subtitle.mt-4.fw-semibold{
+
+h4.subtitle.mt-4.fw-semibold {
     color: white;
 }
+
 .servocos {
     position: relative;
     list-style: none;
@@ -1344,9 +1354,11 @@ h4.subtitle.mt-4.fw-semibold{
     opacity: 1 !important;
     z-index: 100;
 }
+
 button.text-dark.active {
     color: white !important;
 }
+
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -1507,15 +1519,18 @@ button.text-dark.active {
     width: 100%;
     height: 100%;
 }
-.teambtn{
+
+.teambtn {
     background: transparent;
     border: none;
     text-align: left;
 }
+
 .image-section#profile {
     height: 20rem;
     overflow: hidden;
 }
+
 .team {
     padding-bottom: 70px;
 }
@@ -2694,6 +2709,12 @@ button.text-dark.active {
     color: #888888;
     position: relative;
     font-weight: 300;
+}
+
+.blog__item__pic img {
+    object-fit: cover;
+    width: 403px;
+    height: 269px;
 }
 
 .blog__item__text ul li:after {
