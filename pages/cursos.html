@@ -1,0 +1,322 @@
+<meta name="description"
+    content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Clínica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .services__item {
+            background: #dfb080;
+            padding: 45px 30px 45px 50px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            line-height: 2.1;
+            color: white !important;
+            height: 23rem;
+        }
+
+        .services__item .services__item__text ul li a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        b {
+            color: #d6a294;
+            font-weight: 400;
+        }
+
+        .services__details__pic {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+        }
+
+        .services__details__title h3 {
+            width: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .services__details__pic img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .services__details__content {
+            position: absolute;
+            bottom: 3rem;
+            left: 10px;
+            width: 26rem;
+            max-width: 60%;
+            background-color: #dfb080;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .services__details__title span {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .services__details__title h3,
+        .services__details__widget h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .services__details__widget .rating i {
+            color: #f8d210;
+        }
+
+        .clicavel {
+            background: transparent;
+            border: none;
+        }
+    </style>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data; // O conteúdo é carregado como está
+            });
+
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data; // O conteúdo é carregado como está
+            });
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale connosco!<span>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="../#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="../#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="../#"><i class="fa fa-facebook"></i></a>
+            <a href="../#"><i class="fa fa-twitter"></i></a>
+            <a href="../#"><i class="fa fa-instagram"></i></a>
+            <a href="../#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div id="header-container">
+
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <section class="blog spad mt-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 order-lg-2">
+                    <div class="services__details">
+                        <div class="services__details__pic">
+                            <div class="services__details__pic">
+                                <img src="../img/blog/details/cursos.jpg" alt="">
+                                <!-- <div class="services__details__content">
+                                    <div class="row w-100 align-items-center">
+                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                            <div class="services__details__title">
+                                                <span>Dra. Patrícia p. Ronquillo</span>
+                                                <h3><img src="../img/icons/pregnat-white.png" class="fa mr-3"
+                                                        alt="">Marcação
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 text-end">
+                                            <div class="services__details__widget">
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <h4>1h30min</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="mr-4">
+                        <div class="blog__details__text__item">
+                            <!-- Título da Seção -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h2 id="title" class="subtitle fw-bold h3">Cursos da <i>A Clínica</i>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <p><i>A Clínica</i> oferece cursos cuidadosamente desenvolvidos para proporcionar conhecimento essencial
+                    e
+                    prático em diversas
+                    áreas, garantindo que cada participante esteja bem preparado para enfrentar os desafios do dia a
+                    dia. Com uma abordagem
+                    dinâmica e interativa, os cursos incluem conteúdos atualizados, práticas guiadas e acompanhamento
+                    especializado para
+                    proporcionar uma experiência de aprendizado completa. Seja para gestantes, pais de primeira viagem
+                    ou profissionais da
+                    área da saúde, aqui você encontrará formações estruturadas para atender às suas necessidades com
+                    qualidade e confiança.</p>
+                <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/amame-grupo.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="curso-amamentacao-grupo.html">Curso de Preparação para a Amamentação em
+                                    grupo</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team 4.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/details/amame.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="curso-amamentacao-indiv.html">Curso de Preparação para a Amamentação
+                                    Individual</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team-7.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/151.jpeg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="curso-prep-grupo.html">Curso de Preparação para o Parto em Grupo</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team-5.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="../img/blog/details/152.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="curso-prep-indiv.html">Curso de Preparação para o Parto individual</a></h5>
+                            <ul>
+                                <li><img src="../img/team/team-5.jpg" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer" style='background-image: url("../img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+
+
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
