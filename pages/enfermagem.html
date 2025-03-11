@@ -336,65 +336,47 @@
         const suturaDiv = document.getElementById('sutura-ferida');
         const consultaText = document.getElementById('Consulta');
     
-        // Função para exibir a consulta Cirurgia
-        function showCirurgia() {
-            CirurgiaDiv.style.display = 'block';
+        // Função para atualizar a exibição com base na consulta selecionada
+        function updateView(hash) {
+            // Resetar tudo
+            CirurgiaDiv.style.display = 'none';
             anelDiv.style.display = 'none';
             suturaDiv.style.display = 'none';
-            consultaText.textContent = "a) Apoio domiciliário no pós-parto";
-            CirurgiaBtn.classList.add("active");
+            CirurgiaBtn.classList.remove("active");
             anelBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
     
-        // Função para exibir a consulta Anel
-        function showAnel() {
-            anelDiv.style.display = 'block';
-            suturaDiv.style.display = 'none';
-            CirurgiaDiv.style.display = 'none';
-            consultaText.textContent = "b) Consulta de Enfermagem";
-            anelBtn.classList.add("active");
-            CirurgiaBtn.classList.remove("active");
-            suturaBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    
-        // Função para exibir a consulta Sutura
-        function showSutura() {
-            suturaDiv.style.display = 'block';
-            anelDiv.style.display = 'none';
-            CirurgiaDiv.style.display = 'none';
-            consultaText.textContent = "c) Pensos";
-            suturaBtn.classList.add("active");
-            anelBtn.classList.remove("active");
-            CirurgiaBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    
-        // Verificar o fragmento da URL e inicializar a página de acordo
-        function checkHashAndLoad() {
-            const hash = window.location.hash;
-    
+            // Atualizar com base no hash
             if (hash === "#domicilio") {
-                showCirurgia();
+                CirurgiaDiv.style.display = 'block';
+                consultaText.textContent = "a) Apoio domiciliário no pós-parto";
+                CirurgiaBtn.classList.add("active");
             } else if (hash === "#conseferm") {
-                showAnel();
+                anelDiv.style.display = 'block';
+                consultaText.textContent = "b) Consulta de Enfermagem";
+                anelBtn.classList.add("active");
             } else if (hash === "#pensos") {
-                showSutura();
+                suturaDiv.style.display = 'block';
+                consultaText.textContent = "c) Pensos";
+                suturaBtn.classList.add("active");
             } else {
-                showCirurgia();
+                CirurgiaDiv.style.display = 'block';
+                consultaText.textContent = "a) Apoio domiciliário no pós-parto";
+                CirurgiaBtn.classList.add("active");
             }
+    
+            // Rolar suavemente para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     
-        // Executar ao carregar a página
+        // Atualizar a exibição ao carregar a página
         window.addEventListener('load', function () {
-            checkHashAndLoad();
+            updateView(window.location.hash);
         });
     
-        // Atualizar a página ao mudar o hash (para recarregar ao clicar)
+        // Atualizar a exibição ao mudar o hash da URL
         window.addEventListener('hashchange', function () {
-            window.location.reload();
+            updateView(window.location.hash);
         });
     
         // Adicionar funcionalidade dos botões
@@ -410,6 +392,7 @@
             window.location.hash = "#pensos";
         });
     </script>
+    
     
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
