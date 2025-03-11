@@ -579,13 +579,9 @@
             }
         });
         window.addEventListener('hashchange', function () {
-        location.reload(); // Recarrega a página
-        });
-
-        window.addEventListener('DOMContentLoaded', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Após o carregamento, rola para o topo
-        });
-
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola para o topo suavemente antes de recarregar
+    location.reload(); // Recarrega a página
+});
 
 
         // Adicionar funcionalidade dos botões
