@@ -578,6 +578,10 @@
                 show(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
             }
         });
+    // Atualizar a página ao mudar o hash (para recarregar ao clicar)
+    window.addEventListener('hashchange', function () {
+        window.location.reload();
+    });
 
         // Adicionar funcionalidade dos botões
         ABtn.addEventListener('click', function () {
