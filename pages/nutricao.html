@@ -581,6 +581,7 @@
     // Atualizar a página ao mudar o hash (para recarregar ao clicar)
     window.addEventListener('hashchange', function () {
         window.location.reload();
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
     });
 
         // Adicionar funcionalidade dos botões
