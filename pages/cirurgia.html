@@ -325,61 +325,70 @@
         const anelDiv = document.getElementById('anel');
         const suturaDiv = document.getElementById('sutura-ferida');
         const consultaText = document.getElementById('Consulta');
-
-        // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
+    
+        // Função para exibir a consulta Cirurgia
         function showCirurgia() {
-            CirurgiaDiv.style.display = 'block'; // Exibe a div Cirurgia
-            anelDiv.style.display = 'none';  // Esconde a div pós-parto
-            suturaDiv.style.display = 'none';  // Esconde a div pós-parto
-            consultaText.textContent = "Consulta de Cirurgia"; // Atualiza o texto para "Cirurgia"
+            CirurgiaDiv.style.display = 'block';
+            anelDiv.style.display = 'none';
+            suturaDiv.style.display = 'none';
+            consultaText.textContent = "Consulta de Cirurgia";
         }
-
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+    
+        // Função para exibir a consulta Anel
         function showAnel() {
-            anelDiv.style.display = 'block'; // Exibe a div pós-parto
-            suturaDiv.style.display = 'none'; // Exibe a div pós-parto
-            CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "Circuncisão com anel"; // Atualiza o texto para "Pós-parto"
+            anelDiv.style.display = 'block';
+            suturaDiv.style.display = 'none';
+            CirurgiaDiv.style.display = 'none';
+            consultaText.textContent = "Circuncisão com anel";
         }
-
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+    
+        // Função para exibir a consulta Sutura
         function showSutura() {
-            suturaDiv.style.display = 'block'; // Exibe a div pós-parto
-            anelDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "Sutura de feridas superficiais"; // Atualiza o texto para "Pós-parto"
+            suturaDiv.style.display = 'block';
+            anelDiv.style.display = 'none';
+            CirurgiaDiv.style.display = 'none';
+            consultaText.textContent = "Sutura de feridas superficiais";
         }
+    
         // Verificar o fragmento da URL e inicializar a página de acordo
-        window.addEventListener('load', function () {
-            const hash = window.location.hash; // Pega a parte após o "#"
-
+        function checkHashAndLoad() {
+            const hash = window.location.hash;
+    
             if (hash === "#Cirurgia") {
-                showCirurgia(); // Se o hash for "#Cirurgia", exibe Cirurgia
+                showCirurgia();
             } else if (hash === "#anel") {
-                showAnel(); // Se o hash for "#pos", exibe pós-parto
+                showAnel();
             } else if (hash === "#sutura") {
-                showSutura(); // Se o hash for "#pos", exibe pós-parto
+                showSutura();
+            } else {
+                showCirurgia();
             }
-            else {
-                showCirurgia(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
-            }
+        }
+    
+        // Recarregar a página ao mudar o hash
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
         });
-
+    
+        // Executar ao carregar a página
+        window.addEventListener('load', function () {
+            checkHashAndLoad();
+        });
+    
         // Adicionar funcionalidade dos botões
         CirurgiaBtn.addEventListener('click', function () {
-            window.location.hash = "#Cirurgia"; // Atualiza o URL para "#Cirurgia" ao clicar no botão Cirurgia
-            showCirurgia(); // Exibe a consulta Cirurgia
+            window.location.hash = "#Cirurgia";
         });
-
+    
         anelBtn.addEventListener('click', function () {
-            window.location.hash = "#anel"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showAnel(); // Exibe a consulta pós-parto
+            window.location.hash = "#anel";
         });
+    
         suturaBtn.addEventListener('click', function () {
-            window.location.hash = "#sutura"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showSutura(); // Exibe a consulta pós-parto
+            window.location.hash = "#sutura";
         });
     </script>
+    
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
