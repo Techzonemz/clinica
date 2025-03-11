@@ -335,73 +335,82 @@
         const anelDiv = document.getElementById('anel');
         const suturaDiv = document.getElementById('sutura-ferida');
         const consultaText = document.getElementById('Consulta');
-
-        // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
+    
+        // Função para exibir a consulta Cirurgia
         function showCirurgia() {
-            CirurgiaDiv.style.display = 'block'; // Exibe a div Cirurgia
-            anelDiv.style.display = 'none';  // Esconde a div pós-parto
-            suturaDiv.style.display = 'none';  // Esconde a div pós-parto
-            consultaText.textContent = "a) Apoio domiciliário no pós-parto"; // Atualiza o texto para "Cirurgia"
+            CirurgiaDiv.style.display = 'block';
+            anelDiv.style.display = 'none';
+            suturaDiv.style.display = 'none';
+            consultaText.textContent = "a) Apoio domiciliário no pós-parto";
             CirurgiaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
-              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+    
+        // Função para exibir a consulta Anel
         function showAnel() {
-            anelDiv.style.display = 'block'; // Exibe a div pós-parto
-            suturaDiv.style.display = 'none'; // Exibe a div pós-parto
-            CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "b) Consulta de Enfermagem"; // Atualiza o texto para "Pós-parto"
+            anelDiv.style.display = 'block';
+            suturaDiv.style.display = 'none';
+            CirurgiaDiv.style.display = 'none';
+            consultaText.textContent = "b) Consulta de Enfermagem";
             anelBtn.classList.add("active");
             CirurgiaBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
-              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+    
+        // Função para exibir a consulta Sutura
         function showSutura() {
-            suturaDiv.style.display = 'block'; // Exibe a div pós-parto
-            anelDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CirurgiaDiv.style.display = 'none';  // Esconde a div Cirurgia
-            consultaText.textContent = "c) Pensos"; // Atualiza o texto para "Pós-parto"
+            suturaDiv.style.display = 'block';
+            anelDiv.style.display = 'none';
+            CirurgiaDiv.style.display = 'none';
+            consultaText.textContent = "c) Pensos";
             suturaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             CirurgiaBtn.classList.remove("active");
-              window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+    
         // Verificar o fragmento da URL e inicializar a página de acordo
-        window.addEventListener('load', function () {
-            const hash = window.location.hash; // Pega a parte após o "#"
-
+        function checkHashAndLoad() {
+            const hash = window.location.hash;
+    
             if (hash === "#domicilio") {
-                showCirurgia(); // Se o hash for "#domicilio", exibe Cirurgia
+                showCirurgia();
             } else if (hash === "#conseferm") {
-                showAnel(); // Se o hash for "#pos", exibe pós-parto
+                showAnel();
             } else if (hash === "#pensos") {
-                showSutura(); // Se o hash for "#pos", exibe pós-parto
+                showSutura();
+            } else {
+                showCirurgia();
             }
-            else {
-                showCirurgia(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
-            }
+        }
+    
+        // Executar ao carregar a página
+        window.addEventListener('load', function () {
+            checkHashAndLoad();
         });
-
+    
+        // Atualizar a página ao mudar o hash (para recarregar ao clicar)
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
+        });
+    
         // Adicionar funcionalidade dos botões
         CirurgiaBtn.addEventListener('click', function () {
-            window.location.hash = "#domicilio"; // Atualiza o URL para "#domicilio" ao clicar no botão Cirurgia
-            showCirurgia(); // Exibe a consulta Cirurgia
+            window.location.hash = "#domicilio";
         });
-
+    
         anelBtn.addEventListener('click', function () {
-            window.location.hash = "#conseferm"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showAnel(); // Exibe a consulta pós-parto
+            window.location.hash = "#conseferm";
         });
+    
         suturaBtn.addEventListener('click', function () {
-            window.location.hash = "#pensos"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showSutura(); // Exibe a consulta pós-parto
+            window.location.hash = "#pensos";
         });
     </script>
+    
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
