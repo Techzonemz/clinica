@@ -1,0 +1,453 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Clínica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .services__item:hover {
+            background: #b1cad4;
+        }
+
+        .services__item {
+            background: #d6a294;
+            padding: 45px 30px 45px 50px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            line-height: 2.1;
+            color: white !important;
+            height: 19rem;
+        }
+
+        .services__item .services__item__text ul li a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .services__details__pic {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+        }
+
+        .services__details__title h3 {
+            width: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .services__details__pic img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .services__details__content {
+            position: absolute;
+            bottom: 3rem;
+            left: 10px;
+            width: 20rem;
+            max-width: 60%;
+            background-image: url('../img/bg3.png');
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .services__details__title span {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .services__details__title h3,
+        .services__details__widget h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .services__details__widget .rating i {
+            color: #f8d210;
+        }
+
+        .clicavel {
+            background: transparent;
+            border: none;
+        }
+
+        b {
+            color: #d6a294;
+            font-weight: 400;
+        }
+    </style>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data; // O conteúdo é carregado como está
+            });
+
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data; // O conteúdo é carregado como está
+            });
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale connosco!<span>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="../#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="../#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="../#"><i class="fa fa-facebook"></i></a>
+            <a href="../#"><i class="fa fa-twitter"></i></a>
+            <a href="../#"><i class="fa fa-instagram"></i></a>
+            <a href="../#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div id="header-container">
+
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad mt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 order-lg-2">
+                    <div class="services__details">
+                        <div class="services__details__pic">
+                            <div class="services__details__pic">
+                                <div id="img" class="blog__details__hero set-bg mb-0"
+                                    data-setbg="../img/blog/details/domicilio.jpg">
+                                    <div class="services__details__content">
+                                        <div class="row w-100 align-items-center">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="services__details__title">
+                                                    <h3><img src="../img/icons/amamentação-white.png" class="fa mr-3"
+                                                            alt="">Apoio ao domicílio</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <section class="services  set-bg">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12">
+                    <div class="ml-4 mr-4">
+                        <div class="blog__details__text__item">
+                            <!-- Título da Seção -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h3 id="Consulta" class="subtitle fw-bold">
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+
+                <div id="Cirurgia" class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="blog__details__text ml-4 mr-4">
+                            <div class="blog__details__text__item">
+                                <div class="section-title">
+                                    <h5 class="mb-0 mb-4 h4"><b>Deve ter todo o apoio que precisa no conforto do seu lar
+                                            durante a sua jornada de amamentação!</b></h5> <br>
+                                    <p class="mb-4">A amamentação é uma maravilha mas pode ser muito desafiante. Para
+                                        uma jornada de amamentação eficaz, ter toda a
+                                        informação e o apoio de profissionais experientes pode ser determinante.
+                                        <br><br>
+                                        Todos sabemos que em nossa casa é onde estamos mais seguros e confortáveis. Ter
+                                        o apoio que necessita em relação à
+                                        amamentação no conforto do seu lar, ajuda-a a tornar este desafio mais fácil.
+                                    </p>
+                                    <p>
+                                        <br>
+                                        <b><i>Importante:</i></b> Esta sessão inclui a recolha da história clínica da
+                                        paciente e do bebé e a observação da mamada, bem como o exame físico
+                                        de ambos. Tenha sempre consigo o seu Boletim de Saúde da Grávida e o Boletim de
+                                        Saúde do Bebé. Aconselhamos a que a
+                                        paciente e o seu bebé vistam roupas confortáveis e apropriadas à amamentação.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="anel" class="col-lg-8 col-md-8" style="display: none;">
+                    <div class="row">
+                        <div class="blog__details__text ml-4 mr-4">
+                            <div class="blog__details__text__item">
+                                <!-- Título da Seção -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="section-title">
+                                            <h5 class="mb-0 mt-4 h4"><b>O cuidado do seu recém-nascido na comodidade da
+                                                    sua casa!</b>
+                                            </h5>
+                                            <h5 class=""><b>Esta consulta destina-se a:</b></h5>
+                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>O primeiro mês de um bebé é uma montanha russa de emoções e de mudanças na vida dos
+                                    pais. Não se esqueça que cada vez
+                                    que nasce um bebé, nasce uma mãe e um pai, mesmo que já não seja o primeiro filho.
+                                    Em suma, nasce uma nova família, que
+                                    precisa de se ajustar progressivamente a esta realidade. <br>
+                                    <b>N’A Clínica</b> sabemos que é em sua casa que se sente mais segura e à vontade,
+                                    mas também, é onde nascem mais medos. Não
+                                    precisa de se sentir sozinha! A nossa equipa de Enfermagem está disponível para ir a
+                                    sua casa resolver dúvidas básicas
+                                    sobre os cuidados neonatais e da mãe, pesar ou reavaliar a coloração do seu bebé.
+                                    <br><br>
+
+
+                                </p>
+                                <p>
+
+                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica da
+                                    paciente e do bebé, bem como o exame físico de ambos. Tenha sempre
+                                    consigo o seu Boletim de Saúde da Grávida e o Boletim de Saúde do Bebé. Aconselhamos
+                                    a que a paciente e o seu bebé
+                                    vistam roupas confortáveis.
+                                </p>
+                            </div>
+                            <a href="#" class="primary-btn">Marcar Consulta </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sutura-ferida" class="col-lg-8 col-md-8" style="display: none;">
+                    <div class="row">
+                        <div class="blog__details__text ml-4 mr-4">
+                            <div class="blog__details__text__item">
+                                <!-- Título da Seção -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="section-title">
+                                            <h5 class=""><b>Esta consulta destina-se a:</b></h5>
+                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>crianças que tenham uma ferida que necessite desinfeção e colocação ou mudança de
+                                    penso.
+                                </p>
+
+                                <div class="section-title pt-4">
+                                    <h5 class=""><b>Procedimento cirúrgico:</b></h5>
+                                    <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
+                                </div>
+                                <ul class="list mb-4">
+                                    <li><a><i class="fa fa-check-circle"></i> Desinfeção adequada de feridas e aplicação
+                                            ou mudança de pen</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="primary-btn">Marcar Consulta </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="card shadow" style="background-image: url('../img/bg3.png');">
+                            <div class="card-more">
+                                <div class="icon text-center p-2">
+                                    <img src="../img/icons/home.png" width="100">
+                                </div>
+                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas,
+                                    clique em cada uma das seguintes consultas para saber
+                                    que consultas tem disponíveis.</p>
+                                <div class="d-flex">
+                                    <div class="col-lg-12 col-md-12 ">
+                                        <div class="card-text">
+                                            <button class="text-dark" id="con-ciru">Amamentação</button> <br>
+                                            <button class="text-dark" id="circ-anel">Enfermagem</button>
+                                            <br>
+                                            <button class="text-dark" id="Sutura">Teste do pezinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer" style='background-image: url("../img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+
+    <script>
+        // Obter os botões e as divs
+        const CirurgiaBtn = document.getElementById('con-ciru');
+        const anelBtn = document.getElementById('circ-anel');
+        const suturaBtn = document.getElementById('Sutura');
+        const CirurgiaDiv = document.getElementById('Cirurgia');
+        const anelDiv = document.getElementById('anel');
+        const suturaDiv = document.getElementById('sutura-ferida');
+        const consultaText = document.getElementById('Consulta');
+
+        // Função para exibir a consulta Cirurgia
+        function showCirurgia() {
+            CirurgiaDiv.style.display = 'block';
+            anelDiv.style.display = 'none';
+            suturaDiv.style.display = 'none';
+            consultaText.textContent = "Amamentação";
+            img.style.backgroundImage = "url('../img/blog/details/curso-amamentacao.jpg')";
+            CirurgiaBtn.classList.add("active");
+            anelBtn.classList.remove("active");
+            suturaBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Função para exibir a consulta Anel
+        function showAnel() {
+            anelDiv.style.display = 'block';
+            suturaDiv.style.display = 'none';
+            CirurgiaDiv.style.display = 'none';
+            consultaText.textContent = "Enfermagem";
+            img.style.backgroundImage = "url('../img/blog/details/enfermeira.jpg')";
+            anelBtn.classList.add("active");
+            CirurgiaBtn.classList.remove("active");
+            suturaBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Função para exibir a consulta Sutura
+        function showSutura() {
+            window.location.href = "teste.html#A"; // Substitua pelo link correto
+        }
+
+        // Verificar o fragmento da URL e inicializar a página de acordo
+        function checkHashAndLoad() {
+            const hash = window.location.hash;
+
+            if (hash === "#domicilio") {
+                showCirurgia();
+            } else if (hash === "#conseferm") {
+                showAnel();
+            } else if (hash === "#pensos") {
+                showSutura();
+            } else {
+                showCirurgia();
+            }
+        }
+
+        // Executar ao carregar a página
+        window.addEventListener('load', function () {
+            checkHashAndLoad();
+        });
+
+        // Atualizar a página ao mudar o hash (para recarregar ao clicar)
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
+        });
+
+        // Adicionar funcionalidade dos botões
+        CirurgiaBtn.addEventListener('click', function () {
+            window.location.hash = "#domicilio";
+        });
+
+        anelBtn.addEventListener('click', function () {
+            window.location.hash = "#conseferm";
+        });
+
+        suturaBtn.addEventListener('click', function () {
+            window.location.hash = "#pensos";
+        });
+    </script>
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

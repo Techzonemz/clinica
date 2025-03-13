@@ -1,9 +1,9 @@
-<meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional."><meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional."><meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional."><meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional."><meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional."><!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-   <meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
     <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -117,7 +117,8 @@
                                     <div class="section-title">
                                         <h2 class="mb-4 subtitle fw-bolder">Enfermagem
                                         </h2>
-                                        <h5 class="h4"><b>O cuidado do seu recém-nascido na comodidade da sua casa!</b></h5>
+                                        <h5 class="h4"><b>O cuidado do seu recém-nascido na comodidade da sua casa!</b>
+                                        </h5>
                                         <p class="mb-4">Enfermagem é uma profissão chave nos cuidados de saúde,
                                             especialmente na área materno-infantil. <i>N’A Clínica</i>
                                             proporcionamos cuidados de Enfermagem de excelência aos nossos pacientes e
@@ -296,14 +297,17 @@
                                 <div class="icon text-center p-2">
                                     <img src="../img/icons/Enfermagem.png" width="100">
                                 </div>
-                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas, clique em cada uma das seguintes consultas para saber
+                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas,
+                                    clique em cada uma das seguintes consultas para saber
                                     que consultas tem disponíveis.</p>
                                 <div class="d-flex">
                                     <div class="col-lg-12 col-md-12 ">
                                         <div class="card-text">
-                                            <button class="text-dark" id="con-ciru">a) Apoio domiciliário no pós-parto</button> <br>
-                                            <button class="text-dark" id="circ-anel">b) Consulta de Enfermagem</button> <br>
-                                            <button class="text-dark" id="Sutura">c) Pensos</button>
+                                            <button class="text-dark" id="con-ciru">Apoio domiciliário no
+                                                pós-parto</button> <br>
+                                            <button class="text-dark" id="circ-anel">Consulta de Enfermagem</button>
+                                            <br>
+                                            <button class="text-dark" id="Sutura">Pensos</button>
                                         </div>
                                     </div>
                                 </div>
@@ -335,47 +339,47 @@
         const anelDiv = document.getElementById('anel');
         const suturaDiv = document.getElementById('sutura-ferida');
         const consultaText = document.getElementById('Consulta');
-    
+
         // Função para exibir a consulta Cirurgia
         function showCirurgia() {
             CirurgiaDiv.style.display = 'block';
             anelDiv.style.display = 'none';
             suturaDiv.style.display = 'none';
-            consultaText.textContent = "a) Apoio domiciliário no pós-parto";
+            consultaText.textContent = "Apoio domiciliário no pós-parto";
             CirurgiaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    
+
         // Função para exibir a consulta Anel
         function showAnel() {
             anelDiv.style.display = 'block';
             suturaDiv.style.display = 'none';
             CirurgiaDiv.style.display = 'none';
-            consultaText.textContent = "b) Consulta de Enfermagem";
+            consultaText.textContent = "Consulta de Enfermagem";
             anelBtn.classList.add("active");
             CirurgiaBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    
+
         // Função para exibir a consulta Sutura
         function showSutura() {
             suturaDiv.style.display = 'block';
             anelDiv.style.display = 'none';
             CirurgiaDiv.style.display = 'none';
-            consultaText.textContent = "c) Pensos";
+            consultaText.textContent = "Pensos";
             suturaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             CirurgiaBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    
+
         // Verificar o fragmento da URL e inicializar a página de acordo
         function checkHashAndLoad() {
             const hash = window.location.hash;
-    
+
             if (hash === "#domicilio") {
                 showCirurgia();
             } else if (hash === "#conseferm") {
@@ -386,31 +390,31 @@
                 showCirurgia();
             }
         }
-    
+
         // Executar ao carregar a página
         window.addEventListener('load', function () {
             checkHashAndLoad();
         });
-    
+
         // Atualizar a página ao mudar o hash (para recarregar ao clicar)
         window.addEventListener('hashchange', function () {
             window.location.reload();
         });
-    
+
         // Adicionar funcionalidade dos botões
         CirurgiaBtn.addEventListener('click', function () {
             window.location.hash = "#domicilio";
         });
-    
+
         anelBtn.addEventListener('click', function () {
             window.location.hash = "#conseferm";
         });
-    
+
         suturaBtn.addEventListener('click', function () {
             window.location.hash = "#pensos";
         });
     </script>
-    
+
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
