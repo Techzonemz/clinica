@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Clínica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        /* Estilos para a política de privacidade */
+        .policy-container {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .policy-container p {
+            margin-bottom: 10px;
+        }
+
+        .policy-container strong {
+            font-weight: bold;
+            color: #2A8D45;
+            /* Cor para destacar a data de atualização */
+        }
+
+        .roman-list {
+            list-style: none;
+            counter-reset: roman-counter;
+            padding-left: 3rem;
+            /* Ajusta o recuo da lista */
+        }
+
+        .roman-list li {
+            counter-increment: roman-counter;
+            padding-left: 20px;
+            /* Move o conteúdo para dentro */
+            text-indent: -20px;
+            /* Move apenas o número para trás */
+            line-height: 2;
+            /* Aumenta o espaçamento entre linhas */
+        }
+
+        .roman-list li::before {
+            content: counter(roman-counter, upper-roman) ". ";
+            font-weight: bold;
+        }
+
+        .numbered-list {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 3rem;
+            /* Mantém o recuo da lista numerada */
+        }
+
+        .numbered-list li {
+            counter-increment: item;
+            text-indent: -25px;
+            /* Move apenas o número para trás */
+            line-height: 2;
+        }
+
+        .numbered-list li::before {
+            content: counter(item) ". ";
+            font-weight: bold;
+        }
+
+        .bullet-list {
+            list-style-type: disc;
+            /* Usa pontos como marcadores */
+            padding-left: 2rem;
+            /* Ajusta o recuo da lista */
+        }
+
+        .bullet-list li {
+            margin-bottom: 10px;
+            /* Adiciona espaço entre os itens */
+            line-height: 1.6;
+            /* Melhora a legibilidade */
+        }
+
+        ol {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #333;
+            padding-left: 2rem;
+        }
+
+        /* Estilo para os itens da lista */
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        ::marker {
+            color: black;
+        }
+    </style>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data; // O conteúdo é carregado como está
+            });
+
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data; // O conteúdo é carregado como está
+            });
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale connosco!<span>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div id="header-container">
+
+        </div>
+    </header>
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad mt-9">
+        <div class="container mt-9">
+            <div class="blog__details__hero set-bg mb-2" data-setbg="../img/blog/details/privacy.jpg">
+                <!-- <div class="row d-flex justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="blog__hero__text">
+                                <h2>Here’s how you can get a natural glow this party season</h2>
+                                <ul>
+                                    <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
+                                    <li>Dec 06, 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="row d-flex justify-content-center mt-0">
+                <div class="col-lg-12">
+                    <div class="blog__details__text ml-4 mr-4">
+                        <div class="blog__details__text__item">
+                            <!-- Título da Seção -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h2 class="">Política de Privacidade</h2>
+                                        <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-4">A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA</strong>,
+                                dá-lhe a conhecer
+                                a sua
+                                Política de Privacidade,
+                                mediante a
+                                qual o informa dos seus direitos e estabelece o modo como recolhe e utiliza os seus
+                                dados pessoais.
+                                <br><br>
+                                Na <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>,
+                                assumimos o
+                                compromisso de
+                                utilizar os seus dados
+                                apenas para
+                                as finalidades determinadas, específicas e legítimas, tendo sido adotadas diversas
+                                medidas de segurança, de
+                                carácter
+                                técnico e organizativo, de forma a proteger os dados pessoais que nos são
+                                disponibilizados contra a sua
+                                divulgação,
+                                perda, uso indevido, alteração, tratamento ou acesso não autorizado, bem como contra
+                                qualquer outra forma de
+                                tratamento
+                                ilícito.
+                            </p>
+                            <h4>1. Responsável pelo tratamento de dados pessoais</h4>
+                            <p class="mb-4">A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA</strong>, com
+                                sede no
+                                Edifício 24, Avenida 24 de Julho, loja 20 na cidade
+                                de Maputo é a entidade responsável pelo tratamento dos seus dados pessoais.</p>
+
+                            <h4>2. Encarregado de Proteção de Dados</h4>
+                            <p class="mb-4">A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>,
+                                nomeou
+                                um
+                                Encarregado da Proteção de Dados, que:</p>
+                            <ul class="roman-list">
+                                <li>Informa e aconselha o responsável pelo tratamento a respeito das obrigações no
+                                    âmbito das regras de privacidade
+                                    e proteção de dados pessoais;</li>
+                                <li>Coopera com a autoridade de controlo;</li>
+                                <li>é o ponto de contacto com o cliente, ou potencial cliente, por forma a
+                                    esclarecer possíveis questões sobre o
+                                    tratamento de dados pessoais efetuado pela <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE
+                                        UNIPESSOAL LIMITADA,</strong></li>
+                            </ul>
+                            <p class="mb-4">Caso pretenda esclarecer alguma dúvida ou apresentar reclamação, poderá
+                                fazê-lo junto do
+                                nosso Encarregado de Proteção
+                                de Dados, através do endereço eletrónico ou por via postal para [incluir].</p>
+                            <h4>3. Recolha dos dados pessoais e finalidades</h4>
+                            <p class="mb-4">Os dados pessoais, fornecidos pelo cliente ou gerados pela utilização de
+                                qualquer serviço
+                                prestado pela <strong>ICEPD-INÊS
+                                    CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> serão tratados nas
+                                seguintes
+                                circunstâncias:
+                            </p>
+                            <ul class="numbered-list list-unstyled">
+                                <li>Para efeitos de celebração e execução de contrato;</li>
+                                <li>Para fins de Marketing e vendas;</li>
+                                <li>Para Gestão do cliente e prestação de serviço / fornecimento de bens;</li>
+                                <li>Para Gestão contabilística, fiscal e administrativa;</li>
+                                <li>Para Gestão de contencioso e deteção de fraude;</li>
+                                <li>Para Proteção de receita e auditoria;</li>
+                                <li>Para Gestão de rede e sistemas;</li>
+                                <li>Para Controlo da segurança da informação e da segurança física;</li>
+                                <li>Para Cumprimento de obrigações legais.</li>
+                            </ul>
+
+                            <p class="mb-4">O tratamento de dados para fins de marketing e vendas será efetuado de
+                                acordo com a opção
+                                de consentimento manifestada
+                                pelo cliente. <br>
+                                As comunicações com o cliente ou com o potencial cliente podem ser objeto de gravação
+                                por parte da <strong>ICEPD-INÊS CLAUDINO
+                                    PED SOCIEDADE UNIPESSOAL LIMITADA</strong>para prova da transação comercial,
+                                para
+                                monitorização da qualidade do atendimento
+                                prestado ao cliente, nos termos legalmente exigidos, ou ainda no caso de o cliente ter
+                                dado o seu consentimento,
+                                conforme o que for aplicável.</p>
+                            <h4>4. Fundamento e prazo de conservação</h4>
+                            <p class="mb-4">Os fundamentos que legitimam o tratamento dos dados pessoais dos clientes da
+                                ICEPD-INÊS CLAUDINO PED SOCIEDADE
+                                UNIPESSOAL LIMITADA são os seguintes:</p>
+                            <ul class="bullet-list">
+                                <li><strong>Consentimento:</strong> os seus dados pessoais podem ser tratados mediante
+                                    manifestação de vontade, livre,
+                                    específica, informada e inequívoca, nos termos da qual aceita, mediante declaração
+                                    ou ato positivo inequívoco,
+                                    que os seus dados pessoais sejam objeto de tratamento.</li>
+                                <li><strong>Diligências pré-contratuais e/ou execução de contrato do qual o titular faz
+                                        parte:</strong> os seus dados pessoais
+                                    podem ser necessários para o esclarecimento de dúvidas, para lhe apresentarmos uma
+                                    proposta, para a celebração,
+                                    execução e gestão do contrato celebrado com ICEPD-INÊS CLAUDINO PED SOCIEDADE
+                                    UNIPESSOAL LIMITADA.</li>
+                                <li><strong>Cumprimento de obrigação legal:</strong> os seus dados podem ser necessários
+                                    para o
+                                    cumprimento de uma obrigação
+                                    jurídica a que o responsável pelo tratamento, neste caso a ICEPD-INÊS CLAUDINO PED
+                                    SOCIEDADE UNIPESSOAL
+                                    LIMITADA, esteja sujeito.</li>
+                                <li><strong>Interesse legítimo:</strong> os seus dados podem ser tratados para a
+                                    realização de
+                                    certas operações relacionadas
+                                    com a atividade empresarial da ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA, desde que não prevaleçam
+                                    os seus interesses, direitos e liberdades fundamentais, tomando em conta as suas
+                                    expectativas razoáveis no
+                                    âmbito da sua relação com a ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA.
+                                </li>
+                            </ul>
+                            <p class="mb-4">
+                                <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>, por forma a
+                                poder cumprir as suas
+                                obrigações contratuais, necessita de recolher alguns dados pessoais (<strong>nome, email
+                                    e
+                                    telefone</strong>) do
+                                representante ou colaborador das empresas com quem contrata, para permitir,
+                                exclusivamente, a boa execução
+                                desse mesmo contrato. Neste caso, o cliente pessoa coletiva deve garantir que os dados
+                                recolhidos dos seus
+                                representantes/colaboradores são recolhidos e transmitidos à
+                                <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> de forma lícita
+                                (ao abrigo de uma das
+                                causas de licitude previstas na legislação aplicável), devendo assegurar aos titulares
+                                dos dados pessoais, seus
+                                representantes ou colaboradores, o direito à informação sobre o tratamento desses dados.
+                            </p>
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> poderá proceder
+                                à definição de perfis
+                                para melhor informá-lo e aconselhá-lo ativamente sobre os nossos produtos e serviços,
+                                utilizando instrumentos
+                                de avaliação, o que inclui estudos de mercado e de opinião, bem como os hábitos de
+                                consumo e preferências próprios.
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> aplica todas as
+                                medidas adequadas à
+                                salvaguarda dos seus direitos e liberdades neste âmbito. Nessa medida, poderá a qualquer
+                                momento exercer os seus
+                                direitos e:
+                            </p>
+
+                            <ul class="bullet-list">
+                                <li>Solicitar esclarecimentos a respeito dos termos e critérios em que é criado o
+                                    perfil;</li>
+                                <li>Contestar as decisões que venham a ser tomadas com base em decisões automatizadas;
+                                </li>
+                                <li>Solicitar uma intervenção humana (não-automatizada).</li>
+                            </ul>
+
+                            <p class="mb-4">
+                                No caso da criação de perfis de cliente exclusivamente para efeitos comerciais, poderá
+                                opor-se à definição desse
+                                perfil, mediante contacto para o Encarregado de Proteção de Dados, para os contactos
+                                acima indicados.
+                            </p>
+
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> conserva os
+                                dados pessoais dos
+                                titulares apenas durante o período estritamente necessário à prossecução da finalidade
+                                para a qual estes foram
+                                recolhidos e tendo em conta os critérios legais aplicáveis.
+                            </p>
+
+                            <p class="mb-4">
+                                Iremos, também, conservar os seus dados durante o período em que mantiver uma relação
+                                contratual com a
+                                <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>. Contudo, podemos
+                                manter os seus dados
+                                pessoais por períodos superiores à duração do contrato, para assegurar direitos e
+                                deveres relacionados com o
+                                contrato ou nas situações em que existir um interesse legítimo da
+                                <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>, respeitando
+                                sempre o período necessário
+                                à prossecução da finalidade para a qual foram recolhidos. Em certos casos, a lei obriga
+                                à conservação de dados
+                                durante um período específico.
+                            </p>
+
+                            <p class="mb-4">
+                                Não existindo uma obrigação legal específica, os seus dados serão tratados apenas pelo
+                                período necessário ao
+                                cumprimento das finalidades que motivaram a sua recolha, e enquanto subsistirem
+                                fundamentos legítimos que
+                                permitam a sua conservação pela <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA</strong>.
+                                Uma vez atingido o prazo máximo de conservação, os dados pessoais serão anonimizados,
+                                caso em que deixarão de
+                                constituir dados pessoais dada a irreversibilidade do processo de anonimização, podendo
+                                ser também apagados de
+                                forma segura.
+                            </p>
+                            <h4>5. Transmissão dos seus dados pessoais</h4>
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> pode transmitir
+                                os seus dados pessoais,
+                                consoante a finalidade para a qual foram recolhidos, a entidades terceiras, quando tal
+                                for solicitado por si,
+                                sendo transmitidos apenas os dados necessários ao desenvolvimento da atividade
+                                prosseguida por essas entidades.
+                            </p>
+
+                            <p class="mb-4">
+                                Os nossos fornecedores, na qualidade de <b>subcontratantes</b>, estão vinculados
+                                contratualmente e apresentam
+                                garantias de execução de medidas técnicas e organizativas que asseguram que o tratamento
+                                de dados pessoais é
+                                efetuado nos termos legais e que são assegurados os direitos dos titulares de dados,
+                                tratando os dados apenas de
+                                acordo com as nossas instruções documentadas.
+                            </p>
+
+                            <p class="mb-4">
+                                Os seus dados pessoais podem também ser transmitidos a entidades a quem os dados tenham
+                                de ser comunicados por
+                                força da lei, nomeadamente, e sem excluir outras, à <b>autoridade tributária</b>.
+                            </p>
+
+                            <h4>6. Direitos dos titulares dos dados pessoais</h4>
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> garante a
+                                aplicabilidade e cumprimento de
+                                todos os direitos do titular dos dados pessoais previstos na legislação nacional em
+                                vigor.
+                            </p>
+
+                            <ul class="bullet-list">
+                                <li>
+                                    <strong>Direito de Acesso:</strong> Tem o direito de obter, da ICEPD-INÊS CLAUDINO
+                                    PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA, a confirmação de que os dados pessoais que lhe digam respeito são ou não
+                                    objeto de tratamento e, se
+                                    for esse o caso, o direito a aceder aos seus dados pessoais e às informações
+                                    respeitantes a esse mesmo
+                                    tratamento. Por exemplo, pode requerer uma cópia exata da sua compilação e solicitar
+                                    informação adicional sobre
+                                    o tratamento que efetuamos.
+                                </li>
+                                <li>
+                                    <strong>Direito de Retificação, Atualização e Eliminação:</strong> Também tem o
+                                    direito de obter, sem demora
+                                    justificada, por parte da ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA a
+                                    retificação, atualização e
+                                    eliminação dos dados pessoais inexatos que lhe digam respeito. O titular dos dados,
+                                    atentas as finalidades do
+                                    tratamento, tem o direito a que os seus dados incompletos sejam completados.
+                                </li>
+                                <li>
+                                    <strong>Direito a Retirar o Consentimento:</strong> Assiste ao titular dos dados o
+                                    direito de, a qualquer
+                                    momento, retirar o consentimento previamente dado, não sendo comprometida a licitude
+                                    do tratamento efetuado com
+                                    base no consentimento que nos foi previamente dado. A ICEPD-INÊS CLAUDINO PED
+                                    SOCIEDADE UNIPESSOAL LIMITADA
+                                    informará o titular dos dados deste direito de retirar o consentimento, previamente
+                                    ao início do tratamento,
+                                    garantindo que o processo de retirada do consentimento por parte do titular de dados
+                                    seja efetuado de modo
+                                    fácil.
+                                </li>
+                                <li>
+                                    <strong>Direito de Oposição:</strong> Poderá ainda opor-se, a qualquer momento, ao
+                                    tratamento dos dados pessoais
+                                    que lhe digam respeito quando não existam razões imperiosas e legítimas para o
+                                    tratamento que prevaleçam sobre
+                                    os seus interesses, direitos e liberdades, ou para efeitos de declaração, exercício
+                                    ou defesa de um direito num
+                                    processo judicial.
+                                </li>
+                                <li>
+                                    <strong>Direito à Limitação do Tratamento:</strong> Em determinadas situações, tem o
+                                    direito de obter da
+                                    ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA a limitação do tratamento dos
+                                    seus dados, nomeadamente se
+                                    contestar a exatidão dos dados pessoais durante um período que permita a verificação
+                                    da sua exatidão, nos casos
+                                    em que os dados já não são necessários para as finalidades do tratamento, mas sejam
+                                    requeridos pelo titular para
+                                    efeitos de declaração, exercício ou defesa de um direito em sede de um processo
+                                    judicial e ainda quando se
+                                    opuser ao tratamento, até se verificar que os motivos de interesse legítimo da
+                                    ICEPD-INÊS CLAUDINO PED SOCIEDADE
+                                    UNIPESSOAL LIMITADA prevalecem sobre os seus.
+                                </li>
+                                <li>
+                                    <strong>Direito a Não Ficar Sujeito a Nenhuma Decisão Automatizada:</strong> Tem o
+                                    direito de não ficar sujeito
+                                    a nenhuma decisão tomada exclusivamente com base no tratamento automatizado,
+                                    incluindo a definição de perfis que
+                                    produza efeitos na sua esfera jurídica ou que o afete significativamente de forma
+                                    similar.
+                                </li>
+                                <li>
+                                    <strong>Exercício dos Seus Direitos:</strong> Poderá exercer os seus direitos de
+                                    forma gratuita, exceto se se
+                                    tratar de um pedido manifestamente infundado ou excessivo, ou dado seu caráter
+                                    repetitivo, caso em que
+                                    poderemos, nos termos legais, cobrar-lhe uma taxa razoável tendo em conta os custos
+                                    administrativos. Iremos
+                                    responder aos seus pedidos no prazo máximo de 30 (trinta) dias, salvo nos casos de
+                                    pedidos de maior complexidade
+                                    ou quando o número de pedidos for elevado, caso em que este prazo pode ser
+                                    prorrogado até 60 (sessenta) dias.
+                                </li>
+                            </ul>
+
+                            <p class="mb-4">
+                                Poderá exercer os seus direitos através de um dos seguintes meios:
+                            </p>
+                            <ul class="bullet-list">
+                                <li>Por correio eletrónico: <a
+                                        href="mailto:politicaprivacidade@mz-aclinica.com">politicaprivacidade@mz-aclinica.com</a>;
+                                </li>
+                                <li>Por carta dirigida ao Encarregado da Proteção de Dados enviada para <strong>Edifício
+                                        24, Avenida 24 de Julho,
+                                        Loja 20, Maputo</strong>.</li>
+                            </ul>
+
+                            <p class="mb-4">
+                                Ainda assim, e caso não esteja satisfeito com a nossa resposta após o exercício de algum
+                                destes direitos, tem o
+                                direito de apresentar reclamação à autoridade de controlo.
+                            </p>
+
+                            <h4>7. Medidas Processuais e Técnicas de Segurança</h4>
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> faz uso de
+                                medidas de segurança físicas,
+                                tecnológicas e organizativas adequadas à proteção dos seus dados pessoais de forma a
+                                proteger os dados pessoais que
+                                nos são disponibilizados contra a sua divulgação, perda, uso indevido, alteração,
+                                tratamento ou acesso não
+                                autorizado, bem como contra qualquer outra forma de tratamento ilícito.
+                            </p>
+
+                            <p class="mb-4">
+                                Para o efeito, a <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                    LIMITADA</strong> aplica medidas técnicas e
+                                organizativas para assegurar um nível de segurança adequado ao risco por manter em
+                                arquivo os Dados Pessoais e
+                                durante a transmissão dos mesmos.
+                            </p>
+
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> dispõe de
+                                um sistema informático com
+                                capacidade de resistir, com um elevado nível de confiança, a eventos acidentais ou a
+                                ações maliciosas ou ilícitas
+                                que comprometam a disponibilidade, a integridade e a confidencialidade dos Dados
+                                Pessoais conservados ou
+                                transmitidos.
+                            </p>
+
+                            <h4>9. Cookies</h4>
+                            <p class="mb-4">
+                                A <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> elaborou uma
+                                política de cookies, na qual
+                                presta informação acerca das cookies que utiliza, como as mesmas podem ser geridas,
+                                entre outras informações.
+                                Consulte esta política <a href="inserir_link_de_cookies" target="_blank">aqui</a>.
+                            </p>
+
+                            <h4>10. Utilização do website da ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</h4>
+                            <ol>
+                                <li>
+                                    No que toca à utilização dos materiais presentes no website d’ A Clínica,
+                                    <strong>ICEPD-INÊS CLAUDINO PED
+                                        SOCIEDADE UNIPESSOAL LIMITADA</strong>, informação, texto, figuras ou gráficos
+                                    nele contidos, os mesmos só
+                                    poderão ser utilizados para o seu uso pessoal, e nunca para fins comerciais, nem
+                                    deverá reproduzir, modificar,
+                                    transmitir, autorizar ou publicar tais informações, textos, figuras ou gráficos,
+                                    total ou parcialmente, para
+                                    qualquer fim sem a autorização prévia por escrito da <strong>ICEPD-INÊS CLAUDINO PED
+                                        SOCIEDADE UNIPESSOAL
+                                        LIMITADA</strong>.
+                                </li>
+                                <li>
+                                    Relativamente ao uso e risco da sua utilização, a <strong>ICEPD-INÊS CLAUDINO PED
+                                        SOCIEDADE UNIPESSOAL
+                                        LIMITADA</strong> rejeita especificamente qualquer responsabilidade por danos
+                                    diretos, indiretos,
+                                    acidentais, consequenciais ou especiais provenientes ou de qualquer forma associados
+                                    ao seu acesso ou utilização
+                                    deste website, que afetem o equipamento do seu computador, ou a sua confiança nas
+                                    informações obtidas através do
+                                    website da <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong>.
+                                </li>
+                                <li>
+                                    A informação constante no website deve ser encarada na sua vertente informativa.
+                                    Apesar dos esforços da
+                                    <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA</strong> em manter os
+                                    conteúdos atualizados e
+                                    fidedignos, estes podem conter incorreções, erros de tipografia ou estar
+                                    desatualizados, e podem ser alterados
+                                    em qualquer momento sem que a <strong>ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL
+                                        LIMITADA</strong> tenha
+                                    obrigação de notificação prévia.
+                                </li>
+                                <li>
+                                    Consulte, para efeito de obtenção de esclarecimentos e informações adicionais, os <a
+                                        href="inserir_link_termos_e_condicoes" target="_blank">Termos e Condições</a> do
+                                    nosso website.
+                                </li>
+                            </ol>
+                            <h4>11. Atualização da Política de Privacidade</h4>
+                            <p>A ICEPD-INÊS CLAUDINO PED SOCIEDADE UNIPESSOAL LIMITADA reserva-se o direito de atualizar
+                                esta política em qualquer
+                                altura, segundo as exigências legais e/ou necessidades da atividade comercial. Está
+                                assim o utilizador, por este
+                                meio, convidado a visitar regularmente esta página de modo a tomar conhecimento das
+                                alterações.</p>
+                            <p>
+                                <br><br><strong><i>Esta Política de Privacidade foi atualizada a 11 de Março de
+                                        2025.</i></strong>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer" style='background-image: url("img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
