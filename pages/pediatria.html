@@ -475,151 +475,139 @@
         const img = document.getElementById('img');
         const header = document.getElementById('header');
 
-        // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
         function showA() {
             header.classList.add("d-none");
-            ADiv.style.display = 'block'; // Exibe a div Cirurgia
-            BDiv.style.display = 'none';  // Esconde a div pós-parto
-            CDiv.style.display = 'none';  // Esconde a div pós-parto
-            DDiv.style.display = 'none';  // Esconde a div pós-parto
-            EDiv.style.display = 'none';  // Esconde a div pós-parto
-            title.textContent = "Consulta de Pediatria Pré-Natal"; // Atualiza o texto para "Cirurgia"
-            img.style.backgroundImage = "url('../img/blog/details/diabetes.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'block';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            title.textContent = "Consulta de Pediatria Pré-Natal";
+            img.style.backgroundImage = "url('../img/blog/details/diabetes.jpg')";
             ABtn.classList.add("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showB() {
             header.classList.add("d-none");
-            ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'block'; // Exibe a div pós-parto
-            CDiv.style.display = 'none'; // Exibe a div pós-parto
-            DDiv.style.display = 'none'; // Exibe a div pós-parto
-            EDiv.style.display = 'none'; // Exibe a div pós-parto
-            title.textContent = "Consulta de Pediatria de Rotina"; // Atualiza o texto para "Pós-parto"
-            img.style.backgroundImage = "url('../img/blog/details/blog-hero10.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'block';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            title.textContent = "Consulta de Pediatria de Rotina";
+            img.style.backgroundImage = "url('../img/blog/details/blog-hero10.jpg')";
             ABtn.classList.remove("active");
             BBtn.classList.add("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
         function showC() {
             header.classList.add("d-none");
-            ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CDiv.style.display = 'block'; // Exibe a div pós-parto
-            DDiv.style.display = 'none';  // Esconde a div Cirurgia
-            EDiv.style.display = 'none';  // Esconde a div Cirurgia
-            title.textContent = "Consulta de Pediatria de Criança Doente"; // Atualiza o texto para "Pós-parto"
-            img.style.backgroundImage = "url('../img/blog/details/consultas em criancas.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'block';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            title.textContent = "Consulta de Pediatria de Criança Doente";
+            img.style.backgroundImage = "url('../img/blog/details/consultas em criancas.jpg')";
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.add("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+
         function showD() {
             header.classList.add("d-none");
-            ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CDiv.style.display = 'none';  // Esconde a div Cirurgia
-            DDiv.style.display = 'block'; // Exibe a div pós-parto
-            EDiv.style.display = 'none'; // Exibe a div pós-parto
-            title.textContent = "Consulta de Sono Infantil"; // Atualiza o texto para "Pós-parto"
-            img.style.backgroundImage = "url('../img/blog/details/sono.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'block';
+            EDiv.style.display = 'none';
+            title.textContent = "Consulta de Sono Infantil";
+            img.style.backgroundImage = "url('../img/blog/details/sono.jpg')";
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.add("active");
             EBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
-        }      // Função para exibir a consulta pós-parto, esconder a Cirurgia e atualizar o texto
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         function showE() {
             header.classList.add("d-none");
-            ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CDiv.style.display = 'none';  // Esconde a div Cirurgia
-            DDiv.style.display = 'none'; // Exibe a div pós-parto
-            EDiv.style.display = 'block'; // Exibe a div pós-parto
-            title.textContent = "Consulta de Pediatria de Introdução Alimentar"; // Atualiza o texto para "Pós-parto"
-            img.style.backgroundImage = "url('../img/blog/details/nutrio-infant.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'block';
+            title.textContent = "Consulta de Pediatria de Introdução Alimentar";
+            img.style.backgroundImage = "url('../img/blog/details/nutrio-infant.jpg')";
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.add("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
         function show() {
             header.classList.remove("d-none");
-            ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'none';  // Esconde a div Cirurgia
-            CDiv.style.display = 'none';  // Esconde a div Cirurgia
-            DDiv.style.display = 'none'; // Exibe a div pós-parto
-            EDiv.style.display = 'none'; // Exibe a div pós-parto
-            title.textContent = "Pediatria"; // Atualiza o texto para "Pós-parto"
-            img.style.backgroundImage = "url('../img/blog/details/blog-hero10.jpg')"; // Atualiza o texto para "Cirurgia"
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            title.textContent = "Pediatria";
+            img.style.backgroundImage = "url('../img/blog/details/blog-hero10.jpg')";
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             CBtn.classList.remove("active");
             DBtn.classList.remove("active");
             EBtn.classList.remove("active");
-            window.scrollTo({ top: 0, behavior: 'smooth' });    // Rolar para o topo suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        // Verificar o fragmento da URL e inicializar a página de acordo
+
         window.addEventListener('load', function () {
-            const hash = window.location.hash; // Pega a parte após o "#"
-
-            if (hash === "#A") {
-                showA(); // Se o hash for "#A", exibe Cirurgia
-            } else if (hash === "#B") {
-                showB(); // Se o hash for "#pos", exibe pós-parto
-            } else if (hash === "#C") {
-                showC(); // Se o hash for "#pos", exibe pós-parto
-            } else if (hash === "#D") {
-                showD(); // Se o hash for "#pos", exibe pós-parto
-            } else if (hash === "#E") {
-                showE(); // Se o hash for "#pos", exibe pós-parto
-            }
-            else {
-                show(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
-            }
+            const hash = window.location.hash;
+            if (hash === "#A") showA();
+            else if (hash === "#B") showB();
+            else if (hash === "#C") showC();
+            else if (hash === "#D") showD();
+            else if (hash === "#E") showE();
+            else show();
         });
 
-        // Adicionar funcionalidade dos botões
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
+        });
+
         ABtn.addEventListener('click', function () {
-            window.location.hash = "#A"; // Atualiza o URL para "#A" ao clicar no botão Cirurgia
-            showA(); // Exibe a consulta Cirurgia
+            window.location.hash = "#A";
         });
-
         BBtn.addEventListener('click', function () {
-            window.location.hash = "#B"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showB(); // Exibe a consulta pós-parto
+            window.location.hash = "#B";
         });
         CBtn.addEventListener('click', function () {
-            window.location.hash = "#C"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showC(); // Exibe a consulta pós-parto
+            window.location.hash = "#C";
         });
         DBtn.addEventListener('click', function () {
-            window.location.hash = "#D"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showD(); // Exibe a consulta pós-parto
+            window.location.hash = "#D";
         });
         EBtn.addEventListener('click', function () {
-            window.location.hash = "#E"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showE(); // Exibe a consulta pós-parto
+            window.location.hash = "#E";
         });
     </script>
+
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
