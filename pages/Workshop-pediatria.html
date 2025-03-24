@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Clínica</title>
+    <!-- Favicon no formato .png -->
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        b {
+            color: #d6a294;
+            font-weight: 400;
+        }
+
+        .blog__item__pic img {
+            object-fit: cover;
+            width: 403px;
+            height: 200px;
+        }
+
+        .consultation__video .play-btn {
+            display: inline-block;
+            height: 47px;
+            width: 163px;
+            background: #ff0000;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .consultation__video {
+
+            align-items: normal;
+            padding: 6px;
+            justify-content: end;
+        }
+    </style>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data; // O conteúdo é carregado como está
+            });
+
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data; // O conteúdo é carregado como está
+            });
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Fale connosco!<span>
+    </a>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt="Logótipo"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__btn">
+            <a href="#" class="primary-btn">Agendar</a>
+        </div>
+        <ul class="offcanvas__widget">
+            <li><a href="#" class="text-white"><i class="fa fa-phone"></i> +258 84 1869 7194</a></li>
+            <li><i class="fa fa-map-marker"></i> Edifício ou Shopping 24, Avenida 24 de Julho, Loja 20</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Sáb 8:00 às 17:00</li>
+        </ul>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div id="header-container">
+
+        </div>
+    </header>
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad mt-5">
+        <div class="container mt-9">
+            <div class="blog__details__hero set-bg mb-2 position-relative"
+                data-setbg="../img/blog/details/pediatria.jpg"
+                style="background: url('../img/blog/details/pediatria.jpg') no-repeat center center/cover; height: 400px;">
+                <div class="row d-flex justify-content-start h-100">
+                    <div class="col-lg-7 text-start d-flex align-items-start">
+                        <div class="blog__hero__text p-4 rounded shadow"
+                            style="max-width: 90%; position: absolute; top: 5rem; left: 20px; background: #d6a294; color: white;">
+                            <div class="services__details__title">
+                                <h3 class="text-white"><img src="../img/icons/Pediatra .png"
+                                        style="width: 3rem; color: white;" class="fa mr-3" alt="">Pediatria</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3">
+                <div class="col-lg-12">
+                    <div class="services__details__text">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="mr-4">
+                                    <div class="blog__details__text__item">
+                                        <!-- Título da Seção -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="section-title">
+                                                    <h2 id="title" class="subtitle fw-bold h2">
+                                                    </h2>
+                                                    <h5 class="mb-0 mt-2 h4"><b>1 - Doenças respiratórias infantis</b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-6">
+                                <p>Quando o Inverno chega traz com ele as doenças respiratórias. Neste workshop vai
+                                    poder conhecer as principais doenças
+                                    respiratórias infantis, como a constipação, bronquiolite, pneumonia e asma. Vai
+                                    também aprender a diferenciá-las e
+                                    reconhecer os sinais de alarme.
+                                </p>
+                                <div class="services__details__desc">
+                                    <div class="section-title  mb-4">
+                                        <a href="../info.html" class="primary-btn mt-4">Inscreva-se </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="consultation__video set-bg"
+                                            data-setbg="../img/blog/details/152.jpg">
+                                            <a href="#" class="play-btn video-popup">Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-center pb-4">
+                    <div class="col-lg-12 text-center">
+                        <div class="mr-4">
+                            <div class="blog__details__text__item">
+                                <!-- Título da Seção -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="section-title">
+                                            <h2 id="title" class="subtitle fw-bold h2">Workshops</i>
+                                            </h2>
+                                            <h5 class="mb-0 mt-2 h4">Inscreva-se já e desfrute de todos os nossos
+                                                Workshops mensais / Aulas complementares!</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="../img/blog/amame-grupo.jpg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <h5><a href="curso-amamentacao-grupo.html">Curso de Preparação para a Amamentação em
+                                        grupo</a></h5>
+                                <ul>
+                                    <li><img src="../img/team/team 4.jpg" alt=""> John Doe</li>
+                                    <li>Dec 06, 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="../img/blog/details/amame.jpg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <h5><a href="curso-amamentacao-indiv.html">Curso de Preparação para a Amamentação
+                                        Individual</a></h5>
+                                <ul>
+                                    <li><img src="../img/team/team-7.jpg" alt=""> John Doe</li>
+                                    <li>Dec 06, 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="../img/151.jpeg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <h5><a href="curso-prep-grupo.html">Curso de Preparação para o Parto em Grupo</a></h5>
+                                <ul>
+                                    <li><img src="../img/team/team-5.jpg" alt=""> John Doe</li>
+                                    <li>Dec 06, 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="../img/blog/details/152.jpg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <h5><a href="curso-prep-indiv.html">Curso de Preparação para o Parto individual</a></h5>
+                                <ul>
+                                    <li><img src="../img/team/team-5.jpg" alt=""> John Doe</li>
+                                    <li>Dec 06, 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Seção de Rodapé Início -->
+    <footer class="footer" style='background-image: url("img/blog/details/blog-hero11.jpg");'>
+        <div id="footer">
+
+        </div>
+    </footer>
+    <!-- Seção de Rodapé Fim -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
