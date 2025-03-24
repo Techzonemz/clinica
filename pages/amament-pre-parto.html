@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-   <meta name="description" content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
+    <meta name="description"
+        content="A Clínica é uma instituição de saúde focada no atendimento familiar, especialmente nas áreas de maternidade, pediatria, nutrição, vacinação e terapia ocupacional.">
     <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -248,17 +249,27 @@
                                     <h5 class="underline"><b>Temáticas abordadas nesta consulta:</b></h5>
                                     <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
                                 </div>
-                                <p class="mb-4"><b>Bebé e amamentação:</b>  pega correta, diferentes posições de amamentação, confusão de bicos, sinais de fome, rejeição da amamentação, escasso ganho de peso, diferentes técnicas para oferecer leite materno sem usar a mama.
+                                <p class="mb-4"><b>Bebé e amamentação:</b> pega correta, diferentes posições de
+                                    amamentação, confusão de bicos, sinais de fome, rejeição da amamentação, escasso
+                                    ganho de peso, diferentes técnicas para oferecer leite materno sem usar a mama.
                                 </p>
-                                <p class="mb-4"><b>Mãe e amamentação:</b> amamentação dolorosa, lesões nas mamas, mastites, técnica manual de extração de leite materno, técnica de extração de leite materno com bomba, relactação.
+                                <p class="mb-4"><b>Mãe e amamentação:</b> amamentação dolorosa, lesões nas mamas,
+                                    mastites, técnica manual de extração de leite materno, técnica de extração de leite
+                                    materno com bomba, relactação.
                                 </p>
-                                <p class="mb-4"><b>Regresso ao trabalho e amamentação:</b> como preparar o regresso ao trabalho, armazenamento adequado de leite materno, manutenção da amamentação em exclusivo até aos 6 meses de vida.
+                                <p class="mb-4"><b>Regresso ao trabalho e amamentação:</b> como preparar o regresso ao
+                                    trabalho, armazenamento adequado de leite materno, manutenção da amamentação em
+                                    exclusivo até aos 6 meses de vida.
                                 </p>
                                 <p class="mb-4"><b>Desmame:</b> ccomo fazer um desmame gentil e progressivo, desmame
                                     noturno, desmame natural.
                                 </p>
                                 <p>
-                                    <b>Importante:</b> Esta consulta inclui a recolha da história clínica da amamentação atual e prévias (se procede), o exame físico da paciente e do seu bebé e a observação da mamada. Traga o seu Boletim de Saúde de Grávida e o Boletim de Saúde do seu bebé. Aconselhamos a que ambos vistam roupas confortáveis e apropriadas à amamentação.
+                                    <b>Importante:</b> Esta consulta inclui a recolha da história clínica da amamentação
+                                    atual e prévias (se procede), o exame físico da paciente e do seu bebé e a
+                                    observação da mamada. Traga o seu Boletim de Saúde de Grávida e o Boletim de Saúde
+                                    do seu bebé. Aconselhamos a que ambos vistam roupas confortáveis e apropriadas à
+                                    amamentação.
                                 </p>
                             </div>
                             <a href="../info.html" class="primary-btn">Marcar Consulta </a>
@@ -280,7 +291,8 @@
                                             <img src="../img/icons/pregnant-woman.png" style="width: 110px;">
                                         </div>
                                         <div class="text-white card-text">
-                                            <button id="con-pre" class="text-white">Consulta de Amamentação pré-parto</button>
+                                            <button id="con-pre" class="text-white">Consulta de Amamentação
+                                                pré-parto</button>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 text-center">
@@ -289,7 +301,8 @@
 
                                         </div>
                                         <div class="text-white card-text ">
-                                            <button id="con-pos" class="text-white">Consulta de Amamentação Pós-parto</button>
+                                            <button id="con-pos" class="text-white">Consulta de Amamentação
+                                                Pós-parto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -313,6 +326,11 @@
     <!-- Seção de Rodapé Fim -->
 
     <script>
+        // Atualizar a página ao mudar o hash (para recarregar ao clicar)
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
+        });
+
         // Obter os botões e as divs
         const conPreBtn = document.getElementById('con-pre');
         const conPosBtn = document.getElementById('con-pos');
@@ -350,14 +368,13 @@
         // Adicionar funcionalidade dos botões
         conPreBtn.addEventListener('click', function () {
             window.location.hash = "#pre"; // Atualiza o URL para "#pre" ao clicar no botão pré-parto
-            showPreParto(); // Exibe a consulta pré-parto
         });
 
         conPosBtn.addEventListener('click', function () {
             window.location.hash = "#pos"; // Atualiza o URL para "#pos" ao clicar no botão pós-parto
-            showPosParto(); // Exibe a consulta pós-parto
         });
     </script>
+
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
