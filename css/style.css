@@ -351,6 +351,10 @@ li a i {
     text-align: justify;
 }
 
+.text-left {
+    text-align: left;
+}
+
 /* buttons */
 
 .primary-btn {
@@ -694,6 +698,11 @@ li a i {
     position: relative;
     /* Necessário para posicionar o dropdown */
     list-style: none;
+}
+
+.dropdown li span img {
+    width: 40px;
+    padding: 5px;
 }
 
 .arrow {
@@ -2111,6 +2120,7 @@ button.text-dark.active {
     background: #777777;
     font-size: 18px;
     line-height: 50px;
+    align-content: center;
     text-align: center;
     color: #ffffff;
     border-radius: 50%;
