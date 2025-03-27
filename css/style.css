@@ -178,7 +178,7 @@ a:focus {
     color: inherit;
 }
 
-.height-fit-content{
+.height-fit-content {
     height: fit-content;
 }
 
@@ -1839,7 +1839,7 @@ b {
 
 .footer {
     padding-top: 1rem;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-size: contain;
     background-position: top center;
 }
