@@ -58,6 +58,10 @@ h6 {
     -webkit-font-smoothing: antialiased;
 }
 
+.footer strong {
+    color: #d6a294;
+}
+
 .h1 {
     font-size: 70px;
 }
@@ -172,6 +176,10 @@ a:focus {
     text-decoration: none;
     outline: none;
     color: inherit;
+}
+
+.height-fit-content{
+    height: fit-content;
 }
 
 ul,
@@ -1324,7 +1332,7 @@ li .dropdown .active a {
 }
 
 h4.subtitle.mt-4.fw-semibold {
-    color: white;
+    color: #4b4b4b;
 }
 
 .servocos {
@@ -1508,6 +1516,85 @@ button.text-dark.active {
     -webkit-transition: all, 0.3s;
     -o-transition: all, 0.3s;
     transition: all, 0.3s;
+}
+
+.services__item:hover {
+    background: #b1cad4;
+}
+
+.services__item {
+    background: #d6a294;
+    padding: 45px 30px 45px 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    line-height: 2.1;
+    color: white !important;
+    height: 19rem;
+}
+
+.services__item .services__item__text ul li a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+b {
+    color: #d6a294;
+    font-weight: 400;
+}
+
+.services__details__pic {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+.services__details__title h3 {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.services__details__pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.services__details__content {
+    position: absolute;
+    bottom: 3rem;
+    left: 10px;
+    width: 26rem;
+    max-width: 60%;
+    background-image: url('../img/bg0.png');
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.services__details__title span {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.services__details__title h3,
+.services__details__widget h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.services__details__widget .rating i {
+    color: #f8d210;
+}
+
+.clicavel {
+    background: transparent;
+    border: none;
 }
 
 /*---------------------
@@ -1752,7 +1839,7 @@ button.text-dark.active {
 
 .footer {
     padding-top: 1rem;
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     background-size: contain;
     background-position: top center;
 }
@@ -2101,10 +2188,24 @@ button.text-dark.active {
     color: #e4c870;
 }
 
+.expandir {
+    height: auto !important;
+    overflow: unset !important;
+}
+
 .testimonial__item p {
     font-size: 17px;
     line-height: 28px;
+    height: 9rem;
+    overflow: hidden;
     margin-bottom: 0;
+}
+
+.mais {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #d6a294;
 }
 
 .testimonial__author {
