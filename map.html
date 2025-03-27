@@ -5,129 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        .sitemap>li>ul {
-            margin-top: 1.5rem;
-        }
-
-        ul {
-            list-style: none;
-
-            li {
-                line-height: 1.5rem;
-                vertical-align: top;
-                position: relative;
-
-                a {
-                    text-decoration: none;
-                    color: rgb(0, 0, 0);
-                    display: inline-block;
-                }
-            }
-
-            ul {
-                margin-left: 1.5rem;
-                margin-bottom: 1.5rem;
-
-                li {
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        display: inline-block;
-                        width: 3rem;
-                        height: 100%;
-                        border-left: 1px #000000 solid;
-                        position: absolute;
-                        top: -0.75rem;
-                    }
-
-                    a {
-                        margin-left: 3.75rem;
-                    }
-                }
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <ul class="sitemap">
+    <style>
+        .texto-limitado {
+            max-height: 10px;
+            /* Altura máxima do texto visível inicialmente */
+            overflow: hidden;
+            position: relative;
+        }
 
 
-        <!-- Header Menu -->
-        <li class="header-menu-item"><a href="" class="header-menu-link">Header Menu</a>
-            <ul class="header-menu-submenu">
-                <li class="header-menu-item"><a href="./about.html" class="header-menu-link">A Clínica</a>
-                    <ul class="header-menu-submenu">
-                        <li class="header-menu-item"><a href="./about.html" class="header-menu-link">Sobre Nós</a></li>
-                        <li class="header-menu-item"><a href="./team.html" class="header-menu-link">Equipa</a></li>
-                        <li class="header-menu-item"><a href="./partners.html" class="header-menu-link">O nosso trabalho
-                                humanitário</a></li>
-                        <li class="header-menu-item"><a href="./partners.html" class="header-menu-link">Pedido de
-                                informação/ Agendamento</a></li>
-                    </ul>
-                </li>
-                <li class="header-menu-item"><a href="consultas.html" class="header-menu-link">Consultas</a>
-                    <ul class="header-menu-submenu">
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Amamentação</a>
-                            <ul class="header-menu-submenu">
-                                <li class="header-menu-item"><a href="pages/amament-pre-parto.html#pre"
-                                        class="header-menu-link">Consulta Pré-parto</a></li>
-                                <li class="header-menu-item"><a href="pages/amament-pre-parto.html#pos"
-                                        class="header-menu-link">Consulta Pós-parto</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Medicina do Viajante</a></li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Cirurgia</a>
-                            <ul class="header-menu-submenu">
-                                <li class="header-menu-item"><a href="pages/cirurgia.html#Cirurgia"
-                                        class="header-menu-link">Consulta de Cirurgia</a></li>
-                                <li class="header-menu-item"><a href="pages/cirurgia.html#anel"
-                                        class="header-menu-link">Circuncisão com anel</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="header-menu-item"><a href="./additional-services.html" class="header-menu-link">Vacinação</a>
-                    <ul class="header-menu-submenu">
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Adulto</a></li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Gravidez</a></li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Infantil</a></li>
-                    </ul>
-                </li>
-                <li class="header-menu-item"><a href="./additional-services.html" class="header-menu-link">Gravidez</a>
-                    <ul class="header-menu-submenu">
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">A Clínica durante a
-                                gravidez</a>
-                        </li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Preparação para a
-                                Amamentação</a>
-                        </li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Exercício Físico</a></li>
-                    </ul>
-                </li>
-                <li class="header-menu-item"><a href="./additional-services.html" class="header-menu-link">Apoio ao
-                        domicílio</a></li>
-                <li class="header-menu-item"><a href="./additional-services.html" class="header-menu-link">Workshops</a>
-                    <ul class="header-menu-submenu">
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Amamentação</a></li>
-                        <li class="header-menu-item"><a href="#" class="header-menu-link">Bebé</a></li>
-                    </ul>
-                </li>
-                <li class="header-menu-item"><a href="#" class="primary-btn" class="header-menu-link">Área Reservada</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+        .texto-expandido {
+            max-height: none;
+            /* Remove a altura máxima para mostrar todo o texto */
+        }
 
+
+        .mostrar-mais {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
+
+    <div class="texto-limitado" id="meuTexto">
+        A Dra. Inês é uma pediatra extremamente atenta e cuidadosa. Em cada consulta, demonstra
+        um cuidado especial não só com a
+        criança, mas também com a forma como a família está a lidar com as diferentes fases do
+        desenvolvimento. De destacar o
+        vasto conhecimento e apoio da Dra. Inês na área de alimentação e nutrição, que continua
+        a ser uma referência para todos
+        nós, inclusivé para orientar e ensinar para a nossa filha mais velha, de 6 anos.
+        Funciona sempre ir recordando: “A Dra
+        Inês disse que tinhas que beber mais leite e comer mais espinafres, lembras-te?”
+        Desde que me tornei mãe, a Dra. Inês tem sido um suporte fundamental, sendo uma
+        verdadeira referência para a saúde das
+        minhas três filhas em Moçambique!
+        A Dra. Inês é uma pediatra extremamente atenta e cuidadosa. Em cada consulta, demonstra
+        um cuidado especial não só com a
+        criança, mas também com a forma como a família está a lidar com as diferentes fases do
+        desenvolvimento. De destacar o
+        vasto conhecimento e apoio da Dra. Inês na área de alimentação e nutrição, que continua
+        a ser uma referência para todos
+        nós, inclusivé para orientar e ensinar para a nossa filha mais velha, de 6 anos.
+        Funciona sempre ir recordando: “A Dra
+        Inês disse que tinhas que beber mais leite e comer mais espinafres, lembras-te?”
+        Desde que me tornei mãe, a Dra. Inês tem sido um suporte fundamental, sendo uma
+        verdadeira referência para a saúde das
+        minhas três filhas em Moçambique!
+    </div>
+
+
+    <button class="mostrar-mais" id="botaoMostrarMais">Mostrar mais</button>
+
+
+    <script>
+        const texto = document.getElementById('meuTexto');
+        const botao = document.getElementById('botaoMostrarMais');
+
+
+        botao.addEventListener('click', () => {
+            texto.classList.toggle('texto-expandido');
+            botao.style.display = 'none'; // Oculta o botão após expandir
+        });
+    </script>
 </body>
 
 </html>
