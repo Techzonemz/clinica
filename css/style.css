@@ -156,6 +156,11 @@ p {
     text-align: justify;
 }
 
+.hyphens-auto {
+    hyphens: auto !important;
+
+}
+
 img {
     max-width: 100%;
 }
@@ -180,6 +185,10 @@ a:focus {
 
 .height-fit-content {
     height: fit-content;
+}
+
+.justify-items-center {
+    justify-items: center !important;
 }
 
 ul,
@@ -1551,7 +1560,7 @@ b {
 }
 
 .services__details__title h3 {
-    width: 4rem;
+    width: 5rem;
     display: flex;
     align-items: center;
 }
@@ -1567,8 +1576,8 @@ b {
     position: absolute;
     bottom: 3rem;
     left: 10px;
-    width: 26rem;
-    max-width: 60%;
+    width: fit-content;
+    /* max-width: 60%; */
     background-image: url('../img/bg0.png');
     padding: 15px;
     border-radius: 8px;
