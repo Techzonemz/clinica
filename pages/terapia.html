@@ -31,6 +31,12 @@
             color: #d6a294;
             font-weight: 400;
         }
+
+        .blog__item__pic img {
+            object-fit: cover;
+            width: 403px;
+            height: 200px;
+        }
     </style>
     <script>
         fetch('header.html')
@@ -95,24 +101,34 @@
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad mt-6">
         <div class="container mt-9">
-            <div id="img" class="blog__details__hero set-bg mb-0" data-setbg="../img/blog/details/blog-hero12.jpg">
-                <!-- <div class="row d-flex justify-content-center">
-                    <div class="col-lg-7 text-center">
-                        <div class="blog__hero__text">
-                            <h2>Here’s how you can get a natural glow this party season</h2>
-                            <ul>
-                                <li><img src="../img/blog/blog-author.jpg" alt=""> John Doe</li>
-                                <li>Dec 06, 2019</li>
-                            </ul>
+            <div class="services__details__pic">
+                <div class="services__details__pic">
+                    <img id="img" src="../img/blog/details/blog-hero4.jpg" alt="">
+                    <div class="services__details__content">
+                        <div class="d-flex w-100 align-items-end">
+                            <div class="mr-3">
+                                <div class="services__details__title">
+                                    <h3><img src="../img/icons/atendimento.png" class="fa " alt="">
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white"><a id="doutora" href="team-sing.html#I">Marina Pastore</a>
+                                </h4>
+                                <h5>Terapeuta</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex w-100 mt-2 align-items-end justify-content-center text-white">
+                            <span id="showe" class="h6"> <i class="fa fa-clock-o"></i> Duração: 40mn a 60mn <i
+                                    class="fa fa-user"> presencial</i>
+                            </span>
+                            <span id="hiden" class="h6"> <i class="fa fa-clock-o"></i> Duração: 40mn a 90mn <i
+                                    class="fa fa-user"> presencial</i>
+                            </span>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-    </section>
-    <!-- Blog Details Section End -->
-
-    <section class="services  set-bg">
-        <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">
                     <div class="ml-4 mr-4">
@@ -123,42 +139,26 @@
                                     <div class="section-title">
                                         <h2 id="title" class="subtitle fw-bold">
                                         </h2>
+                                        <h5 class="mt-2  h4"><b id="subtitulo">A terapia ocupacional ajuda a que o teu
+                                                dia-a-dia
+                                                corra melhor! </b><a class="h6 " id="mais" href="terapia.html#F"> clique
+                                                aqui para
+                                                saiber
+                                                mais</a></h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="d-flex">
-                <div id="header" class="col-lg-8 col-md-8">
-                    <div class="row">
-                        <div class="blog__details__text ml-4 mr-4">
-                            <div class="blog__details__text__item">
-                                <div class="section-title">
-                                    <h5 class="mb-0 mb-4 h4"><b>A terapia ocupacional ajuda a que o teu dia-a-dia
-                                            corra melhor!</b></h5>
-                                    <p class="mb-4">O terapeuta ocupacional é o profissional de saúde especialista
-                                        na prevenção ou tratamento de doenças motoras,
-                                        neurológicas, emocionais ou de desenvolvimento, que limitam a capacidade da
-                                        pessoa de realizar atividades diárias. <br><br>
-                                        A terapia ocupacional utiliza técnicas ou equipamentos que ajudam a pessoa a
-                                        aprender novas formas de fazer as
-                                        atividades diárias, a desenvolver novas habilidades e a reabilitar ou manter
-                                        as habilidades motoras. O estímulo das
-                                        capacidades cognitivas, a autonomia do autocuidado e a adaptação do ambiente
-                                        em que o paciente vive de forma a melhorar
-                                        a sua qualidade de vida, são pontos focais da terapia ocupacional. <br>
-                                        É uma consulta que abrange a família no seu todo, podendo fazer sentido em
-                                        todas as idades da vida.
-                                    </p>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="services  set-bg">
+        <div class="container">
+            <div class="d-flex">
                 <div id="A" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -188,9 +188,10 @@
                                             ambiente habitual da criança.</a>
                                     </li>
                                 </ul>
-                                <p>
-                                    <br><br>
-                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica do
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p>Esta consulta inclui a recolha da história clínica do
                                     paciente. Aconselhamos a que a criança traga roupas confortáveis.
                                 </p>
                             </div>
@@ -212,7 +213,8 @@
                                     </div>
                                 </div>
 
-                                <p>Pacientes com transtornos neurológicos que necessitem a intervenção especializada de
+                                <p><span class="underline">Pacientes com transtornos neurológicos</span> que necessitem
+                                    a intervenção especializada de
                                     um terapeuta ocupacional para
                                     melhorar a sua qualidade de vida. Exemplos de transtornos neurológicos abrangidos
                                     nesta consulta: <br><br>
@@ -246,9 +248,10 @@
                                     <li><a><i class="fa fa-check-circle"></i> Fornecimento de estratégias para a
                                             adaptação do ambiente habitual do paciente.</a></li>
                                 </ul>
-                                <p>
-                                    <br><br>
-                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica do
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p> Esta consulta inclui a recolha da história clínica do
                                     paciente. Aconselhamos a que o paciente traga roupas confortáveis.
                                 </p>
                             </div>
@@ -261,20 +264,6 @@
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
-                                <!-- Título da Seção -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="section-title">
-                                            <br>
-                                            <h5 class="mb-0 mt-4 h4"><b>No desafio do pós-parto, encontre o seu
-                                                    equilíbrio na sala Snoezelen.</b>
-                                            </h5>
-                                            <h5 class=""><b>Esta consulta destina-se a:</b></h5>
-                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <p>O pós-parto é um momento desafiante para toda a família. Requer adaptação do bebé
                                     recém-nascido ao mundo e dos pais ao seu novo papel. <br><br>
                                     O principal objetivo da terapia Snoezelen é melhorar o bem-estar emocional,
@@ -291,15 +280,16 @@
                                     entre a pais e o bebé através da redução da ansiedade e do relaxamento de ambos.
                                     <br><br>
 
-                                    Em caso de ter alguma dúvida a respeito desta consulta, ligue diretamente para A
-                                    Clínica. O atendimento ao paciente irá encaminhar a sua chamada para a nossa
+                                    Em caso de ter alguma dúvida a respeito desta consulta, ligue diretamente para <i>A
+                                        Clínica</i>. O atendimento ao paciente irá encaminhar a sua chamada para a nossa
                                     Terapeuta Ocupacional de forma a orientar o seu curso de ação. <br><br>
 
 
                                 </p>
-                                <p>
-
-                                    <b><i>Importante:</i></b> Esta experiência multissensorial pode incluir a recolha da
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p> Esta experiência multissensorial pode incluir a recolha da
                                     história clínica da paciente e do seu bebé. Aconselhamos a que a paciente e bebé
                                     tragam roupas confortáveis.
                                 </p>
@@ -313,14 +303,6 @@
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
                                 <!-- Título da Seção -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="section-title">
-                                            <h5 class=""><b>Esta consulta destina-se a:</b></h5>
-                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <p>
 
@@ -349,9 +331,10 @@
                                     seu
                                     curso de ação.
                                 </p>
-                                <p>
-                                    <br><br>
-                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica do
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p>Esta consulta inclui a recolha da história clínica do
                                     paciente. Aconselhamos a que o paciente traga roupas confortáveis.
                                 </p>
                             </div>
@@ -364,21 +347,6 @@
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
-                                <!-- Título da Seção -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="section-title">
-                                            <br>
-                                            <h5 class="mb-0 mb-4 h4"><b>N’A Clínica orgulhamo-nos de ter a única sala
-                                                    Snoezelen em
-                                                    Moçambique!!!</b>
-                                            </h5>
-                                            <h5 class="mt-4"><b>Esta consulta destina-se a:</b></h5>
-                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <p>A abordagem terapêutica Snoezelen nasce na Holanda na década de 1970, combinando
                                     estimulação sensorial, estimulação
                                     cognitiva e relaxamento, com o objetivo de proporcionar um ambiente confortável e
@@ -396,7 +364,8 @@
                                     sensações ao paciente. Esta técnica usa efeitos de forma individual ou combinada,
                                     cruzando música, sons, luzes, cores,
                                     vibrações suaves, texturas e aromaterapia. <br><br>
-                                    A sala multissensorial d’A Clínica é um ambiente seguro que privilegia os sentidos e
+                                    A sala multissensorial d’<i>A Clínica</i> é um ambiente seguro que privilegia os
+                                    sentidos e
                                     possibilita a exploração e
                                     descoberta. Promove-se desta forma orgânica a aprendizagem sensorial, o
                                     autocontrolo, a autonomia, a autoestima, a
@@ -426,8 +395,12 @@
                                     Em caso de ter alguma dúvida a respeito desta consulta, ligue diretamente para A
                                     Clínica. O atendimento ao paciente irá
                                     encaminhar a sua chamada para a nossa Terapeuta Ocupacional de forma a orientar o
-                                    seu curso de ação. <br><br>
-                                    <b><i>Importante:</i></b> Esta experiência multissensorial pode incluir a recolha da
+                                    seu curso de ação.
+                                </p>
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p> Esta experiência multissensorial pode incluir a recolha da
                                     história clínica do paciente. Aconselhamos a que o paciente
                                     traga roupas confortáveis.
                                 </p>
@@ -436,26 +409,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div id="F" class="col-lg-8 col-md-8" style="display: none;">
                     <div class="row">
-                        <div class="card shadow" style="background-image: url('../img/bg3.png');">
-                            <div class="card-more">
-                                <div class="icon text-center p-2">
-                                    <img src="../img/icons/Terapia Ocupacional.png" width="100">
+                        <div class="blog__details__text ml-4 mr-4">
+                            <div class="blog__details__text__item">
+                                <div class="section-title">
+                                    <p class="mb-4">O terapeuta ocupacional é o profissional de saúde especialista
+                                        na prevenção ou tratamento de doenças motoras,
+                                        neurológicas, emocionais ou de desenvolvimento, que limitam a capacidade da
+                                        pessoa de realizar atividades diárias. <br><br>
+                                        A terapia ocupacional utiliza técnicas ou equipamentos que ajudam a pessoa a
+                                        aprender novas formas de fazer as
+                                        atividades diárias, a desenvolver novas habilidades e a reabilitar ou manter
+                                        as habilidades motoras. O estímulo das
+                                        capacidades cognitivas, a autonomia do autocuidado e a adaptação do ambiente
+                                        em que o paciente vive de forma a melhorar
+                                        a sua qualidade de vida, são pontos focais da terapia ocupacional. <br>
+                                        É uma consulta que abrange a família no seu todo, podendo fazer sentido em
+                                        todas as idades da vida.
+                                    </p>
                                 </div>
-                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas,
-                                    clique em cada uma das seguintes consultas para saber
-                                    que consultas tem disponíveis.</p>
-                                <div class="d-flex">
-                                    <div class="col-lg-12 col-md-12 ">
-                                        <div class="card-text d-grid">
-                                            <button class="text-dark" id="ABtn">Terapia Ocupacional Infantil </button>
-                                            <button class="text-dark" id="BBtn">Terapia Ocupacional Neurológica</button>
-                                            <button class="text-dark" id="DBtn">Terapia Ocupacional da Saúde
-                                                Mental</button>
-                                            <button class="text-dark" id="EBtn">Terapia Snoezelen</button>
-                                            <button class="text-dark" id="CBtn">Terapia Snoezelen no Pós-Parto</button>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex height-fit-content justify-content-end">
+                    <div class="row">
+                        <div class="card shadow" style="background-image: url('../img/bg1.png');">
+                            <div class="card-more">
+                                <p class="border-bottom text-white hyphens-auto">N’<i>A Clínica</i> estão
+                                    disponíveis consultas
+                                    de
+                                    diferentes especialidades, tal como variados workshops, desde a gravidez à
+                                    parentalidade. Clique em cada um dos ícones seguintes para descobrir os nossos
+                                    serviços.</p>
+                                <div class="d-flex mt-2">
+                                    <div class="col-lg-4 col-md-4">
+                                        <a href="../consultas.html">
+                                            <div class="card-icon">
+                                                <img src="../img/icons/Enfermagem.png" style="width: 104px;">
+                                            </div>
+                                            <div class="text-white card-text text-center">
+                                                <button id="con-pre" class="text-white">Consultas</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <a href="pediatria.html">
+                                            <div class="card-icon mb-3">
+                                                <img src="../img/icons/Pediatra .png" style="width: 104px;">
+                                            </div>
+                                            <div class="text-white card-text text-center">
+                                                <button id="con-pre" class="text-white">Pediatria</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <a href="terapia.html#F">
+                                            <div class="card-icon">
+                                                <img src="../img/icons/atendimento.png" style="width: 100px;">
+
+                                            </div>
+                                            <div class="text-white card-text ">
+                                                <button id="con" class="text-white">Terapia ocupacional</button>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -478,129 +496,171 @@
     <!-- Seção de Rodapé Fim -->
 
     <script>
-        // Obter os elementos necessários
+        // Obter os botões e as divs
         const ABtn = document.getElementById('ABtn');
         const ADiv = document.getElementById('A');
         const BBtn = document.getElementById('BBtn');
         const BDiv = document.getElementById('B');
         const DBtn = document.getElementById('DBtn');
         const DDiv = document.getElementById('D');
-        const EBtn = document.getElementById('EBtn');
-        const EDiv = document.getElementById('E');
         const CBtn = document.getElementById('CBtn');
         const CDiv = document.getElementById('C');
+        const EBtn = document.getElementById('EBtn');
+        const FBtn = document.getElementById('FBtn');
+        const EDiv = document.getElementById('E');
+        const FDiv = document.getElementById('F');
         const title = document.getElementById('title');
         const img = document.getElementById('img');
         const header = document.getElementById('header');
+        const subtitulo = document.getElementById('subtitulo');
+        const doutora = document.getElementById('doutora');
+        const showe = document.getElementById('showe');
+        const hiden = document.getElementById('hiden');
+        const mn = document.getElementById('mn');
+        const mais = document.getElementById('mais');
 
-        // Função para exibir o conteúdo de cada consulta e atualizar o título e imagem
-        function showContent(div, titleText, imgUrl, activeBtn) {
-            // Esconder todas as divs e o cabeçalho
+        function showA() {
+            ADiv.style.display = 'flex';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            showe.style.display = 'none';
+            doutora.textContent = "Marina Pastore";
+            title.textContent = "Consulta de Terapia Ocupacional Infantil";
+            subtitulo.textContent = "A terapia ocupacional ajuda a que o teu dia-a-dia corra melhor!";
+            img.src = "../img/blog/details/terapia-em-criancas.jpg";
+            ABtn.classList.add("active");
+            BBtn.classList.remove("active");
+            CBtn.classList.remove("active");
+            DBtn.classList.remove("active");
+            EBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showB() {
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'flex';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            showe.style.display = 'none';
+            doutora.textContent = "Marina Pastore";
+            title.textContent = "Consulta de Terapia Ocupacional Neurológica";
+            subtitulo.textContent = "A terapia ocupacional ajuda a que o teu dia-a-dia corra melhor!";
+            img.src = "../img/blog/details/terapia-neurologica.jpg";
+            ABtn.classList.remove("active");
+            BBtn.classList.add("active");
+            CBtn.classList.remove("active");
+            DBtn.classList.remove("active");
+            EBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showC() {
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'flex';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'none';
+            showe.style.display = 'block';
+            hiden.style.display = 'none';
+            doutora.textContent = "Marina Pastore";
+            title.textContent = "Terapia Snoezelen no Pós-Parto";
+            subtitulo.textContent = "No desafio do pós-parto, encontre o seu equilíbrio na sala Snoezelen.";
+            img.src = "../img/blog/details/yoga.jpg";
+            ABtn.classList.remove("active");
+            BBtn.classList.remove("active");
+            CBtn.classList.add("active");
+            DBtn.classList.remove("active");
+            EBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showD() {
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'flex';
+            EDiv.style.display = 'none';
+            showe.style.display = 'none';
+            title.textContent = "Consulta de Terapia Ocupacional da Saúde Mental";
+            subtitulo.textContent = "A terapia ocupacional ajuda a que o teu dia-a-dia corra melhor!";
+            img.src = "../img/blog/details/terrapia-ocupacional.jpg";
+            ABtn.classList.remove("active");
+            BBtn.classList.remove("active");
+            CBtn.classList.remove("active");
+            DBtn.classList.add("active");
+            EBtn.classList.remove("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showE() {
+            ADiv.style.display = 'none';
+            BDiv.style.display = 'none';
+            CDiv.style.display = 'none';
+            DDiv.style.display = 'none';
+            EDiv.style.display = 'flex';
+            showe.style.display = 'none';
+            title.textContent = "Terapia Snoezelen";
+            subtitulo.textContent = "N’A Clínica orgulhamo-nos de ter a única sala Snoezelen em Moçambique!!!";
+            img.src = "../img/blog/details/Snoezelen.png";
+            ABtn.classList.remove("active");
+            BBtn.classList.remove("active");
+            CBtn.classList.remove("active");
+            DBtn.classList.remove("active");
+            EBtn.classList.add("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function showF() {
+            mais.style.display = 'none';
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
             CDiv.style.display = 'none';
             DDiv.style.display = 'none';
             EDiv.style.display = 'none';
-            header.classList.add("d-none");
-
-            // Exibir a div selecionada
-            div.style.display = 'block';
-
-            // Atualizar título e imagem
-            title.textContent = titleText;
-            img.style.backgroundImage = `url(${imgUrl})`;
-
-            // Ativar o botão clicado e desativar os outros
-            ABtn.classList.remove("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.remove("active");
-
-            activeBtn.classList.add("active");
-
-            // Rolar para o topo suavemente
+            FDiv.style.display = 'flex';
+            showe.style.display = 'none';
+            title.textContent = "Terapia Snoezelen";
+            subtitulo.textContent = "N’A Clínica orgulhamo-nos de ter a única sala Snoezelen em Moçambique!!!";
+            img.src = "../img/blog/details/Snoezelen.png";
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Funções específicas para cada botão
-        function showA() {
-            showContent(ADiv, "Consulta de Terapia Ocupacional Infantil", "../img/blog/details/terapia-em-criancas.jpg", ABtn);
-        }
+        window.addEventListener('load', function () {
+            const hash = window.location.hash;
+            if (hash === "#A") showA();
+            else if (hash === "#B") showB();
+            else if (hash === "#C") showC();
+            else if (hash === "#D") showD();
+            else if (hash === "#E") showE();
+            else if (hash === "#F") showF();
+            else showF();
+        });
 
-        function showB() {
-            showContent(BDiv, "Consulta de Terapia Ocupacional Neurológica", "../img/blog/details/terapia-neurologica.jpg", BBtn);
-        }
-
-        function showC() {
-            showContent(CDiv, "Terapia Snoezelen no Pós-Parto", "../img/blog/details/yoga.jpg", CBtn);
-        }
-
-        function showD() {
-            showContent(DDiv, "Consulta de Terapia Ocupacional da Saúde Mental", "../img/blog/details/terrapia-ocupacional.jpg", DBtn);
-        }
-
-        function showE() {
-            showContent(EDiv, "Terapia Snoezelen", "../img/blog/details/Snoezelen.png", EBtn);
-        }
-
-        function showDefault() {
-            // Exibir a página inicial com o título padrão
-            showContent(null, "Terapia ocupacional", "", null);
-        }
-
-        // Atualizar a página ao mudar o hash
         window.addEventListener('hashchange', function () {
             window.location.reload();
         });
 
-        // Verificar o fragmento da URL e inicializar a página de acordo
-        window.addEventListener('load', function () {
-            const hash = window.location.hash;
-
-            // Exibir o conteúdo correto com base no hash
-            if (hash === "#A") {
-                showA();
-            } else if (hash === "#B") {
-                showB();
-            } else if (hash === "#C") {
-                showC();
-            } else if (hash === "#D") {
-                showD();
-            } else if (hash === "#E") {
-                showE();
-            } else {
-                showDefault();
-            }
-        });
-
-        // Adicionar eventos de clique aos botões para atualizar o hash e exibir o conteúdo
         ABtn.addEventListener('click', function () {
             window.location.hash = "#A";
-            showA();
         });
-
         BBtn.addEventListener('click', function () {
             window.location.hash = "#B";
-            showB();
         });
-
         CBtn.addEventListener('click', function () {
             window.location.hash = "#C";
-            showC();
         });
-
         DBtn.addEventListener('click', function () {
             window.location.hash = "#D";
-            showD();
         });
-
         EBtn.addEventListener('click', function () {
             window.location.hash = "#E";
-            showE();
+        });
+        FBtn.addEventListener('click', function () {
+            window.location.hash = "#F";
         });
     </script>
-
 
 
     <!-- Js Plugins -->
