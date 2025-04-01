@@ -488,10 +488,12 @@
                 showE(); // Se o hash for "#pos", exibe pós-parto
             }
             else {
-                show(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
+                showA(); // Se não houver hash ou hash desconhecido, exibe Cirurgia por padrão
             }
         });
-
+        window.addEventListener('hashchange', function () {
+            window.location.reload();
+        });
         // Adicionar funcionalidade dos botões
         ABtn.addEventListener('click', function () {
             window.location.hash = "#A"; // Atualiza o URL para "#A" ao clicar no botão Cirurgia

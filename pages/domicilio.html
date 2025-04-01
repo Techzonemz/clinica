@@ -26,80 +26,6 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
     <style>
-        .services__item:hover {
-            background: #b1cad4;
-        }
-
-        .services__item {
-            background: #d6a294;
-            padding: 45px 30px 45px 50px;
-            margin-bottom: 30px;
-            border-radius: 5px;
-            line-height: 2.1;
-            color: white !important;
-            height: 19rem;
-        }
-
-        .services__item .services__item__text ul li a {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        .services__details__pic {
-            position: relative;
-            overflow: hidden;
-            height: 400px;
-            margin-bottom: 60px;
-            border-radius: 10px;
-        }
-
-        .services__details__title h3 {
-            width: 4rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .services__details__pic img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-
-        .services__details__content {
-            position: absolute;
-            bottom: 3rem;
-            left: 10px;
-            width: 20rem;
-            max-width: 60%;
-            background-image: url('../img/bg3.png');
-            padding: 15px;
-            border-radius: 8px;
-            color: white;
-        }
-
-        .services__details__title span {
-            display: block;
-            font-size: 14px;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-
-        .services__details__title h3,
-        .services__details__widget h3 {
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .services__details__widget .rating i {
-            color: #f8d210;
-        }
-
-        .clicavel {
-            background: transparent;
-            border: none;
-        }
-
         b {
             color: #d6a294;
             font-weight: 400;
@@ -166,35 +92,40 @@
 
 
     <!-- Blog Details Section Begin -->
-    <section class="blog-details spad mt-6">
+    <section class="blog-details spad mt-9">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 order-lg-2">
-                    <div class="services__details">
-                        <div class="services__details__pic">
-                            <div class="services__details__pic">
-                                <div id="img" class="blog__details__hero set-bg mb-0"
-                                    data-setbg="../img/blog/details/domicilio.jpg">
-                                    <div class="services__details__content">
-                                        <div class="row w-100 align-items-center">
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div class="services__details__title">
-                                                    <h3><img src="../img/icons/amamentação-white.png" class="fa mr-3"
-                                                            alt="">Apoio ao domicílio</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+            <div class="services__details__pic">
+                <div class="services__details__pic">
+                    <img id="img" src="../img/blog/details/blog-hero4.jpg" alt="">
+                    <div class="services__details__content">
+                        <div class="d-flex w-100 align-items-end">
+                            <div class="mr-3">
+                                <div class="services__details__title">
+                                    <h3><img src="../img/icons/atendimento.png" class="fa " alt="">
+                                    </h3>
                                 </div>
                             </div>
+                            <div>
+                                <h4 class="text-white"><a id="doutora" href="team-sing.html#I">Dra Patrícia Pérez
+                                        Ronquillo</a>
+                                </h4>
+                                <h5>Médica Geral</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex w-100 mt-2 align-items-end justify-content-center text-white">
+                            <span id="showe" class="h6"> <i class="fa fa-clock-o"></i> Duração: 60mn | <i
+                                    class="fa fa-user">
+                                    presencial</i> |
+                                <i class="fa fa-desktop"></i> Online
+                            </span>
+                            <span id="hiden" class="h6"> <i class="fa fa-clock-o"></i> Duração: 40mn a 90mn <i
+                                    class="fa fa-user">
+                                    presencial</i>
+                            </span>
                         </div>
                     </div>
                 </div>
-    </section>
-    <!-- Blog Details Section End -->
-
-    <section class="services  set-bg">
-        <div class="container">
+            </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">
                     <div class="ml-4 mr-4">
@@ -205,6 +136,10 @@
                                     <div class="section-title">
                                         <h3 id="Consulta" class="subtitle fw-bold">
                                         </h3>
+                                        <h5 class="mt-2 h4"><b id="subtitulo">Deve ter todo o apoio que precisa no
+                                                conforto do seu
+                                                lar
+                                                durante a sua jornada de amamentação!</b></h5> <br>
                                     </div>
                                 </div>
                             </div>
@@ -212,15 +147,18 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
 
+    <section class="services  set-bg">
+        <div class="container">
+            <div class="d-flex">
                 <div id="Cirurgia" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
                                 <div class="section-title">
-                                    <h5 class="mb-0 mb-4 h4"><b>Deve ter todo o apoio que precisa no conforto do seu lar
-                                            durante a sua jornada de amamentação!</b></h5> <br>
                                     <p class="mb-4">A amamentação é uma maravilha mas pode ser muito desafiante. Para
                                         uma jornada de amamentação eficaz, ter toda a
                                         informação e o apoio de profissionais experientes pode ser determinante.
@@ -229,9 +167,10 @@
                                         o apoio que necessita em relação à
                                         amamentação no conforto do seu lar, ajuda-a a tornar este desafio mais fácil.
                                     </p>
-                                    <p>
-                                        <br>
-                                        <b><i>Importante:</i></b> Esta sessão inclui a recolha da história clínica da
+                                    <div class="section-title mt-4">
+                                        <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                    </div>
+                                    <p>Esta sessão inclui a recolha da história clínica da
                                         paciente e do bebé e a observação da mamada, bem como o exame físico
                                         de ambos. Tenha sempre consigo o seu Boletim de Saúde da Grávida e o Boletim de
                                         Saúde do Bebé. Aconselhamos a que a
@@ -247,36 +186,26 @@
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
-                                <!-- Título da Seção -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="section-title">
-                                            <h5 class="mb-0 mt-4 h4"><b>O cuidado do seu recém-nascido na comodidade da
-                                                    sua casa!</b>
-                                            </h5>
-                                            <h5 class=""><b>Esta consulta destina-se a:</b></h5>
-                                            <!-- <span>N’A Clínica, damos consultas em várias áreas de especialidade</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <p>O primeiro mês de um bebé é uma montanha russa de emoções e de mudanças na vida dos
                                     pais. Não se esqueça que cada vez
                                     que nasce um bebé, nasce uma mãe e um pai, mesmo que já não seja o primeiro filho.
                                     Em suma, nasce uma nova família, que
-                                    precisa de se ajustar progressivamente a esta realidade. <br>
-                                    <b>N’A Clínica</b> sabemos que é em sua casa que se sente mais segura e à vontade,
-                                    mas também, é onde nascem mais medos. Não
-                                    precisa de se sentir sozinha! A nossa equipa de Enfermagem está disponível para ir a
+                                    precisa de se ajustar progressivamente a esta realidade. <br><br>
+                                    <b>N’<i>A Clínica</i></b> sabemos que é em sua casa que se sente mais segura e à
+                                    vontade,
+                                    mas também, é onde nascem mais medos. <b>Não
+                                        precisa de se sentir sozinha!</b> A nossa equipa de Enfermagem está disponível
+                                    para ir a
                                     sua casa resolver dúvidas básicas
                                     sobre os cuidados neonatais e da mãe, pesar ou reavaliar a coloração do seu bebé.
                                     <br><br>
 
 
                                 </p>
-                                <p>
-
-                                    <b><i>Importante:</i></b> Esta consulta inclui a recolha da história clínica da
+                                <div class="section-title mt-4">
+                                    <h4 class=" mb-2"><b>! Informação importante !</b></h4>
+                                </div>
+                                <p>Esta consulta inclui a recolha da história clínica da
                                     paciente e do bebé, bem como o exame físico de ambos. Tenha sempre
                                     consigo o seu Boletim de Saúde da Grávida e o Boletim de Saúde do Bebé. Aconselhamos
                                     a que a paciente e o seu bebé
@@ -326,9 +255,10 @@
                                 <div class="icon text-center p-2">
                                     <img src="../img/icons/home.png" width="100">
                                 </div>
-                                <p class="border-bottom text-dark">Neste espaço existem consultas em várias áreas,
-                                    clique em cada uma das seguintes consultas para saber
-                                    que consultas tem disponíveis.</p>
+                                <p class="border-bottom text-dark">N’A Clínica estão disponíveis vários workshops|grupos
+                                    de apoio muito interessantes na sua jornada de parentalidade.
+                                    Clique em cada um dos links seguintes para descobrir os nossos workshops|grupos de
+                                    apoio.</p>
                                 <div class="d-flex">
                                     <div class="col-lg-12 col-md-12 ">
                                         <div class="card-text">
@@ -359,7 +289,7 @@
     <!-- Seção de Rodapé Fim -->
 
     <script>
-        // Obter os botões e as divs
+        // Obter os botões e asclassimg.src = " divs
         const CirurgiaBtn = document.getElementById('con-ciru');
         const anelBtn = document.getElementById('circ-anel');
         const suturaBtn = document.getElementById('Sutura');
@@ -367,6 +297,8 @@
         const anelDiv = document.getElementById('anel');
         const suturaDiv = document.getElementById('sutura-ferida');
         const consultaText = document.getElementById('Consulta');
+        const subtitulo = document.getElementById('subtitulo');
+        const doutora = document.getElementById('doutora');
 
         // Função para exibir a consulta Cirurgia
         function showCirurgia() {
@@ -374,7 +306,10 @@
             anelDiv.style.display = 'none';
             suturaDiv.style.display = 'none';
             consultaText.textContent = "Amamentação";
-            img.style.backgroundImage = "url('../img/blog/details/curso-amamentacao.jpg')";
+            subtitulo.textContent = "Deve ter todo o apoio que precisa no conforto do seu lar durante a sua jornada de amamentação!";
+            showe.style.display = 'block';
+            hiden.style.display = 'none';
+            img.src = "../img/blog/details/curso-amamentacao.jpg";
             CirurgiaBtn.classList.add("active");
             anelBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
@@ -386,8 +321,12 @@
             anelDiv.style.display = 'block';
             suturaDiv.style.display = 'none';
             CirurgiaDiv.style.display = 'none';
+            doutora.textContent = "Enfermeira Tânia Semende";
             consultaText.textContent = "Enfermagem";
-            img.style.backgroundImage = "url('../img/blog/details/enfermeira.jpg')";
+            subtitulo.textContent = "O cuidado do seu recém-nascido na comodidade da sua casa!";
+            showe.style.display = 'block';
+            hiden.style.display = 'none';
+            img.src = "../img/blog/details/enfermeira.jpg";
             anelBtn.classList.add("active");
             CirurgiaBtn.classList.remove("active");
             suturaBtn.classList.remove("active");
