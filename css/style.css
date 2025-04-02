@@ -1531,6 +1531,8 @@ button.text-dark.active {
     background: #b1cad4;
 }
 
+
+
 .services__item {
     background: #d6a294;
     padding: 45px 30px 45px 50px;
@@ -1544,6 +1546,10 @@ button.text-dark.active {
 .services__item .services__item__text ul li a {
     color: #ffffff;
     text-decoration: underline;
+}
+
+.services__item .services__item__text ul li button {
+    text-align: justify;
 }
 
 b {
