@@ -907,7 +907,6 @@ li .dropdown .active a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
     /* Adiciona uma sobreposição para destacar o texto e o botão */
     border-radius: 20px;
 }
@@ -920,7 +919,6 @@ li .dropdown .active a {
     position: absolute;
     left: 0px;
     top: 0px;
-    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     -webkit-transition: all 300ms ease;
     -o-transition: all 300ms ease;
@@ -1145,7 +1143,19 @@ li .dropdown .active a {
     display: inline-block;
     height: 50px;
     width: 50px;
-    background: #777777;
+    background: #ff0000;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.consultation__video i {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #ff0000;
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
