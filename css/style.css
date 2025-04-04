@@ -299,7 +299,7 @@ ol {
     .float-button {
         bottom: 15px;
         right: 15px;
-        width: 20px;
+        /* width: 20px; */
         border-radius: 20px 20px 5px 20px;
     }
 
@@ -4389,6 +4389,10 @@ a.sub-arrow {
         line-height: 2;
         width: 78%;
         padding-top: 38px;
+    }
+
+    .team-img {
+        width: fit-content;
     }
 
     .agenda {
