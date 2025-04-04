@@ -27,6 +27,20 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
     <style>
+        /* Exibe o menu offcanvas apenas em telas menores (máx. 768px) */
+        @media (max-width: 768px) {
+            .services__details__pic {
+                background-image: url(../img/blog/details/blog-hero4.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .services__details__pic img {
+                display: none;
+            }
+        }
+
         b {
             color: #d6a294;
             font-weight: 400;
@@ -415,7 +429,7 @@
 
         // Função para exibir a consulta pré-parto, esconder a pós-parto e atualizar o texto
         function showPreParto() {
-            prePartoDiv.style.display = 'flex'; // Exibe a div pré-parto
+            prePartoDiv.classList.add('displayidr'); // Exibe a div pré-parto
             posPartoDiv.style.display = 'none';  // Esconde a div pós-parto
             partoText.textContent = "Consulta de Amamentação Pré-parto"; // Atualiza o texto para "Pré-parto"
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -423,7 +437,7 @@
 
         // Função para exibir a consulta pós-parto, esconder a pré-parto e atualizar o texto
         function showPosParto() {
-            posPartoDiv.style.display = 'flex'; // Exibe a div pós-parto
+            posPartoDiv.classList.add('displayidr'); // Exibe a div pós-parto
             prePartoDiv.style.display = 'none';  // Esconde a div pré-parto
             partoText.textContent = "Consulta de Amamentação Pós-parto"; // Atualiza o texto para "Pós-parto"
             window.scrollTo({ top: 0, behavior: 'smooth' });

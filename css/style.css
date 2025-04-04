@@ -4364,10 +4364,18 @@ a.sub-arrow {
     align-items: end;
 }
 
+.displayid {
+    display: flex;
+}
+
 /* Exibe o menu offcanvas apenas em telas menores (máx. 768px) */
 @media (max-width: 768px) {
     .offcanvas-menu {
         display: block;
+    }
+
+    .displayid {
+        display: grid !important;
     }
 
     .team_content h2 {
@@ -4386,6 +4394,11 @@ a.sub-arrow {
     .image-section#profile {
         height: fit-content;
         overflow: hidden;
+    }
+
+    .contact_field {
+        padding: inherit;
+        text-align: center;
     }
 
     .spad {
