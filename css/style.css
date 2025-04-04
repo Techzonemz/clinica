@@ -4359,11 +4359,49 @@ a.sub-arrow {
     background: transparent;
 }
 
+.team_content {
+    display: flex;
+    align-items: end;
+}
+
 /* Exibe o menu offcanvas apenas em telas menores (máx. 768px) */
 @media (max-width: 768px) {
     .offcanvas-menu {
         display: block;
     }
+
+    .team_content h2 {
+        font-size: 20px;
+    }
+
+    .team_head b {
+        text-align: center;
+    }
+
+    .team_head p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .image-section#profile {
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .spad {
+        padding-top: inherit;
+        padding-bottom: 2rem;
+    }
+
+    .team_content {
+        align-items: center;
+    }
+
+    #icone {
+        width: 47px;
+        height: 44px;
+    }
+
 
     /* Opcional: pode ocultar o menu principal em mobile */
     .header__menu {
