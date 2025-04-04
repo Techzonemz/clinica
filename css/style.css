@@ -4364,7 +4364,7 @@ a.sub-arrow {
     align-items: end;
 }
 
-.displayid {
+.displayidr {
     display: flex;
 }
 
@@ -4374,7 +4374,11 @@ a.sub-arrow {
         display: block;
     }
 
-    .displayid {
+    .services__details__content img {
+        display: block !important;
+    }
+
+    .displayidr {
         display: grid !important;
     }
 
