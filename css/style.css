@@ -1359,7 +1359,8 @@ h4.subtitle.mt-4.fw-semibold {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 200px;
+    /* height: 200px; */
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -4304,4 +4305,140 @@ ul.days {
         font-size: 14px;
     }
 
+}
+
+body.offcanvas-active {
+    overflow: hidden;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+a.nav-link {
+    color: #000 !important;
+}
+
+/* Esconde o menu offcanvas em telas maiores (desktop) */
+.mobile-offcanvas {
+    display: none;
+}
+
+a.sub-arrow {
+    padding-left: 10px;
+    margin: 0;
+    color: #4c4c4c;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.mobile-offcanvas a.arrow {
+    padding: 7px 0;
+    margin: 0;
+    color: #111111;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.menucanva {
+    display: block;
+    font-size: 22px;
+    color: #222;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #323232;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    align-items: center;
+    align-content: center;
+    top: 35px;
+    background: transparent;
+}
+
+/* Exibe o menu offcanvas apenas em telas menores (máx. 768px) */
+@media (max-width: 768px) {
+    .offcanvas-menu {
+        display: block;
+    }
+
+    /* Opcional: pode ocultar o menu principal em mobile */
+    .header__menu {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        background-image: url(../img/hero-bg.png) !important;
+    }
+
+    .agenda {
+        display: none;
+    }
+
+    .card {
+        width: -webkit-fill-available;
+        margin-bottom: .5rem
+    }
+}
+
+.screen-overlay {
+    width: 0%;
+    height: 100%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+
+.screen-overlay.show {
+    transition: opacity .5s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+@media all and (max-width:992px) {
+
+    .offcanvas-header {
+        display: block;
+    }
+
+    .mobile-offcanvas ul.dropdown-menu.show {
+        border: none;
+    }
+
+    .mobile-offcanvas {
+        background-color: #fff !important;
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 50px 20px 30px 30px;
+        left: 0;
+        height: 100%;
+        z-index: 1200;
+        width: 70%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+    }
+
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+.offcanvas-header .header__logo {
+    padding: 2px 30px 20px 0px !important;
 }

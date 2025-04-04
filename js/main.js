@@ -100,3 +100,46 @@
     minDate: 0,
   });
 })(jQuery);
+
+/// some script
+
+// jQuery ready start
+$(document).ready(function () {
+  // Abrir menu offcanvas
+  $("[data-trigger]").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var offcanvas_id = $(this).attr("data-trigger");
+    $(offcanvas_id).toggleClass("show");
+    $("body").toggleClass("offcanvas-active");
+    $(".screen-overlay").toggleClass("show");
+    $(".offcanvas-menu-overlay ").toggleClass("active");
+  });
+
+  // Fechar ao pressionar ESC
+  $(document).on("keydown", function (event) {
+    if (event.keyCode === 27) {
+      fecharOffcanvas();
+    }
+  });
+
+  // Fechar ao clicar no botão de fechar ou overlay
+  $(".btn-close, .screen-overlay").click(function () {
+    fecharOffcanvas();
+  });
+
+  // Fechar ao clicar fora do menu
+  $(document).click(function (e) {
+    if (!$(e.target).closest(".mobile-offcanvas, [data-trigger]").length) {
+      fecharOffcanvas();
+    }
+  });
+
+  // Função para fechar o offcanvas
+  function fecharOffcanvas() {
+    $(".screen-overlay").removeClass("show");
+    $(".mobile-offcanvas").removeClass("show");
+    $(".offcanvas-menu-overlay ").removeClass("active");
+    $("body").removeClass("offcanvas-active");
+  }
+}); // jQuery end
