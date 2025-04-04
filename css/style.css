@@ -4375,6 +4375,22 @@ a.sub-arrow {
         background-image: url(../img/hero-bg.png) !important;
     }
 
+    .destaque {
+        height: fit-content !important;
+        padding: 2.5rem 0;
+    }
+
+    .destaque span {
+        display: block;
+    }
+
+    .about_hero .hero__text h2 {
+        font-size: 16px;
+        line-height: 2;
+        width: 78%;
+        padding-top: 38px;
+    }
+
     .agenda {
         display: none;
     }
