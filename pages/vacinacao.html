@@ -151,7 +151,7 @@
 
                 </div>
             </div>
-            <div class="d-flex">
+            <div class="flexivel">
                 <div id="header" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -214,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="B" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="B" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item mt-4">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
 
-                <div id="D" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="D" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -310,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="E" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="E" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -402,7 +402,7 @@
         // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
         function showA() {
             header.classList.add("d-none");
-            ADiv.style.display = 'block'; // Exibe a div Cirurgia
+            ADiv.classList.add('displayidr'); // Exibe a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div pós-parto
             DDiv.style.display = 'none';  // Esconde a div pós-parto
             EDiv.style.display = 'none';  // Esconde a div pós-parto
@@ -419,7 +419,7 @@
         function showB() {
             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
-            BDiv.style.display = 'block'; // Exibe a div pós-parto
+            BDiv.classList.add('displayidr'); // Exibe a div pós-parto
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
             img.src = "../img/blog/details/gravida-vacinando.jpg"; // Atualiza o texto para "Cirurgia"
@@ -436,7 +436,7 @@
             header.classList.add("d-none");
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
-            DDiv.style.display = 'block'; // Exibe a div pós-parto
+            DDiv.classList.add('displayidr'); // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
             img.src = "../img/blog/details/crianca-vacinando.jpg"; // Atualiza o texto para "Cirurgia"
             title.textContent = "Vacinação Infantil"; // Atualiza o texto para "Pós-parto"
@@ -452,7 +452,7 @@
             ADiv.style.display = 'none';  // Esconde a div Cirurgia
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             DDiv.style.display = 'none'; // Exibe a div pós-parto
-            EDiv.style.display = 'block'; // Exibe a div pós-parto
+            EDiv.classList.add('displayidr'); // Exibe a div pós-parto
             img.src = "../img/blog/details/familia.jpg"; // Atualiza o texto para "Cirurgia"
             title.textContent = "Viajante"; // Atualiza o texto para "Pós-parto"
             ABtn.classList.remove("active");

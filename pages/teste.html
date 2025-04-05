@@ -149,8 +149,7 @@
 
     <section class="services  set-bg">
         <div class="container">
-
-            <div class="d-flex">
+            <div class="flexivel">
                 <div id="header" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
@@ -260,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="B" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="B" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -320,7 +319,7 @@
                     </div>
                 </div>
 
-                <div id="D" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="D" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="row mb-2">
@@ -375,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="E" class="col-lg-8 col-md-8" style="display: none;">
+                <div id="E" class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -491,7 +490,7 @@
         // Função para exibir a seção A
         function showA() {
             header.classList.add("d-none");
-            ADiv.style.display = 'block';
+            ADiv.classList.add('displayidr');
             BDiv.style.display = 'none';
             DDiv.style.display = 'none';
             EDiv.style.display = 'none';
@@ -506,7 +505,7 @@
         function showB() {
             header.classList.add("d-none");
             ADiv.style.display = 'none';
-            BDiv.style.display = 'block';
+            BDiv.classList.add('displayidr');
             DDiv.style.display = 'none';
             EDiv.style.display = 'none';
             title.textContent = "Teste rápido de amigdalite bacterianas";
@@ -520,7 +519,7 @@
             header.classList.add("d-none");
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
-            DDiv.style.display = 'block';
+            DDiv.classList.add('displayidr');
             EDiv.style.display = 'none';
             title.textContent = "Teste rápido de malária";
             img.src = "../img/blog/details/teste de malaria.jpg";
@@ -534,7 +533,7 @@
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
             DDiv.style.display = 'none';
-            EDiv.style.display = 'block';
+            EDiv.classList.add('displayidr');
             title.textContent = "Teste rápido de urina";
             img.src = "../img/blog/details/teste de urina.jpg";
             updateActiveButton(EBtn);

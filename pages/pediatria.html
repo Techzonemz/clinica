@@ -320,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="B" style="display: none;">
+                <div id="B">
                     <div class="col-lg-8 col-md-8">
                         <div class="row">
                             <div class="blog__details__text ml-4 mr-4">
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="C" style="display: none;">
+                <div id="C">
                     <div class="col-lg-8 col-md-8">
                         <div class="row">
                             <div class="blog__details__text ml-4 mr-4">
@@ -545,7 +545,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="D" style="display: none;">
+                <div id="D">
                     <div class="col-lg-8 col-md-8">
                         <div class="row">
                             <div class="blog__details__text ml-4 mr-4">
@@ -652,7 +652,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="E" style="display: none;">
+                <div id="E">
                     <div class="col-lg-8 col-md-8">
                         <div class="row">
                             <div class="blog__details__text ml-4 mr-4">
@@ -795,7 +795,7 @@
 
         function showA() {
             header.classList.add("d-none");
-            ADiv.style.display = 'flex';
+            ADiv.classList.add('displayidr');
             BDiv.style.display = 'none';
             CDiv.style.display = 'none';
             DDiv.style.display = 'none';
@@ -804,18 +804,13 @@
             title.textContent = "Consulta de Pediatria Pré-Natal";
             subtitulo.textContent = "Conhecer a tua Pediatra durante a gravidez proporciona-lhe a tranquilidade de saber que o seu bebé está em boas mãos desde o nascimento.";
             img.src = "../img/blog/details/diabetes.jpg";
-            ABtn.classList.add("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function showB() {
             header.classList.add("d-none");
             ADiv.style.display = 'none';
-            BDiv.style.display = 'flex';
+            BDiv.classList.add('displayidr');
             CDiv.style.display = 'none';
             DDiv.style.display = 'none';
             EDiv.style.display = 'none';
@@ -824,11 +819,6 @@
             title.textContent = "Consulta de Pediatria de Rotina";
             subtitulo.textContent = "Uma Pediatra não é uma médica como as outras, é alguém que acompanha toda a família!";
             img.src = "../img/blog/details/blog-hero10.jpg";
-            ABtn.classList.remove("active");
-            BBtn.classList.add("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -836,7 +826,7 @@
             header.classList.add("d-none");
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
-            CDiv.style.display = 'flex';
+            CDiv.classList.add('displayidr');
             DDiv.style.display = 'none';
             EDiv.style.display = 'none';
             showe.style.display = 'block';
@@ -845,11 +835,6 @@
             title.textContent = "Consulta de Pediatria de Criança Doente";
             subtitulo.textContent = "Quando o seu filhote está doente, confie na Pediatra que melhor o conhece.";
             img.src = "../img/blog/details/consultas em criancas.jpg";
-            ABtn.classList.remove("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.add("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -858,17 +843,12 @@
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
             CDiv.style.display = 'none';
-            DDiv.style.display = 'flex';
+            DDiv.classList.add('displayidr');
             EDiv.style.display = 'none';
             showe.style.display = 'none';
             title.textContent = "Consulta de Sono Infantil";
             subtitulo.textContent = "O sono é fundamental para a saúde do seu filhote";
             img.src = "../img/blog/details/sono.jpg";
-            ABtn.classList.remove("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.add("active");
-            EBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -878,17 +858,12 @@
             BDiv.style.display = 'none';
             CDiv.style.display = 'none';
             DDiv.style.display = 'none';
-            EDiv.style.display = 'flex';
+            EDiv.classList.add('displayidr');
             showe.style.display = 'none';
             title.textContent = "Consulta de Pediatria de Introdução Alimentar";
             mn.textContent = " A 90mn";
             subtitulo.textContent = "A fase da diversificação alimentar é uma aventura que tem implicações para toda a vida!";
             img.src = "../img/blog/details/nutrio-infant.jpg";
-            ABtn.classList.remove("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.add("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -902,11 +877,6 @@
             showe.style.display = 'none';
             title.textContent = "Pediatria";
             img.src = "../img/blog/details/blog-hero10.png";
-            ABtn.classList.remove("active");
-            BBtn.classList.remove("active");
-            CBtn.classList.remove("active");
-            DBtn.classList.remove("active");
-            EBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -924,21 +894,6 @@
             window.location.reload();
         });
 
-        ABtn.addEventListener('click', function () {
-            window.location.hash = "#A";
-        });
-        BBtn.addEventListener('click', function () {
-            window.location.hash = "#B";
-        });
-        CBtn.addEventListener('click', function () {
-            window.location.hash = "#C";
-        });
-        DBtn.addEventListener('click', function () {
-            window.location.hash = "#D";
-        });
-        EBtn.addEventListener('click', function () {
-            window.location.hash = "#E";
-        });
     </script>
 
     <!-- Js Plugins -->

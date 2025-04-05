@@ -153,8 +153,8 @@
 
     <section class="services  set-bg">
         <div class="container">
-            <div class="d-flex">
-                <div id="Cirurgia" class="col-lg-8 col-md-8">
+            <div id="Cirurgia">
+                <div class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -181,8 +181,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="card shadow" style="background-image: url('../img/bg3.png');">
+                            <div class="card-more">
+                                <div class="icon text-center p-2">
+                                    <img src="../img/icons/home.png" width="100">
+                                </div>
+                                <p class="border-bottom text-dark">N’A Clínica estão disponíveis vários
+                                    workshops|grupos
+                                    de apoio muito interessantes na sua jornada de parentalidade.
+                                    Clique em cada um dos links seguintes para descobrir os nossos workshops|grupos
+                                    de
+                                    apoio.</p>
+                                <div class="d-flex">
+                                    <div class="col-lg-12 col-md-12 ">
+                                        <div class="card-text">
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#domicilio">Amamentação</a> <br>
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#conseferm">Enfermagem</a>
+                                            <br>
+                                            <a class="text-dark underline btn" href="teste.html#A">Teste do pezinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div id="anel" class="col-lg-8 col-md-8" style="display: none;">
+            <div id="anel">
+                <div class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -216,8 +247,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="card shadow" style="background-image: url('../img/bg3.png');">
+                            <div class="card-more">
+                                <div class="icon text-center p-2">
+                                    <img src="../img/icons/home.png" width="100">
+                                </div>
+                                <p class="border-bottom text-dark">N’A Clínica estão disponíveis vários
+                                    workshops|grupos
+                                    de apoio muito interessantes na sua jornada de parentalidade.
+                                    Clique em cada um dos links seguintes para descobrir os nossos workshops|grupos
+                                    de
+                                    apoio.</p>
+                                <div class="d-flex">
+                                    <div class="col-lg-12 col-md-12 ">
+                                        <div class="card-text">
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#domicilio">Amamentação</a>
+                                            <br>
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#conseferm">Enfermagem</a>
+                                            <br>
+                                            <a class="text-dark underline btn" href="teste.html#A">Teste do
+                                                pezinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div id="sutura-ferida" class="col-lg-8 col-md-8" style="display: none;">
+            <div id="sutura-ferida">
+                <div class="col-lg-8 col-md-8">
                     <div class="row">
                         <div class="blog__details__text ml-4 mr-4">
                             <div class="blog__details__text__item">
@@ -255,17 +319,23 @@
                                 <div class="icon text-center p-2">
                                     <img src="../img/icons/home.png" width="100">
                                 </div>
-                                <p class="border-bottom text-dark">N’A Clínica estão disponíveis vários workshops|grupos
+                                <p class="border-bottom text-dark">N’A Clínica estão disponíveis vários
+                                    workshops|grupos
                                     de apoio muito interessantes na sua jornada de parentalidade.
-                                    Clique em cada um dos links seguintes para descobrir os nossos workshops|grupos de
+                                    Clique em cada um dos links seguintes para descobrir os nossos workshops|grupos
+                                    de
                                     apoio.</p>
                                 <div class="d-flex">
                                     <div class="col-lg-12 col-md-12 ">
                                         <div class="card-text">
-                                            <button class="text-dark" id="con-ciru">Amamentação</button> <br>
-                                            <button class="text-dark" id="circ-anel">Enfermagem</button>
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#domicilio">Amamentação</a>
                                             <br>
-                                            <button class="text-dark" id="Sutura">Teste do pezinho</button>
+                                            <a class="text-dark underline btn"
+                                                href="domicilio.html#conseferm">Enfermagem</a>
+                                            <br>
+                                            <a class="text-dark underline btn" href="teste.html#A">Teste do
+                                                pezinho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +372,7 @@
 
         // Função para exibir a consulta Cirurgia
         function showCirurgia() {
-            CirurgiaDiv.style.display = 'block';
+            CirurgiaDiv.classList.add('displayidr');
             anelDiv.style.display = 'none';
             suturaDiv.style.display = 'none';
             consultaText.textContent = "Amamentação";
@@ -310,15 +380,12 @@
             showe.style.display = 'block';
             hiden.style.display = 'none';
             img.src = "../img/blog/details/curso-amamentacao.jpg";
-            CirurgiaBtn.classList.add("active");
-            anelBtn.classList.remove("active");
-            suturaBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Função para exibir a consulta Anel
         function showAnel() {
-            anelDiv.style.display = 'block';
+            anelDiv.classList.add('displayidr');
             suturaDiv.style.display = 'none';
             CirurgiaDiv.style.display = 'none';
             doutora.textContent = "Enfermeira Tânia Semende";
@@ -327,9 +394,6 @@
             showe.style.display = 'block';
             hiden.style.display = 'none';
             img.src = "../img/blog/details/enfermeira.jpg";
-            anelBtn.classList.add("active");
-            CirurgiaBtn.classList.remove("active");
-            suturaBtn.classList.remove("active");
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -363,18 +427,6 @@
             window.location.reload();
         });
 
-        // Adicionar funcionalidade dos botões
-        CirurgiaBtn.addEventListener('click', function () {
-            window.location.hash = "#domicilio";
-        });
-
-        anelBtn.addEventListener('click', function () {
-            window.location.hash = "#conseferm";
-        });
-
-        suturaBtn.addEventListener('click', function () {
-            window.location.hash = "#pensos";
-        });
     </script>
 
     <!-- Js Plugins -->
