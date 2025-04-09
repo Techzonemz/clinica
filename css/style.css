@@ -59,7 +59,7 @@ h6 {
 }
 
 .footer strong {
-    color: #d6a294;
+    color: #ffffff;
 }
 
 .h1 {
@@ -790,7 +790,7 @@ li a i {
 .menu li {
     padding: 4px 0px 4px 0px;
     /* margin-right: 45px !important; */
-    width: 196px;
+    width: 167px;
 }
 
 .grav li {
@@ -1468,7 +1468,6 @@ button.text-dark.active {
 
 .services__item:hover .services__item__icon img {
     color: #ffffff;
-    filter: invert(1) brightness(5);
 }
 
 .services__item:hover .services__item__text h5 {
@@ -1523,8 +1522,8 @@ button.text-dark.active {
 
 .services__item__text h5 {
     font-size: 20px;
-    color: #777777;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 800;
     margin-bottom: 14px;
     -webkit-transition: all, 0.3s;
     -o-transition: all, 0.3s;
@@ -3959,7 +3958,7 @@ b {
 /* CALENDARIO */
 .meeting {
     height: 100%;
-    background-color: #d6a294 !important;
+    background-color: #b1cad4 !important;
 }
 
 .meeting-2 {
@@ -4337,8 +4336,8 @@ a.sub-arrow {
     margin: 0;
     color: #d6a294;
     color: #111111;
-    font-size: .875em;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 .menucanva {
@@ -4381,6 +4380,42 @@ a.sub-arrow {
 @media (max-width: 768px) {
     .offcanvas-menu {
         display: block;
+    }
+
+    .dropdown-submenu .submenu {
+        display: none;
+        top: 0;
+        left: 100%;
+        min-width: 160px;
+        border: none;
+    }
+
+    .dropdown-menu li {
+        padding: 7px 0;
+    }
+
+    .dropdown-submenu .dropdown-item {
+        color: black;
+        font-weight: 700;
+        font-size: .875em;
+        padding: 0px 15px;
+    }
+
+    a.dropdown-item.underline {
+        font-weight: 400;
+    }
+
+    .submenu .dropdown-item {
+        margin: 0;
+        color: #4c4c4c;
+        font-size: .875em;
+        font-weight: 600;
+        border: none;
+        white-space: normal;
+    }
+
+    .submenu .dropdown-item:hover {
+        background-color: #495057;
     }
 
     .services__details__text .d-flex {
@@ -4544,4 +4579,46 @@ a.sub-arrow {
 
 .offcanvas-header .header__logo {
     padding: 2px 30px 20px 0px !important;
+}
+
+/* Estilo do Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #b8ced7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1000;
+    display: none;
+    /* Inicialmente escondido */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-banner p {
+    margin: 0;
+}
+
+.cookie-banner a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.accept-btn {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accept-btn:hover {
+    background-color: #f4a261;
 }

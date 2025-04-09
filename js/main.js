@@ -102,7 +102,36 @@
 })(jQuery);
 
 /// some script
+document.addEventListener("DOMContentLoaded", function () {
+  // Impede que o clique dentro do dropdown feche o menu principal
+  document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
+    menu.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
 
+  // Faz o submenu "Vacinação" funcionar como toggle no clique
+  document.querySelectorAll(".dropdown-submenu > a").forEach(function (toggle) {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const submenu = this.nextElementSibling;
+
+      // Fecha outros submenus (opcional)
+      document.querySelectorAll(".submenu").forEach(function (el) {
+        if (el !== submenu) el.style.display = "none";
+      });
+
+      // Alterna visibilidade
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    });
+  });
+});
 // jQuery ready start
 $(document).ready(function () {
   // Abrir menu offcanvas
@@ -143,3 +172,19 @@ $(document).ready(function () {
     $("body").removeClass("offcanvas-active");
   }
 }); // jQuery end
+
+// Verifica se o usuário já aceitou os cookies
+if (!localStorage.getItem("cookies-accepted")) {
+  // Exibe o banner se o cookie não foi aceito
+  document.getElementById("cookie-banner").style.display = "flex";
+}
+
+// Quando o usuário clica em "Aceitar"
+document
+  .getElementById("accept-cookies")
+  .addEventListener("click", function () {
+    // Armazena que o usuário aceitou os cookies
+    localStorage.setItem("cookies-accepted", "true");
+    // Esconde o banner
+    document.getElementById("cookie-banner").style.display = "none";
+  });
