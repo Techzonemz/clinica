@@ -3880,8 +3880,10 @@ b {
     }
 
     .hero__text h2 {
-        font-size: 34px;
-        line-height: 46px;
+        font-size: 25px;
+        line-height: 31px;
+        margin-top: 56px;
+        margin-bottom: 0px;
     }
 
     .consultation__form .section-title h2 {
@@ -4490,7 +4492,7 @@ a.sub-arrow {
 
     .hero {
         height: auto;
-        background-image: url(../img/hero-bg.png) !important;
+        background-image: url(../img/hero-bg.jpg) !important;
     }
 
     .destaque {
