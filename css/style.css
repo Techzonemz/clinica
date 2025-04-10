@@ -1626,10 +1626,10 @@ b {
   Team
 -----------------------*/
 .team-img img:hover {
-    -webkit-transform: scale(1.2);
+    /* -webkit-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition: -webkit-transform 4s ease-out;
-    transition: transform 4s ease-out;
+    transition: transform 4s ease-out; */
 }
 
 .team-img {
