@@ -14,7 +14,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -691,147 +691,185 @@
     </section>
     <!-- Testimonials Section End -->
 
-
     <section class="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <!-- <span>Por que nos escolher?</span> -->
                         <h2><i>A Clínica</i> nas Redes Sociais</h2>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-between">
-                <a target="_blank" href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">
-                    <div class="card">
-                        <div class="top">
-                            <div class="userDeatils">
-                                <div class="profileImg">
-                                    <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
-                                    <img src="img/profile.png" alt="A Clínica" class="cover">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="userDeatils">
+                                        <div class="profileImg">
+                                            <img src="img/profile.png" alt="A Clínica" class="cover">
+                                        </div>
+                                        <h3>A Clínica<br><span>@aclinica.mz</span></h3>
+                                    </div>
+                                    <div class="dot">
+                                        <img src="img/icons/dot.png" alt="dot">
+                                    </div>
                                 </div>
-                                <h3>A Clínica<br><span>@aclinica.mz</span></h3>
-                            </div>
-                            <div class="dot">
-                                <img src="img/icons/dot.png" alt="dot">
-                            </div>
-                        </div>
-                        <div class="imgBg">
-
-                            <!-- Alterar a imagem para algo relacionado à clínica -->
-                            <img src="img/team/488648942_17845892778448741_6513558634018821785_n.jpg" alt="bg"
-                                class="cover">
-                        </div>
-                        <div class="btns">
-                            <div class="left">
-                                <img src="img/icons/heart_red.png" alt="heart" class="heart" onclick="likeButton()">
-                                <img src="img/icons/comment.png" alt="comment">
-                                <img src="img/icons/share.png" alt="share">
-                            </div>
-                            <div class="right">
-                                <img src="img/icons/bookmark.png" alt="bookmark">
-                            </div>
-                        </div>
-                        <h4 class="likes">55 likes</h4>
-                        <h4 class="message">
-                            <b>aclinica.mz</b>
-                            A Joana é a nossa Psicóloga Clínica. Apaixonada pela mente humana em todas as suas...
-
-                        </h4>
-                        <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">Ver todos os
-                                546
-                                comentários</a></h4>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://www.instagram.com/p/DIQYLHrieeT/">
-                    <div class="card">
-                        <div class="top">
-                            <div class="userDeatils">
-                                <div class="profileImg">
-                                    <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
-                                    <img src="img/profile.png" alt="A Clínica" class="cover">
+                                <div class="imgBg">
+                                    <img src="img/team/488648942_17845892778448741_6513558634018821785_n.jpg" alt="bg"
+                                        class="cover">
                                 </div>
-                                <h3>A Clínica<br><span>@aclinica.mz</span></h3>
-                            </div>
-                            <div class="dot">
-                                <img src="img/icons/dot.png" alt="dot">
-                            </div>
-                        </div>
-                        <div class="imgBg">
-
-                            <!-- Alterar a imagem para algo relacionado à clínica -->
-                            <img src="img/team/489610960_17846626650448741_6388324698183464706_n.jpg" alt="bg"
-                                class="cover">
-                        </div>
-                        <div class="btns">
-                            <div class="left">
-                                <img src="img/icons/heart_red.png" alt="heart" class="heart" onclick="likeButton()">
-                                <img src="img/icons/comment.png" alt="comment">
-                                <img src="img/icons/share.png" alt="share">
-                            </div>
-                            <div class="right">
-                                <img src="img/icons/bookmark.png" alt="bookmark">
-                            </div>
-                        </div>
-                        <h4 class="likes">55 likes</h4>
-                        <h4 class="message">
-                            <b>aclinica.mz</b>
-                            A Clínica vai abrir portas no dia 14 de Abril às 8 horas!
-
-                        </h4>
-                        <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">Ver todos os
-                                10
-                                comentários</a></h4>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://www.instagram.com/aclinica.mz/p/DH_ndcaCIBF/">
-                    <div class="card">
-                        <div class="top">
-                            <div class="userDeatils">
-                                <div class="profileImg">
-                                    <!-- Alterar a imagem para a logo da clínica ou foto do perfil -->
-                                    <img src="img/profile.png" alt="A Clínica" class="cover">
+                                <div class="btns">
+                                    <div class="left">
+                                        <img src="img/icons/heart_red.png" alt="heart" class="heart"
+                                            onclick="likeButton()">
+                                        <img src="img/icons/comment.png" alt="comment">
+                                        <img src="img/icons/share.png" alt="share">
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/bookmark.png" alt="bookmark">
+                                    </div>
                                 </div>
-                                <h3>A Clínica<br><span>@aclinica.mz</span></h3>
+                                <h4 class="likes">55 likes</h4>
+                                <h4 class="message"><b>aclinica.mz</b> A Joana é a nossa Psicóloga Clínica. Apaixonada
+                                    pela
+                                    mente humana em todas as suas...</h4>
+                                <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">Ver
+                                        todos os 546 comentários</a></h4>
                             </div>
-                            <div class="dot">
-                                <img src="img/icons/dot.png" alt="dot">
-                            </div>
-                        </div>
-                        <div class="imgBg">
+                        </a>
+                    </div>
 
-                            <!-- Alterar a imagem para algo relacionado à clínica -->
-                            <img src="img/team/bosddwdww.jpg" alt="bg" class="cover">
-                        </div>
-                        <div class="btns">
-                            <div class="left">
-                                <img src="img/icons/heart_red.png" alt="heart" class="heart" onclick="likeButton()">
-                                <img src="img/icons/comment.png" alt="comment">
-                                <img src="img/icons/share.png" alt="share">
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://www.instagram.com/p/DIQYLHrieeT/">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="userDeatils">
+                                        <div class="profileImg">
+                                            <img src="img/profile.png" alt="A Clínica" class="cover">
+                                        </div>
+                                        <h3>A Clínica<br><span>@aclinica.mz</span></h3>
+                                    </div>
+                                    <div class="dot">
+                                        <img src="img/icons/dot.png" alt="dot">
+                                    </div>
+                                </div>
+                                <div class="imgBg">
+                                    <img src="img/team/489610960_17846626650448741_6388324698183464706_n.jpg" alt="bg"
+                                        class="cover">
+                                </div>
+                                <div class="btns">
+                                    <div class="left">
+                                        <img src="img/icons/heart_red.png" alt="heart" class="heart"
+                                            onclick="likeButton()">
+                                        <img src="img/icons/comment.png" alt="comment">
+                                        <img src="img/icons/share.png" alt="share">
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/bookmark.png" alt="bookmark">
+                                    </div>
+                                </div>
+                                <h4 class="likes">55 likes</h4>
+                                <h4 class="message"><b>aclinica.mz</b> A Clínica vai abrir portas no dia 14 de Abril às
+                                    8
+                                    horas!</h4>
+                                <h4 class="comments"><a href="https://www.instagram.com/p/DIQYLHrieeT/">Ver todos os 10
+                                        comentários</a></h4>
                             </div>
-                            <div class="right">
-                                <img src="img/icons/bookmark.png" alt="bookmark">
+                        </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://www.instagram.com/aclinica.mz/p/DH_ndcaCIBF/">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="userDeatils">
+                                        <div class="profileImg">
+                                            <img src="img/profile.png" alt="A Clínica" class="cover">
+                                        </div>
+                                        <h3>A Clínica<br><span>@aclinica.mz</span></h3>
+                                    </div>
+                                    <div class="dot">
+                                        <img src="img/icons/dot.png" alt="dot">
+                                    </div>
+                                </div>
+                                <div class="imgBg">
+                                    <img src="img/team/bosddwdww.jpg" alt="bg" class="cover">
+                                </div>
+                                <div class="btns">
+                                    <div class="left">
+                                        <img src="img/icons/heart_red.png" alt="heart" class="heart"
+                                            onclick="likeButton()">
+                                        <img src="img/icons/comment.png" alt="comment">
+                                        <img src="img/icons/share.png" alt="share">
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/bookmark.png" alt="bookmark">
+                                    </div>
+                                </div>
+                                <h4 class="likes">55 likes</h4>
+                                <h4 class="message"><b>aclinica.mz</b> Quem segue a página Dona Bebé já conhece o
+                                    Calisto!
+                                    Como não podia deixar de ser</h4>
+                                <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DH_ndcaCIBF/">Ver
+                                        todos os 5 comentários</a></h4>
                             </div>
-                        </div>
-                        <h4 class="likes">55 likes</h4>
-                        <h4 class="message">
-                            <b>aclinica.mz</b>
-                            Quem segue a página Dona Bebé já conhece o Calisto! Como não podia deixar de ser
-                        </h4>
-                        <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DIGqiErCdTG/">Ver todos os
-                                5
-                                comentários</a></h4>
+                        </a>
                     </div>
-                </a>
-                <div class="col-lg-12 text-center mt-4">
-                    <div class="load__more">
-                        <a href="https://www.instagram.com/aclinica.mz/" class="primary-btn"><i
-                                class="fa fa-instagram p-2"></i> Não perca as novidades:
-                            Siga-nos</a>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://www.instagram.com/aclinica.mz/p/DH_ndcaCIBF/">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="userDeatils">
+                                        <div class="profileImg">
+                                            <img src="img/profile.png" alt="A Clínica" class="cover">
+                                        </div>
+                                        <h3>A Clínica<br><span>@aclinica.mz</span></h3>
+                                    </div>
+                                    <div class="dot">
+                                        <img src="img/icons/dot.png" alt="dot">
+                                    </div>
+                                </div>
+                                <div class="imgBg">
+                                    <img src="img/team/bosddwdww.jpg" alt="bg" class="cover">
+                                </div>
+                                <div class="btns">
+                                    <div class="left">
+                                        <img src="img/icons/heart_red.png" alt="heart" class="heart"
+                                            onclick="likeButton()">
+                                        <img src="img/icons/comment.png" alt="comment">
+                                        <img src="img/icons/share.png" alt="share">
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/bookmark.png" alt="bookmark">
+                                    </div>
+                                </div>
+                                <h4 class="likes">55 likes</h4>
+                                <h4 class="message"><b>aclinica.mz</b> Quem segue a página Dona Bebé já conhece o
+                                    Calisto!
+                                    Como não podia deixar de ser</h4>
+                                <h4 class="comments"><a href="https://www.instagram.com/aclinica.mz/p/DH_ndcaCIBF/">Ver
+                                        todos os 5 comentários</a></h4>
+                            </div>
+                        </a>
                     </div>
+                </div>
+
+            </div>
+
+            <!-- Botão de seguir -->
+            <div class="col-lg-12 text-center mt-4">
+                <div class="load__more">
+                    <a href="https://www.instagram.com/aclinica.mz/" class="primary-btn">
+                        <i class="fa fa-instagram p-2"></i> Não perca as novidades: Siga-nos
+                    </a>
                 </div>
             </div>
         </div>
@@ -847,7 +885,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000, // Tempo em milissegundos (5000 = 5 segundos)
+                disableOnInteraction: false // Continua mesmo após interação
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
         const mais = document.querySelectorAll('.mais');
         const textoporExpandir = document.querySelectorAll('.textoporExpandir');
         mais.forEach((botao, index) => {
