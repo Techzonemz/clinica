@@ -77,6 +77,7 @@
             padding: 34px 1rem;
             font-size: 18px;
             background-color: #f9f9f9;
+            width: 100%;
         }
 
         .contact_field .form-control:focus {
@@ -138,6 +139,17 @@
             color: #d6a294 !important;
             background-color: transparent !important;
             border: 2px solid #d6a294;
+        }
+
+        .nice-select {
+            display: flex;
+            align-items: center;
+        }
+
+        span.current {
+            font-size: 15px;
+            padding-left: 30px;
+            color: #3f3f3f;
         }
 
         .socil_item_inner li {
@@ -252,7 +264,15 @@
                                         </p>
                                         <input type="text" class="form-control form-group" placeholder="Nome" />
                                         <input type="email" class="form-control form-group" placeholder="Email" />
-                                        <input type="text" class="form-control form-group" placeholder="Assunto" />
+                                        <select class="form-control form-group" placeholder="Assunto">
+                                            <option value="" disabled selected>Selecione o assunto</option>
+                                            <option value="assunto1">Consultas</option>
+                                            <option value="assunto2">Cursos</option>
+                                            <option value="assunto2">Workshops</option>
+                                            <option value="assunto2">Gravidez</option>
+                                            <option value="assunto2">Vacinação</option>
+                                            <option value="assunto2">Outros Assuntos</option>
+                                        </select>
                                         <textarea class="form-control form-group" placeholder="Mensagem"
                                             style="height: 16rem;"></textarea>
                                         <p style="text-align: initial;font-size: 11px;">Os dados recolhidos, serão
