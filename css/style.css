@@ -1202,7 +1202,7 @@ li .dropdown .active a {
 
 .list li {
     color: #686868;
-    padding: 2px 18px;
+    padding: 0px 18px 10px;
     font-size: 16px;
 }
 
@@ -1550,7 +1550,7 @@ button.text-dark.active {
     border-radius: 5px;
     line-height: 2.1;
     color: white !important;
-    height: fit-content;
+    height: 304px;
 }
 
 .services__item .services__item__text ul li a {
@@ -1571,7 +1571,7 @@ b {
     position: relative;
     overflow: hidden;
     height: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 
