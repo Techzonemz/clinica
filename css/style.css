@@ -36,6 +36,7 @@
 
 html,
 body {
+    zoom: 90%;
     height: 100%;
     font-family: 'CenturyGothic', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
