@@ -63,55 +63,6 @@ h6 {
     color: #ffffff;
 }
 
-.h1 {
-    font-size: 70px;
-}
-
-.h2 {
-    font-size: 36px;
-}
-
-.h3 {
-    font-size: 30px;
-}
-
-.h4 {
-    font-size: 24px;
-}
-
-.h5 {
-    font-size: 18px;
-}
-
-.h6 {
-    font-size: 16px;
-}
-
-
-h1 {
-    font-size: 70px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-h4 {
-    font-size: 24px;
-}
-
-h5 {
-    font-size: 18px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
 /* Font Weights */
 .fw-light {
     font-weight: 300;
@@ -2966,7 +2917,7 @@ b {
 }
 
 .blog__details__text {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .blog__details__text__item {
