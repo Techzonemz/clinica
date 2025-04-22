@@ -4332,6 +4332,15 @@ a.sub-arrow {
 
 /* Exibe o menu offcanvas apenas em telas menores (máx. 768px) */
 @media (max-width: 768px) {
+    .servocos {
+        display: grid !important;
+        justify-content: center !important;
+    }
+
+    .servocos>li {
+        padding: 2rem;
+    }
+
     .offcanvas-menu {
         display: block;
     }
