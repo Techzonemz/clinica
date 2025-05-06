@@ -27,6 +27,11 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
     <style>
+        .services__details__content {
+            background-image: none;
+            background-color: #cfdbab !important;
+        }
+
         b {
             color: #d6a294;
             font-weight: 400;
@@ -94,18 +99,30 @@
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad mt-9">
         <div class="container">
-            <div id="img" class="blog__details__hero set-bg mb-0" data-setbg="../img/blog/details/amigdalite.jpg">
-                <!-- <div class="row d-flex justify-content-center">
-                    <div class="col-lg-7 text-center">
-                        <div class="blog__hero__text">
-                            <h2>Here’s how you can get a natural glow this party season</h2>
-                            <ul>
-                                <li><img src="../img/blog/blog-author.jpg" alt=""> Dra Patrícia P. Ronquillo</li>
-                                <li>Dec 06, 2019</li>
-                            </ul>
+            <div class="services__details__pic">
+                <div class="services__details__pic">
+                    <img id="img" src="../img/blog/details/amigdalite.jpg" alt="">
+                    <div class="services__details__content">
+                        <div class="d-flex w-100 align-items-end">
+                            <div class="mr-3">
+                                <div class="services__details__title">
+                                    <h3><img src="../img/icons/gravidez-white.png" class="fa " alt="">
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-white"><a href="team-sing.html#D">Dra Erika Pereira</a></h4>
+                                <h5>Nutricionista</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex w-100 mt-2 align-items-end justify-content-center text-white">
+                            <span class="h6"> <i class="fa fa-clock-o"></i> Duração: 60min | <i class="fa fa-user"></i>
+                                presencial |
+                                <i class="fa fa-desktop"></i> Online
+                            </span>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -384,10 +401,10 @@
                 </div>
                 <div class="col-lg-4 col-md-4 d-flex height-fit-content justify-content-end">
                     <div class="row">
-                        <div class="card shadow" style="background-image: url('../img/bg4.png');">
+                        <div class="card shadow" style="background-image: url('../img/bg0.png');">
                             <div class="card-more">
                                 <div class="icon text-center p-2">
-                                    <img src="../img/icons/gravidez.png" width="100">
+                                    <img src="../img/icons/Nutrição.png" width="100">
                                 </div>
                                 <p class="border-bottom text-white">Neste espaço existem consultas em várias áreas,
                                     clique em cada uma das seguintes consultas para saber
@@ -452,7 +469,7 @@
             EDiv.style.display = 'none';  // Esconde a div pós-parto
             title.textContent = "Diabetes Gestacional:"; // Atualiza o texto para "Cirurgia"
             subtitulo.textContent = "A diabetes gestacional afeta cada vez mais grávidas, podendo ter consequências importantes tanto para a mãe como para o bebé."; // Atualiza o texto para "Cirurgia"
-            img.style.backgroundImage = "url('../img/blog/details/diabetes_gestacional.jpg')"; // Atualiza o texto para "Cirurgia"
+            img.src = "../img/blog/details/diabetes_gestacional.jpg";
             ABtn.classList.add("active");
             BBtn.classList.remove("active");
             DBtn.classList.remove("active");
@@ -467,7 +484,7 @@
             BDiv.classList.add('displayidr'); // Exibe a div pós-parto
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
-            img.style.backgroundImage = "url('../img/blog/details/Snoezelen.jpg')"; // Atualiza o texto para "Cirurgia"
+            img.src = "../img/blog/details/Snoezelen.jpg";
             subtitulo.textContent = "Snoezelen é sinónimo de bem-estar, relaxamento e conforto especialmente durante a gravidez."; // Atualiza o texto para "Pós-parto"
             title.textContent = "Snoezelen na gravidez:"; // Atualiza o texto para "Pós-parto"
             ABtn.classList.remove("active");
@@ -483,7 +500,7 @@
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             DDiv.classList.add('displayidr'); // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
-            img.style.backgroundImage = "url('../img/blog/details/Pré-conceção.jpg')"; // Atualiza o texto para "Cirurgia"
+            img.src = "../img/blog/details/Pré-conceção.jpg";
             title.textContent = "Consulta de Pré-conceção"; // Atualiza o texto para "Pós-parto"
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
@@ -498,7 +515,7 @@
             BDiv.style.display = 'none';  // Esconde a div Cirurgia
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.classList.add('displayidr'); // Exibe a div pós-parto
-            img.style.backgroundImage = "url('../img/blog/details/plano_de treino_para_a_gravidez.jpg')"; // Atualiza o texto para "Cirurgia"
+            img.src = "../img/blog/details/plano_de treino_para_a_gravidez.jpg";
             title.textContent = "Exercício Físico durante a gravidez"; // Atualiza o texto para "Pós-parto"
             subtitulo.textContent = "O exercício durante a gravidez é fundamental para a saúde materna e do bebé."; // Atualiza o texto para "Pós-parto"
             ABtn.classList.remove("active");
