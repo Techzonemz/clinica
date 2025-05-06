@@ -111,8 +111,9 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-white"><a href="team-sing.html#D">Dra Erika Pereira</a></h4>
-                                <h5>Nutricionista</h5>
+                                <h4 class="text-white"><a href="team-sing.html#D"><span id="doutora">Dra Erika
+                                            Pereira</span></a></h4>
+                                <h5 id="funcao">Nutricionista</h5>
                             </div>
                         </div>
                         <div class="d-flex w-100 mt-2 align-items-end justify-content-center text-white">
@@ -404,7 +405,7 @@
                         <div class="card shadow" style="background-image: url('../img/bg0.png');">
                             <div class="card-more">
                                 <div class="icon text-center p-2">
-                                    <img src="../img/icons/Nutrição.png" width="100">
+                                    <img id="icon" src="../img/icons/Nutrição.png" width="100">
                                 </div>
                                 <p class="border-bottom text-white">Neste espaço existem consultas em várias áreas,
                                     clique em cada uma das seguintes consultas para saber
@@ -455,9 +456,12 @@
         const EBtn = document.getElementById('EBtn');
         const EDiv = document.getElementById('E');
         const title = document.getElementById('title');
+        const doutora = document.getElementById('doutora');
+        const funcao = document.getElementById('funcao');
         const img = document.getElementById('img');
         const header = document.getElementById('header');
         const subtitulo = document.getElementById('subtitulo');
+        const icon = document.getElementById('icon');
 
         // Função para exibir a consulta Cirurgia, esconder a pós-parto e atualizar o texto
         function showA() {
@@ -485,8 +489,11 @@
             DDiv.style.display = 'none'; // Exibe a div pós-parto
             EDiv.style.display = 'none'; // Exibe a div pós-parto
             img.src = "../img/blog/details/Snoezelen.jpg";
+            icon.src = "../img/icons/Exercício Fisico.png";
             subtitulo.textContent = "Snoezelen é sinónimo de bem-estar, relaxamento e conforto especialmente durante a gravidez."; // Atualiza o texto para "Pós-parto"
-            title.textContent = "Snoezelen na gravidez:"; // Atualiza o texto para "Pós-parto"
+            title.textContent = "Snoezelen na gravidez:"; // Atualiza o texto para "Pós-parto"      
+            doutora.textContent = "Marina Pastore"; // Atualiza o texto para "Pós-parto"
+            funcao.textContent = "Terapeuta"; // Atualiza o texto para "Pós-parto"
             ABtn.classList.remove("active");
             BBtn.classList.add("active");
             DBtn.classList.remove("active");
@@ -518,6 +525,9 @@
             img.src = "../img/blog/details/plano_de treino_para_a_gravidez.jpg";
             title.textContent = "Exercício Físico durante a gravidez"; // Atualiza o texto para "Pós-parto"
             subtitulo.textContent = "O exercício durante a gravidez é fundamental para a saúde materna e do bebé."; // Atualiza o texto para "Pós-parto"
+            doutora.textContent = "André Antunes"; // Atualiza o texto para "Pós-parto"
+            funcao.textContent = "Personal Trainer"; // Atualiza o texto para "Pós-parto"
+            icon.src = "../img/icons/Exercício Fisico.png";
             ABtn.classList.remove("active");
             BBtn.classList.remove("active");
             DBtn.classList.remove("active");
