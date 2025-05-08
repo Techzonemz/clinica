@@ -27,6 +27,11 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
     <style>
+        .services__details__content {
+            background-color: #dfb080;
+            background-image: none !important;
+        }
+
         b {
             color: #d6a294;
             font-weight: 400;
@@ -102,7 +107,7 @@
         <div class="container">
             <div class="services__details__pic">
                 <div class="services__details__pic">
-                    <img id="img" src="../img/blog/details/blog-hero4.jpg" alt="">
+                    <img id="img" src="../img/blog/details/Marina.jpg" alt="">
                     <div class="services__details__content">
                         <div class="d-flex w-100 align-items-end">
                             <div class="mr-3">
@@ -140,10 +145,7 @@
                                         </h2>
                                         <h5><b id="subtitulo">A terapia ocupacional ajuda a que o teu
                                                 dia-a-dia
-                                                corra melhor! </b><a class="h6 " id="mais" href="terapia.html#F"> clique
-                                                aqui para
-                                                saiber
-                                                mais</a></h5>
+                                                corra melhor! </b></h5>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +222,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <a href="pediatria.html">
+                                        <a href="pediatria-sing.html">
                                             <div class="card-icon mb-3">
                                                 <img src="../img/icons/Pediatra .png" style="width: 104px;">
                                             </div>
@@ -329,7 +331,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <a href="pediatria.html">
+                                        <a href="pediatria-sing.html">
                                             <div class="card-icon mb-3">
                                                 <img src="../img/icons/Pediatra .png" style="width: 104px;">
                                             </div>
@@ -417,7 +419,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <a href="pediatria.html">
+                                        <a href="pediatria-sing.html">
                                             <div class="card-icon mb-3">
                                                 <img src="../img/icons/Pediatra .png" style="width: 104px;">
                                             </div>
@@ -509,7 +511,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <a href="pediatria.html">
+                                        <a href="pediatria-sing.html">
                                             <div class="card-icon mb-3">
                                                 <img src="../img/icons/Pediatra .png" style="width: 104px;">
                                             </div>
@@ -625,7 +627,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <a href="pediatria.html">
+                                        <a href="pediatria-sing.html">
                                             <div class="card-icon mb-3">
                                                 <img src="../img/icons/Pediatra .png" style="width: 104px;">
                                             </div>
@@ -713,7 +715,6 @@
         const showe = document.getElementById('showe');
         const hiden = document.getElementById('hiden');
         const mn = document.getElementById('mn');
-        const mais = document.getElementById('mais');
 
         function showA() {
             ADiv.classList.add('displayidr');
@@ -785,11 +786,10 @@
             showe.style.display = 'none';
             title.textContent = "Terapia Snoezelen";
             subtitulo.textContent = "N’A Clínica orgulhamo-nos de ter a única sala Snoezelen em Moçambique!!!";
-            img.src = "../img/blog/details/Snoezelen.jpg";
+            img.src = "../img/blog/details/Marina.jpg";
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         function showF() {
-            mais.style.display = 'none';
             ADiv.style.display = 'none';
             BDiv.style.display = 'none';
             CDiv.style.display = 'none';
@@ -799,7 +799,7 @@
             showe.style.display = 'none';
             title.textContent = "Terapia ocupacional";
             subtitulo.textContent = "A terapia ocupacional ajuda a que o teu dia-a-dia corra melhor!";
-            img.src = "../img/blog/details/Snoezelen.jpg";
+            img.src = "../img/blog/details/Marina.jpg";
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
