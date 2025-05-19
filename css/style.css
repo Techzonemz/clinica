@@ -4624,29 +4624,12 @@ a.sub-arrow {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        max-width: 80% !important;
-        zoom: 80%;
-    }
-
-}
-
-@media (min-width: 992px) {
 
     .container,
-    .container-lg,
+    .container-sm,
     .container-md,
-    .container-sm {
+    .container-lg {
         max-width: 80% !important;
         zoom: 80%;
-    }
-
-}
-
-@media (min-width: 576px) {
-
-    .container,
-    .container-sm {
-        max-width: 90%;
     }
 }
