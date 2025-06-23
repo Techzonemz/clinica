@@ -100,7 +100,7 @@
                         <div class="d-flex w-100 align-items-end">
                             <div class="mr-3">
                                 <div class="services__details__title">
-                                    <h3><img src="../img/icons/atendimento.png" class="fa " alt="">
+                                    <h3><img id="icon" src="../img/icons/atendimento.png" class="fa " alt="">
                                     </h3>
                                 </div>
                             </div>
@@ -360,6 +360,7 @@
         const CirurgiaBtn = document.getElementById('con-ciru');
         const anelBtn = document.getElementById('circ-anel');
         const prof = document.getElementById('prof');
+        const icon = document.getElementById('icon');
         const suturaBtn = document.getElementById('Sutura');
         const CirurgiaDiv = document.getElementById('Cirurgia');
         const anelDiv = document.getElementById('anel');
@@ -393,6 +394,7 @@
             showe.style.display = 'block';
             hiden.style.display = 'none';
             img.src = "../img/blog/details/enfermeira.jpg";
+            icon.src = "../img/icons/Enfermagem.png";
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
